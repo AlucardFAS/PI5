@@ -5,22 +5,20 @@ import random
 import operator
 
 #Carrega o arquivo CSV
-def carregaDados(filename, divideConjunto, conjuntoTratado=[] , conjuntoTeste=[]):
+def carregaDados(filename):
     with open(filename, 'r') as csvfile:#Carrega como CSV File
         lines = csv.reader(csvfile)#Armazena os valores em linhas
         dataset = list(lines)#Cria uma lista
+        return dataset
 
-        #Passa pelos n elementos do dataset
-        for x in range(len(dataset)):
+def treinoDados(divisor, trainingSet, testSet):
+    for x in range(len(dataset)):
             for y in range(4):#le os n elementos de cada linha
                 dataset[x][y] = float(dataset[x][y])#Gera uma matriz de elementos do dataset
             if random.random() < divideConjunto:#Randomiza os valores, ve o que esta abaixo do float enviado e armazena nos conjuntos
                 conjuntoTratado.append(dataset[x])
             else:
                 conjuntoTeste.append(dataset[x])
-        return dataset
-
-
 
 #Acha vizinhos
 #Recebe os conjuntos, sendo um de treino onde estão os dados com as classes, um de teste,
@@ -29,7 +27,6 @@ def carregaDados(filename, divideConjunto, conjuntoTratado=[] , conjuntoTeste=[]
 def getVizinhos(conjuntoTratado, instanciaTeste, k):
 	distancia = []
 	length = len(instanciaTeste)-1#porque é um vetor
-
 
     #Fará o calculo euclidiano de distancia entre os n valores teste 
 	for x in range(len(conjuntoTratado)):
@@ -71,21 +68,54 @@ def getPrecisao(conjuntoTeste, previsoes):
 			correto += 1
 	return (correto/float(len(conjuntoTeste))) * 100.0 #divide os corretos pelo total e transforma em porcentagem
 
+def iris():
+    
+    print('==Iris==')
+    iris = carregaDados('DataCSV\iris.csv')
+    for x in range(len(iris)):
+         for y in range(4):
+                iris[x][y] = float(iris[x][y])
+    instanciaTeste = []
+    instanciaTeste = [0.78, 0.7,0.93]
+    vizinhos = getVizinhos(iris, instanciaTeste, 1)
+    vizinhos_m2 = getVizinhos(iris, instanciaTeste, 7)
+    vizinhos_m10 = getVizinhos(iris, instanciaTeste, 5*10+1)
+    resultado = getResposta(vizinhos)
+    print('1NN: ' + resultado)
+    resultado = getResposta(vizinhos_m2)
+    print('(M+2)-NN: ' + resultado)
+    resultado = getResposta(vizinhos_m10)
+    print('(M*10 + 1)-NN: ' + resultado)
+
+'''def abalone():#TODO
+
+def wine():#TODO
+
+def wineQuality():#TODO
+
+def adult():#TODO
+    
+def breastCancer():#TODO
+'''
+
+
+
+
+
 def main():
     
-    conjuntoTratado = []
-    conjuntoTeste = []
-    #carregaDados('DataCSV\iris.csv', 0.66, trainingSet, testSet)
-    #print ('Train: ' + repr(len(trainingSet)))
-    #print ('Test: ' + repr(len(testSet)))
-    #trainSet = [[2, 2, 2, 'a'], [4, 4, 4, 'b'],[3,3,3,'a']]
-    instanciaTeste = [0.78, 0.7,0.93]
-    k = 8
-    vizinhos = getVizinhos(carregaDados('DataCSV\iris.csv', 0.66, conjuntoTratado, conjuntoTeste), instanciaTeste, k)
-    print ('Vizinhos: %s' % vizinhos)
-
-    resultado = getResposta(vizinhos)
     
-    print("Classe: %s" % resultado)
+    iris()
+    
+    
+    #TODO
+    '''
+    abalone()
+    wine()
+    wineQuality()
+    adult()
+    breastCancer()
+
+    '''
 
 main()
