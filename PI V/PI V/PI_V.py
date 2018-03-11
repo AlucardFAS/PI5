@@ -80,12 +80,15 @@ def iris():
     vizinhos = getVizinhos(iris, instanciaTeste, 1)
     vizinhos_m2 = getVizinhos(iris, instanciaTeste, 7)
     vizinhos_m10 = getVizinhos(iris, instanciaTeste, 5*10+1)
+    vizinhos_q2 = getVizinhos(iris,instanciaTeste, 76)
     resultado = getResposta(vizinhos)
     print('1NN: ' + resultado)
     resultado = getResposta(vizinhos_m2)
     print('(M+2)-NN: ' + resultado)
     resultado = getResposta(vizinhos_m10)
     print('(M*10 + 1)-NN: ' + resultado)
+    resultado = getResposta(vizinhos_q2)
+    print('(Q/2)-NN: ' + resultado)
 
 def wine():
     print('==Wine==')
@@ -98,12 +101,15 @@ def wine():
     vizinhos = getVizinhos(wine, instanciaTeste, 1)
     vizinhos_m2 = getVizinhos(wine, instanciaTeste, 16)
     vizinhos_m10 = getVizinhos(wine, instanciaTeste, 14*10+1)
+    vizinhos_q2 = getVizinhos(wine,instanciaTeste, 90)
     resultado = getResposta(vizinhos)
     print('1NN: ' + resultado)
     resultado = getResposta(vizinhos_m2)
     print('(M+2)-NN: ' + resultado)
     resultado = getResposta(vizinhos_m10)
     print('(M*10 + 1)-NN: ' + resultado)
+    resultado = getResposta(vizinhos_q2)
+    print('(Q/2)-NN: ' + resultado)
 
 
 def wineQualityRed():
@@ -117,12 +123,15 @@ def wineQualityRed():
     vizinhos = getVizinhos(wineQred, instanciaTeste, 1)
     vizinhos_m2 = getVizinhos(wineQred, instanciaTeste, 15)
     vizinhos_m10 = getVizinhos(wineQred, instanciaTeste, 13*10+1)
+    vizinhos_q2 = getVizinhos(wineQred,instanciaTeste, 801)
     resultado = getResposta(vizinhos)
     print('1NN: ' + resultado)
     resultado = getResposta(vizinhos_m2)
     print('(M+2)-NN: ' + resultado)
     resultado = getResposta(vizinhos_m10)
     print('(M*10 + 1)-NN: ' + resultado)
+    resultado = getResposta(vizinhos_q2)
+    print('(Q/2)-NN: ' + resultado)
 
 
 def wineQualityWhite():
@@ -136,12 +145,15 @@ def wineQualityWhite():
     vizinhos = getVizinhos(wineQualitywhite, instanciaTeste, 1)
     vizinhos_m2 = getVizinhos(wineQualitywhite, instanciaTeste, 15)
     vizinhos_m10 = getVizinhos(wineQualitywhite, instanciaTeste, 13*10+1)
+    vizinhos_q2 = getVizinhos(wineQualitywhite,instanciaTeste, 2449)
     resultado = getResposta(vizinhos)
     print('1NN: ' + resultado)
     resultado = getResposta(vizinhos_m2)
     print('(M+2)-NN: ' + resultado)
     resultado = getResposta(vizinhos_m10)
     print('(M*10 + 1)-NN: ' + resultado)
+    resultado = getResposta(vizinhos_q2)
+    print('(Q/2)-NN: ' + resultado)
 
 
 def breastCancer():
@@ -155,12 +167,15 @@ def breastCancer():
     vizinhos = getVizinhos(breastC, instanciaTeste, 1)
     vizinhos_m2 = getVizinhos(breastC, instanciaTeste, 13)
     vizinhos_m10 = getVizinhos(breastC, instanciaTeste, 11*10+1)
+    vizinhos_q2 = getVizinhos(breastC,instanciaTeste, 284)
     resultado = getResposta(vizinhos)
     print('1NN: ' + resultado)
     resultado = getResposta(vizinhos_m2)
     print('(M+2)-NN: ' + resultado)
     resultado = getResposta(vizinhos_m10)
     print('(M*10 + 1)-NN: ' + resultado)
+    resultado = getResposta(vizinhos_q2)
+    print('(Q/2)-NN: ' + resultado)
 
 def abalone():
     print('==Abalone==')
@@ -173,14 +188,37 @@ def abalone():
     vizinhos = getVizinhos(abalone, instanciaTeste, 1)
     vizinhos_m2 = getVizinhos(abalone, instanciaTeste, 11)
     vizinhos_m10 = getVizinhos(abalone, instanciaTeste, 9*10+1)
+    vizinhos_q2 = getVizinhos(abalone,instanciaTeste, 2088)
     resultado = getResposta(vizinhos)
     print('1NN: ' + resultado)
     resultado = getResposta(vizinhos_m2)
     print('(M+2)-NN: ' + resultado)
     resultado = getResposta(vizinhos_m10)
     print('(M*10 + 1)-NN: ' + resultado)
+    resultado = getResposta(vizinhos_q2)
+    print('(Q/2)-NN: ' + resultado)
 
-#def abalone():#TODO
+
+def adult():#TODO
+    print('==Adult==')
+    adult = carregaDados('DadosKNN\dult.csv')
+    for x in range (len(adult)):
+        for y in range(14):
+            adult[x][y] = float(adult[x][y])
+    instanciaTeste = []
+    instanciaTeste = [0.3,1,0.04,1,0.8,1,1,1,1,1,0.02,0,0.4,1]
+    vizinhos = getVizinhos(adult, instanciaTeste, 1)
+    vizinhos_m2 = getVizinhos(adult, instanciaTeste, 17)
+    vizinhos_m10 = getVizinhos(adult, instanciaTeste, 15*10+1)
+    vizinhos_q2 = getVizinhos(adult,instanciaTeste, 24422)
+    resultado = getResposta(vizinhos)
+    print('1NN: ' + resultado)
+    resultado = getResposta(vizinhos_m2)
+    print('(M+2)-NN: ' + resultado)
+    resultado = getResposta(vizinhos_m10)
+    print('(M*10 + 1)-NN: ' + resultado)
+    resultado = getResposta(vizinhos_q2)
+    print('(Q/2)-NN: ' + resultado)
 
 
 
@@ -201,12 +239,8 @@ def main():
     breastCancer()
 
     abalone()
-    #TODO
-    '''
+
     adult()
     
-    
-    
-    '''
 
 main()
