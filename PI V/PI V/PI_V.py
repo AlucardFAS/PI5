@@ -11,7 +11,7 @@ def carregaDados(filename):
         dataset = list(lines)#Cria uma lista
         return dataset
 
-def treinoDados(divisor, trainingSet, testSet):
+def treinoDadosRandom(divisor, trainingSet, testSet):
     for x in range(len(dataset)):
             for y in range(4):#le os n elementos de cada linha
                 dataset[x][y] = float(dataset[x][y])#Gera uma matriz de elementos do dataset
@@ -89,6 +89,7 @@ def iris():
     print('(M*10 + 1)-NN: ' + resultado)
     resultado = getResposta(vizinhos_q2)
     print('(Q/2)-NN: ' + resultado)
+    print()
 
 def wine():
     print('==Wine==')
@@ -110,6 +111,7 @@ def wine():
     print('(M*10 + 1)-NN: ' + resultado)
     resultado = getResposta(vizinhos_q2)
     print('(Q/2)-NN: ' + resultado)
+    print()
 
 
 def wineQualityRed():
@@ -132,6 +134,7 @@ def wineQualityRed():
     print('(M*10 + 1)-NN: ' + resultado)
     resultado = getResposta(vizinhos_q2)
     print('(Q/2)-NN: ' + resultado)
+    print()
 
 
 def wineQualityWhite():
@@ -154,6 +157,7 @@ def wineQualityWhite():
     print('(M*10 + 1)-NN: ' + resultado)
     resultado = getResposta(vizinhos_q2)
     print('(Q/2)-NN: ' + resultado)
+    print()
 
 
 def breastCancer():
@@ -176,6 +180,7 @@ def breastCancer():
     print('(M*10 + 1)-NN: ' + resultado)
     resultado = getResposta(vizinhos_q2)
     print('(Q/2)-NN: ' + resultado)
+    print()
 
 def abalone():
     print('==Abalone==')
@@ -197,6 +202,7 @@ def abalone():
     print('(M*10 + 1)-NN: ' + resultado)
     resultado = getResposta(vizinhos_q2)
     print('(Q/2)-NN: ' + resultado)
+    print()
 
 
 def adult():#TODO
@@ -219,28 +225,53 @@ def adult():#TODO
     print('(M*10 + 1)-NN: ' + resultado)
     resultado = getResposta(vizinhos_q2)
     print('(Q/2)-NN: ' + resultado)
+    print()
 
 
+def preparaDataset(dataset, trainingSet, testSet):
+    for x in range(len(dataset)):
+            for y in range():#le os n elementos de cada linha
+                dataset[x][y] = float(dataset[x][y])#Gera uma matriz de elementos do dataset
+            if random.random() < divideConjunto:#Randomiza os valores, ve o que esta abaixo do float enviado e armazena nos conjuntos
+                conjuntoTratado.append(dataset[x])
+            else:
+                conjuntoTeste.append(dataset[x])
 
 
-
+def crossValidation(tamanho):
+    amostra = int(tamanho/10)
+    incremento = 0
+    '''
+    for x in (range(0,10)):
+        #print('x teste')
+        for y in (range(amostra)):
+            '''
 
 def main():
     
     
-    iris()
+    print('O teste a seguir pode demorar.')
+    confirmacao = input('Deseja continuar? (s/n)    ')
 
-    wine()
-    
-    wineQualityRed()
-
-    wineQualityWhite()
-
-    breastCancer()
-
-    abalone()
-
-    adult()
-    
+    if(confirmacao == 's'):
+        print()
+        print()
+        print('ENTRADA COM DADOS PADRÕES DE TESTE')
+        print()
+        print()
+        iris()
+        wine()    
+        wineQualityRed()
+        wineQualityWhite()
+        breastCancer()
+        abalone()
+        adult()
+    if(confirmacao == 'n'):
+        print('Fim')
+        crossValidation(20)
+    else:
+        print()
+        print('Comando inválido')
+        print('xxxCloseOperation')
 
 main()
