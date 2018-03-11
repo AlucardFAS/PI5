@@ -71,7 +71,7 @@ def getPrecisao(conjuntoTeste, previsoes):
 def iris():
     
     print('==Iris==')
-    iris = carregaDados('DataCSV\iris.csv')
+    iris = carregaDados('DadosKNN\iris.csv')
     for x in range(len(iris)):
          for y in range(4):
                 iris[x][y] = float(iris[x][y])
@@ -87,16 +87,101 @@ def iris():
     resultado = getResposta(vizinhos_m10)
     print('(M*10 + 1)-NN: ' + resultado)
 
-'''def abalone():#TODO
+def wine():
+    print('==Wine==')
+    wine = carregaDados('DadosKNN\wine.csv')
+    for x in range (len(wine)):
+        for y in range(13):
+            wine[x][y] = float(wine[x][y])
+    instanciaTeste = []
+    instanciaTeste = [0.19,0.38,0.83,0.48,0.36,0.27,0.36,0.89,0.2,0.22,0.61,0.45,0.23]
+    vizinhos = getVizinhos(wine, instanciaTeste, 1)
+    vizinhos_m2 = getVizinhos(wine, instanciaTeste, 16)
+    vizinhos_m10 = getVizinhos(wine, instanciaTeste, 14*10+1)
+    resultado = getResposta(vizinhos)
+    print('1NN: ' + resultado)
+    resultado = getResposta(vizinhos_m2)
+    print('(M+2)-NN: ' + resultado)
+    resultado = getResposta(vizinhos_m10)
+    print('(M*10 + 1)-NN: ' + resultado)
 
-def wine():#TODO
 
-def wineQuality():#TODO
+def wineQualityRed():
+    print('==WineQualityRed==')
+    wineQred = carregaDados('DadosKNN\winequalityredOutput.csv')
+    for x in range (len(wineQred)):
+        for y in range(11):
+            wineQred[x][y] = float(wineQred[x][y])
+    instanciaTeste = []
+    instanciaTeste = [0.25,0.4,0,0.07,0.11,0.14,0.1,0.78,0.61,0.14,0.15]
+    vizinhos = getVizinhos(wineQred, instanciaTeste, 1)
+    vizinhos_m2 = getVizinhos(wineQred, instanciaTeste, 15)
+    vizinhos_m10 = getVizinhos(wineQred, instanciaTeste, 13*10+1)
+    resultado = getResposta(vizinhos)
+    print('1NN: ' + resultado)
+    resultado = getResposta(vizinhos_m2)
+    print('(M+2)-NN: ' + resultado)
+    resultado = getResposta(vizinhos_m10)
+    print('(M*10 + 1)-NN: ' + resultado)
 
-def adult():#TODO
-    
-def breastCancer():#TODO
-'''
+
+def wineQualityWhite():
+    print('==WineQualitywhite==')
+    wineQualitywhite = carregaDados('DadosKNN\winequalitywhiteOutput.csv')
+    for x in range (len(wineQualitywhite)):
+        for y in range(11):
+            wineQualitywhite[x][y] = float(wineQualitywhite[x][y])
+    instanciaTeste = []
+    instanciaTeste = [0.31,0.19,0.22,0.31,0.1,0.15,0.37,0.21,0.25,0.27,0.13]
+    vizinhos = getVizinhos(wineQualitywhite, instanciaTeste, 1)
+    vizinhos_m2 = getVizinhos(wineQualitywhite, instanciaTeste, 15)
+    vizinhos_m10 = getVizinhos(wineQualitywhite, instanciaTeste, 13*10+1)
+    resultado = getResposta(vizinhos)
+    print('1NN: ' + resultado)
+    resultado = getResposta(vizinhos_m2)
+    print('(M+2)-NN: ' + resultado)
+    resultado = getResposta(vizinhos_m10)
+    print('(M*10 + 1)-NN: ' + resultado)
+
+
+def breastCancer():
+    print('==BreastCancer==')
+    breastC = carregaDados('DadosKNN\eastcancer.csv')
+    for x in range (len(breastC)):
+        for y in range(10):
+            breastC[x][y] = float(breastC[x][y])
+    instanciaTeste = []
+    instanciaTeste = [18,1.00,0.67,0.67,0.56,0.33,1.00,0.33,0,0.11]
+    vizinhos = getVizinhos(breastC, instanciaTeste, 1)
+    vizinhos_m2 = getVizinhos(breastC, instanciaTeste, 13)
+    vizinhos_m10 = getVizinhos(breastC, instanciaTeste, 11*10+1)
+    resultado = getResposta(vizinhos)
+    print('1NN: ' + resultado)
+    resultado = getResposta(vizinhos_m2)
+    print('(M+2)-NN: ' + resultado)
+    resultado = getResposta(vizinhos_m10)
+    print('(M*10 + 1)-NN: ' + resultado)
+
+def abalone():
+    print('==Abalone==')
+    abalone = carregaDados('DadosKNN\lone.csv')
+    for x in range (len(abalone)):
+        for y in range(8):
+            abalone[x][y] = float(abalone[x][y])
+    instanciaTeste = []
+    instanciaTeste = [0.52,0.52,0.08,0.18,0.15,0.13,0.15,0.50]
+    vizinhos = getVizinhos(abalone, instanciaTeste, 1)
+    vizinhos_m2 = getVizinhos(abalone, instanciaTeste, 11)
+    vizinhos_m10 = getVizinhos(abalone, instanciaTeste, 9*10+1)
+    resultado = getResposta(vizinhos)
+    print('1NN: ' + resultado)
+    resultado = getResposta(vizinhos_m2)
+    print('(M+2)-NN: ' + resultado)
+    resultado = getResposta(vizinhos_m10)
+    print('(M*10 + 1)-NN: ' + resultado)
+
+#def abalone():#TODO
+
 
 
 
@@ -106,16 +191,22 @@ def main():
     
     
     iris()
-    
-    
-    #TODO
-    '''
-    abalone()
+
     wine()
-    wineQuality()
-    adult()
+    
+    wineQualityRed()
+
+    wineQualityWhite()
+
     breastCancer()
 
+    abalone()
+    #TODO
+    '''
+    adult()
+    
+    
+    
     '''
 
 main()
