@@ -4,9 +4,9 @@ The main repository is at https://github.com/AlucardFAS/PI5
 
 <H1>Author</h1>
 
-Fernando Silva
-Victor Trindade
-Danilo Mative
+Fernando Silva</br>
+Victor Trindade</br>
+Danilo Mative</br>
 
 <H1>Úteis</h1>
 
