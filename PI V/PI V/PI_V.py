@@ -34,7 +34,7 @@ def getVizinhos(conjuntoTratado, instanciaTeste, k):
 		distancia.append((conjuntoTratado[x], dist))
 	distancia.sort(key=operator.itemgetter(1))#Ordena o vetor de distancia['valores', distancia] pela distancia
 	vizinhos = []
-	for x in range(k):
+	for x in range(int(k)):
 		vizinhos.append(distancia[x][0])#para o numero k de vizinhos, varre a matriz e obtém as instancias de vizinhos
 	return vizinhos
 
@@ -75,26 +75,12 @@ def iris():
     for x in range(len(iris)):
          for y in range(4):
                 iris[x][y] = float(iris[x][y])
-    instanciaTeste = []
-    instanciaTeste = [0.78, 0.7,0.93]
-    vizinhos = getVizinhos(iris, instanciaTeste, 1)
-    vizinhos_m2 = getVizinhos(iris, instanciaTeste, 7)
-    vizinhos_m10 = getVizinhos(iris, instanciaTeste, 5*10+1)
-    vizinhos_q2 = getVizinhos(iris,instanciaTeste, 76)
-    '''resultado = getResposta(vizinhos)
-    print('1NN: ' + resultado)
-    resultado = getResposta(vizinhos_m2)
-    print('(M+2)-NN: ' + resultado)
-    resultado = getResposta(vizinhos_m10)
-    print('(M*10 + 1)-NN: ' + resultado)
-    resultado = getResposta(vizinhos_q2)
-    print('(Q/2)-NN: ' + resultado)'''
+
     print()
-    crossValidation(150,iris,4)
-    crossValidation(150,iris,4)
-    crossValidation(150,iris,4)
-    crossValidation(150,iris,4)
+    crossValidation(iris,4,5,150)
     print()
+    print()
+
 
 def wine():
     print('==Wine==')
@@ -102,20 +88,10 @@ def wine():
     for x in range (len(wine)):
         for y in range(13):
             wine[x][y] = float(wine[x][y])
-    instanciaTeste = []
-    instanciaTeste = [0.19,0.38,0.83,0.48,0.36,0.27,0.36,0.89,0.2,0.22,0.61,0.45,0.23]
-    vizinhos = getVizinhos(wine, instanciaTeste, 1)
-    vizinhos_m2 = getVizinhos(wine, instanciaTeste, 16)
-    vizinhos_m10 = getVizinhos(wine, instanciaTeste, 14*10+1)
-    vizinhos_q2 = getVizinhos(wine,instanciaTeste, 90)
-    resultado = getResposta(vizinhos)
-    print('1NN: ' + resultado)
-    resultado = getResposta(vizinhos_m2)
-    print('(M+2)-NN: ' + resultado)
-    resultado = getResposta(vizinhos_m10)
-    print('(M*10 + 1)-NN: ' + resultado)
-    resultado = getResposta(vizinhos_q2)
-    print('(Q/2)-NN: ' + resultado)
+
+    print()
+    crossValidation(wine,13,13,178)
+    print()
     print()
 
 
@@ -125,22 +101,10 @@ def wineQualityRed():
     for x in range (len(wineQred)):
         for y in range(11):
             wineQred[x][y] = float(wineQred[x][y])
-    instanciaTeste = []
-    instanciaTeste = [0.25,0.4,0,0.07,0.11,0.14,0.1,0.78,0.61,0.14,0.15]
-    vizinhos = getVizinhos(wineQred, instanciaTeste, 1)
-    vizinhos_m2 = getVizinhos(wineQred, instanciaTeste, 15)
-    vizinhos_m10 = getVizinhos(wineQred, instanciaTeste, 13*10+1)
-    vizinhos_q2 = getVizinhos(wineQred,instanciaTeste, 801)
-    resultado = getResposta(vizinhos)
-    print('1NN: ' + resultado)
-    resultado = getResposta(vizinhos_m2)
-    print('(M+2)-NN: ' + resultado)
-    resultado = getResposta(vizinhos_m10)
-    print('(M*10 + 1)-NN: ' + resultado)
-    resultado = getResposta(vizinhos_q2)
-    print('(Q/2)-NN: ' + resultado)
     print()
-
+    crossValidation(wineQualityRed,13,13,1599)
+    print()
+    print()
 
 def wineQualityWhite():
     print('==WineQualitywhite==')
@@ -148,20 +112,10 @@ def wineQualityWhite():
     for x in range (len(wineQualitywhite)):
         for y in range(11):
             wineQualitywhite[x][y] = float(wineQualitywhite[x][y])
-    instanciaTeste = []
-    instanciaTeste = [0.31,0.19,0.22,0.31,0.1,0.15,0.37,0.21,0.25,0.27,0.13]
-    vizinhos = getVizinhos(wineQualitywhite, instanciaTeste, 1)
-    vizinhos_m2 = getVizinhos(wineQualitywhite, instanciaTeste, 15)
-    vizinhos_m10 = getVizinhos(wineQualitywhite, instanciaTeste, 13*10+1)
-    vizinhos_q2 = getVizinhos(wineQualitywhite,instanciaTeste, 2449)
-    resultado = getResposta(vizinhos)
-    print('1NN: ' + resultado)
-    resultado = getResposta(vizinhos_m2)
-    print('(M+2)-NN: ' + resultado)
-    resultado = getResposta(vizinhos_m10)
-    print('(M*10 + 1)-NN: ' + resultado)
-    resultado = getResposta(vizinhos_q2)
-    print('(Q/2)-NN: ' + resultado)
+
+    print()
+    crossValidation(wineQualityWhite,12,13,4898)
+    print()
     print()
 
 
@@ -171,20 +125,10 @@ def breastCancer():
     for x in range (len(breastC)):
         for y in range(10):
             breastC[x][y] = float(breastC[x][y])
-    instanciaTeste = []
-    instanciaTeste = [18,1.00,0.67,0.67,0.56,0.33,1.00,0.33,0,0.11]
-    vizinhos = getVizinhos(breastC, instanciaTeste, 1)
-    vizinhos_m2 = getVizinhos(breastC, instanciaTeste, 13)
-    vizinhos_m10 = getVizinhos(breastC, instanciaTeste, 11*10+1)
-    vizinhos_q2 = getVizinhos(breastC,instanciaTeste, 284)
-    resultado = getResposta(vizinhos)
-    print('1NN: ' + resultado)
-    resultado = getResposta(vizinhos_m2)
-    print('(M+2)-NN: ' + resultado)
-    resultado = getResposta(vizinhos_m10)
-    print('(M*10 + 1)-NN: ' + resultado)
-    resultado = getResposta(vizinhos_q2)
-    print('(Q/2)-NN: ' + resultado)
+    
+    print()
+    crossValidation(breastC,11,11,569)
+    print()
     print()
 
 def abalone():
@@ -193,20 +137,10 @@ def abalone():
     for x in range (len(abalone)):
         for y in range(8):
             abalone[x][y] = float(abalone[x][y])
-    instanciaTeste = []
-    instanciaTeste = [0.52,0.52,0.08,0.18,0.15,0.13,0.15,0.50]
-    vizinhos = getVizinhos(abalone, instanciaTeste, 1)
-    vizinhos_m2 = getVizinhos(abalone, instanciaTeste, 11)
-    vizinhos_m10 = getVizinhos(abalone, instanciaTeste, 9*10+1)
-    vizinhos_q2 = getVizinhos(abalone,instanciaTeste, 2088)
-    resultado = getResposta(vizinhos)
-    print('1NN: ' + resultado)
-    resultado = getResposta(vizinhos_m2)
-    print('(M+2)-NN: ' + resultado)
-    resultado = getResposta(vizinhos_m10)
-    print('(M*10 + 1)-NN: ' + resultado)
-    resultado = getResposta(vizinhos_q2)
-    print('(Q/2)-NN: ' + resultado)
+    
+    print()
+    crossValidation(abalone,9,9,4177)
+    print()
     print()
 
 
@@ -216,22 +150,11 @@ def adult():#TODO
     for x in range (len(adult)):
         for y in range(14):
             adult[x][y] = float(adult[x][y])
-    instanciaTeste = []
-    instanciaTeste = [0.3,1,0.04,1,0.8,1,1,1,1,1,0.02,0,0.4,1]
-    vizinhos = getVizinhos(adult, instanciaTeste, 1)
-    vizinhos_m2 = getVizinhos(adult, instanciaTeste, 17)
-    vizinhos_m10 = getVizinhos(adult, instanciaTeste, 15*10+1)
-    vizinhos_q2 = getVizinhos(adult,instanciaTeste, 24422)
-    resultado = getResposta(vizinhos)
-    print('1NN: ' + resultado)
-    resultado = getResposta(vizinhos_m2)
-    print('(M+2)-NN: ' + resultado)
-    resultado = getResposta(vizinhos_m10)
-    print('(M*10 + 1)-NN: ' + resultado)
-    resultado = getResposta(vizinhos_q2)
-    print('(Q/2)-NN: ' + resultado)
-    print()
 
+    print()
+    crossValidation(adult,15,15,48842)
+    print()
+    print()
 
 def preparaDataset(dataset, conjuntoTratado, conjuntoTeste,amostra,amostraInicial,coluna):
 
@@ -246,28 +169,95 @@ def preparaDataset(dataset, conjuntoTratado, conjuntoTeste,amostra,amostraInicia
                     conjuntoTratado.append(dataset[x])
                    
 
-def crossValidation(tamanho, dataset,coluna):
-    amostra = int(tamanho/10)
+def crossValidation(dataset,coluna,m,linhas):
+    amostra = int(linhas/10)
     amostraInicial = amostra
     trainingSet = []
     testSet = []
+    acerto = erro = acertom2 = errom2 = acertom10 = errom10 = acertoq = erroq = erroCruzadov1nn = mediav1nn = erroCruzadom2 = erroCruzadom10 = erroCruzadoqnn = acertoqnn = erroqnn = 0
+    
 
     for x in (range(0,10)):
        
        preparaDataset(dataset,trainingSet,testSet,amostra,amostraInicial,coluna)
-       amostra+=amostraInicial
-       
+       amostra+=amostraInicial   
 
        for y in (range(0,len(testSet))):
+           
+           #v1nn
            v1nn = getVizinhos(trainingSet,testSet[y],1)
-           result = getResposta(v1nn)
-           atual = testSet[y][-1]
+           result = (getResposta(v1nn))
+           atual = (testSet[y][-1])
+           
            if result in atual:
-               print('acertou')
+               acerto+=1
            else:
-               print('errou')
+               erro+=1
+
+           #m2nn
+           m2nn = getVizinhos(trainingSet,testSet[y],m+2)
+           resultm2 = getResposta(m2nn)
+           atualm2 = testSet[y][-1]
+
+           if resultm2 in atualm2:
+               acertom2+=1
+           else:
+               errom2+=1
+
+           #m10nn
+           m10 = getVizinhos(trainingSet,testSet[y],m*10+1)
+           resultm10 = getResposta(m2nn)
+           atualm10 = testSet[y][-1]
+
+           if resultm10 in atualm10:
+               acertom10+=1
+           else:
+               errom10+=1
+
+           #qnn
+           if ((int(trainingSet.index(trainingSet[-1]))/2)%2) == 0:
+               qnn = getVizinhos(trainingSet,testSet[y],(trainingSet.index(trainingSet[-1])/2)+1)
+           else:
+               qnn = getVizinhos(trainingSet,testSet[y],int(trainingSet.index(trainingSet[-1])/2))
+
+           resultqnn = getResposta(qnn)
+           atualqnn = testSet[y][-1]
+
+           if resultqnn in atualqnn:
+               acertoqnn+=1
+           else:
+               erroqnn+=1
+
+
+       
        del trainingSet[0:len(trainingSet)] 
-       del testSet[0:len(testSet)]     
+       del testSet[0:len(testSet)]
+
+       erroAmostral = (erro/(linhas-amostraInicial))*100
+       erroCruzadov1nn += erroAmostral
+       mediav1nn = erroCruzadov1nn/10
+
+       erroAmostralm2 = (erro/(linhas-amostraInicial))*100
+       erroCruzadom2 += erroAmostral
+       mediam2 = erroCruzadom2/10
+
+       erroAmostralm10 = (erro/(linhas-amostraInicial))*100
+       erroCruzadom10 += erroAmostral
+       mediam10 = erroCruzadom10/10
+
+       erroAmostralqnn = (erro/(linhas-amostraInicial))*100
+       erroCruzadoqnn += erroAmostral
+       mediaqnn = erroCruzadom10/10
+
+
+       print('Erro Amostral v1nn: %s' %erroAmostral)
+       print('Erro Amostral m2: %s' %erroAmostralm2)
+       print('Erro Amostral m10: %s' %erroAmostralm10)
+       print('Erro Amostral qnn: %s' %erroAmostralqnn)
+    print('Erro de Validação Cruzada v1nn: %s' %mediav1nn)
+    print('Erro de Validação Cruzada m2: %s' %mediam2)
+    print('Erro de Validação Cruzada m10: %s' %mediam10)
+    print('Erro de Validação Cruzada qnn: %s' %mediaqnn)
        
 def main():
     
@@ -278,7 +268,7 @@ def main():
     if(confirmacao == 's'):
         print()
         print()
-        print('ENTRADA COM DADOS PADRÕES DE TESTE')
+        print('REALIZANDO CROSS VALIDATION DE TODOS OS DADOS')
         print()
         print()
         iris()
@@ -287,10 +277,9 @@ def main():
         wineQualityWhite()
         breastCancer()
         abalone()
-        adult()
+        #adult()
     if(confirmacao == 'n'):
         print('Fim')
-        iris()
     else:
         print()
         print('Comando inválido')
