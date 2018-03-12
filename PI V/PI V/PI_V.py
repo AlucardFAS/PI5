@@ -81,14 +81,19 @@ def iris():
     vizinhos_m2 = getVizinhos(iris, instanciaTeste, 7)
     vizinhos_m10 = getVizinhos(iris, instanciaTeste, 5*10+1)
     vizinhos_q2 = getVizinhos(iris,instanciaTeste, 76)
-    resultado = getResposta(vizinhos)
+    '''resultado = getResposta(vizinhos)
     print('1NN: ' + resultado)
     resultado = getResposta(vizinhos_m2)
     print('(M+2)-NN: ' + resultado)
     resultado = getResposta(vizinhos_m10)
     print('(M*10 + 1)-NN: ' + resultado)
     resultado = getResposta(vizinhos_q2)
-    print('(Q/2)-NN: ' + resultado)
+    print('(Q/2)-NN: ' + resultado)'''
+    print()
+    crossValidation(150,iris,4)
+    crossValidation(150,iris,4)
+    crossValidation(150,iris,4)
+    crossValidation(150,iris,4)
     print()
 
 def wine():
@@ -228,25 +233,42 @@ def adult():#TODO
     print()
 
 
-def preparaDataset(dataset, trainingSet, testSet):
+def preparaDataset(dataset, conjuntoTratado, conjuntoTeste,amostra,amostraInicial,coluna):
+
+
     for x in range(len(dataset)):
-            for y in range():#le os n elementos de cada linha
+            for y in range(coluna):#le os n elementos de cada linha
                 dataset[x][y] = float(dataset[x][y])#Gera uma matriz de elementos do dataset
-            if random.random() < divideConjunto:#Randomiza os valores, ve o que esta abaixo do float enviado e armazena nos conjuntos
-                conjuntoTratado.append(dataset[x])
+
+            if (x >= (amostra - amostraInicial)) & (x < amostra):
+                    conjuntoTeste.append(dataset[x])
             else:
-                conjuntoTeste.append(dataset[x])
+                    conjuntoTratado.append(dataset[x])
+                   
 
-
-def crossValidation(tamanho):
+def crossValidation(tamanho, dataset,coluna):
     amostra = int(tamanho/10)
-    incremento = 0
-    '''
-    for x in (range(0,10)):
-        #print('x teste')
-        for y in (range(amostra)):
-            '''
+    amostraInicial = amostra
+    trainingSet = []
+    testSet = []
 
+    for x in (range(0,10)):
+       
+       preparaDataset(dataset,trainingSet,testSet,amostra,amostraInicial,coluna)
+       amostra+=amostraInicial
+       
+
+       for y in (range(0,len(testSet))):
+           v1nn = getVizinhos(trainingSet,testSet[y],1)
+           result = getResposta(v1nn)
+           atual = testSet[y][-1]
+           if result in atual:
+               print('acertou')
+           else:
+               print('errou')
+       del trainingSet[0:len(trainingSet)] 
+       del testSet[0:len(testSet)]     
+       
 def main():
     
     
@@ -268,7 +290,7 @@ def main():
         adult()
     if(confirmacao == 'n'):
         print('Fim')
-        crossValidation(20)
+        iris()
     else:
         print()
         print('Comando inválido')
