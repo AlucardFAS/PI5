@@ -90,7 +90,7 @@ def wine():
             wine[x][y] = float(wine[x][y])
 
     print()
-    crossValidation(wine,13,13,178)
+    crossValidation(wine,13,13,179)
     print()
     print()
 
@@ -102,7 +102,7 @@ def wineQualityRed():
         for y in range(11):
             wineQred[x][y] = float(wineQred[x][y])
     print()
-    crossValidation(wineQualityRed,13,13,1599)
+    crossValidation(wineQred,11,13,1599)
     print()
     print()
 
@@ -114,7 +114,7 @@ def wineQualityWhite():
             wineQualitywhite[x][y] = float(wineQualitywhite[x][y])
 
     print()
-    crossValidation(wineQualityWhite,12,13,4898)
+    crossValidation(wineQualityWhite,11,13,4898)
     print()
     print()
 
@@ -127,7 +127,7 @@ def breastCancer():
             breastC[x][y] = float(breastC[x][y])
     
     print()
-    crossValidation(breastC,11,11,569)
+    crossValidation(breastC,10,11,569)
     print()
     print()
 
@@ -139,7 +139,7 @@ def abalone():
             abalone[x][y] = float(abalone[x][y])
     
     print()
-    crossValidation(abalone,9,9,4177)
+    crossValidation(abalone,8,9,4177)
     print()
     print()
 
@@ -236,28 +236,34 @@ def crossValidation(dataset,coluna,m,linhas):
        erroAmostral = (erro/(linhas-amostraInicial))*100
        erroCruzadov1nn += erroAmostral
        mediav1nn = erroCruzadov1nn/10
+       round(erroCruzadov1nn,2)
+       round(mediav1nn,2)
 
        erroAmostralm2 = (erro/(linhas-amostraInicial))*100
        erroCruzadom2 += erroAmostral
        mediam2 = erroCruzadom2/10
+       round(erroCruzadom2,2)
+       round(mediam2,2)
 
        erroAmostralm10 = (erro/(linhas-amostraInicial))*100
        erroCruzadom10 += erroAmostral
        mediam10 = erroCruzadom10/10
+       round(erroCruzadom10,2)
+       round(mediam10,2)
 
        erroAmostralqnn = (erro/(linhas-amostraInicial))*100
        erroCruzadoqnn += erroAmostral
        mediaqnn = erroCruzadom10/10
+       
 
 
-       print('Erro Amostral v1nn: %s' %erroAmostral)
-       print('Erro Amostral m2: %s' %erroAmostralm2)
-       print('Erro Amostral m10: %s' %erroAmostralm10)
-       print('Erro Amostral qnn: %s' %erroAmostralqnn)
-    print('Erro de Validação Cruzada v1nn: %s' %mediav1nn)
-    print('Erro de Validação Cruzada m2: %s' %mediam2)
-    print('Erro de Validação Cruzada m10: %s' %mediam10)
-    print('Erro de Validação Cruzada qnn: %s' %mediaqnn)
+       print("kFold")
+       print("Erro Amostral v1nn: ", round(erroAmostral,2), "%   Erro Amostral m2: ", round(erroAmostralm2,2), "% Erro Amostral m10: ", round(erroAmostralm10,2), "% Erro Amostral qnn: ", round(erroAmostralqnn,2), "%")
+       print()
+    
+    print("Validação Cruzada")
+    print("Erro de Validação Cruzada v1nn: ", round(mediav1nn,2), "% Erro de Validação Cruzada m2: ", round(mediam2,2), "% Erro de Validação Cruzada m10: ", round(mediam10,2), "% Erro de Validação Cruzada qnn: ", round(mediaqnn,2), "%")
+
        
 def main():
     
@@ -277,7 +283,7 @@ def main():
         wineQualityWhite()
         breastCancer()
         abalone()
-        #adult()
+        adult()
     if(confirmacao == 'n'):
         print('Fim')
     else:
