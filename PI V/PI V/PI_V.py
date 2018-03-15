@@ -64,7 +64,7 @@ def getResposta(vizinhos):
 def getPrecisao(conjuntoTeste, previsoes):
 	correto= 0
 	for x in range(len(conjuntoTeste)):
-		if conjuntoTeste[x][-1] is previsoes[x]: #se o test for igual a previsao, incrementa 1 aos corretos
+		if conjuntoTeste[x][-1] is previsoes: #se o test for igual a previsao, incrementa 1 aos corretos
 			correto += 1
 	return (correto/float(len(conjuntoTeste))) * 100.0 #divide os corretos pelo total e transforma em porcentagem
 
@@ -77,7 +77,7 @@ def iris():
                 iris[x][y] = float(iris[x][y])
 
     print()
-    crossValidation(iris,4,5,150)
+    crossValidation(iris,4,5,150,0)
     print()
     print()
 
@@ -90,7 +90,7 @@ def wine():
             wine[x][y] = float(wine[x][y])
 
     print()
-    crossValidation(wine,13,13,179)
+    crossValidation(wine,13,13,179,0)
     print()
     print()
 
@@ -102,7 +102,7 @@ def wineQualityRed():
         for y in range(11):
             wineQred[x][y] = float(wineQred[x][y])
     print()
-    crossValidation(wineQred,11,13,1599)
+    crossValidation(wineQred,11,13,1599,0)
     print()
     print()
 
@@ -114,7 +114,7 @@ def wineQualityWhite():
             wineQualitywhite[x][y] = float(wineQualitywhite[x][y])
 
     print()
-    crossValidation(wineQualityWhite,11,13,4898)
+    crossValidation(wineQualitywhite,11,13,4898,0)
     print()
     print()
 
@@ -139,7 +139,7 @@ def abalone():
             abalone[x][y] = float(abalone[x][y])
     
     print()
-    crossValidation(abalone,8,9,4177)
+    crossValidation(abalone,8,9,4177,0)
     print()
     print()
 
@@ -168,17 +168,24 @@ def preparaDataset(dataset, conjuntoTratado, conjuntoTeste,amostra,amostraInicia
             else:
                     conjuntoTratado.append(dataset[x])
                    
+def multiclasses(pontosAcertados,pontosErrados):
+    precisao = 0
+    for x in (range(0,10)):
+        precisao += (pontosAcertados/(pontosAcertados + pontosErrados))*10
+        acuracia = precisao/10
 
-def crossValidation(dataset,coluna,m,linhas):
+    return acuracia
+
+def crossValidation(dataset,coluna,m,linhas,tipoclasse):
     amostra = int(linhas/10)
     amostraInicial = amostra
     trainingSet = []
     testSet = []
-    acerto = erro = acertom2 = errom2 = acertom10 = errom10 = acertoq = erroq = erroCruzadov1nn = mediav1nn = erroCruzadom2 = erroCruzadom10 = erroCruzadoqnn = acertoqnn = erroqnn = 0
-    
-
+    acerto = erro = acertom2 = errom2 = acertom10 = errom10 = acertoqnn = erroqnn = erroCruzadov1nn = mediav1nn = erroCruzadom2 = erroCruzadom10 = erroCruzadoqnn = 0
+    acuracia = acuraciam2 = acuraciam10 = acuraciaqnn = 0
+    i = 0
     for x in (range(0,10)):
-       
+       i+=1
        preparaDataset(dataset,trainingSet,testSet,amostra,amostraInicial,coluna)
        amostra+=amostraInicial   
 
@@ -203,6 +210,7 @@ def crossValidation(dataset,coluna,m,linhas):
                acertom2+=1
            else:
                errom2+=1
+
 
            #m10nn
            m10 = getVizinhos(trainingSet,testSet[y],m*10+1)
@@ -229,41 +237,50 @@ def crossValidation(dataset,coluna,m,linhas):
                erroqnn+=1
 
 
-       
+       #Função clear para realizar um novo kFold
        del trainingSet[0:len(trainingSet)] 
        del testSet[0:len(testSet)]
 
+       if tipoclasse is 0:
+           acuracia += multiclasses(acerto,erro)
+           acuraciam2 += multiclasses(acertom2,errom2)
+           acuraciam10 += multiclasses(acertom10,errom10)
+           acuraciaqnn += multiclasses(acertoqnn,erroqnn)
+       
+       
+       #Calculos de Erro Amostral, Erro d Validação Cruzado e Acurácia
+           #v1nn
        erroAmostral = (erro/(linhas-amostraInicial))*100
        erroCruzadov1nn += erroAmostral
        mediav1nn = erroCruzadov1nn/10
-       round(erroCruzadov1nn,2)
-       round(mediav1nn,2)
-
-       erroAmostralm2 = (erro/(linhas-amostraInicial))*100
-       erroCruzadom2 += erroAmostral
+       
+           #m2
+       erroAmostralm2 = (errom2/(linhas-amostraInicial))*100
+       erroCruzadom2 += erroAmostralm2
        mediam2 = erroCruzadom2/10
-       round(erroCruzadom2,2)
-       round(mediam2,2)
-
-       erroAmostralm10 = (erro/(linhas-amostraInicial))*100
-       erroCruzadom10 += erroAmostral
+       
+       
+           #m10
+       erroAmostralm10 = (errom10/(linhas-amostraInicial))*100
+       erroCruzadom10 += erroAmostralm10
        mediam10 = erroCruzadom10/10
-       round(erroCruzadom10,2)
-       round(mediam10,2)
+       
 
-       erroAmostralqnn = (erro/(linhas-amostraInicial))*100
-       erroCruzadoqnn += erroAmostral
-       mediaqnn = erroCruzadom10/10
+           #qnn
+       erroAmostralqnn = (erroqnn/(linhas-amostraInicial))*100
+       erroCruzadoqnn += erroAmostralqnn
+       mediaqnn = erroCruzadoqnn/10
        
 
 
-       print("kFold")
+
+       print("k",i,"Fold")
        print("Erro Amostral v1nn: ", round(erroAmostral,2), "%   Erro Amostral m2: ", round(erroAmostralm2,2), "% Erro Amostral m10: ", round(erroAmostralm10,2), "% Erro Amostral qnn: ", round(erroAmostralqnn,2), "%")
        print()
-    
     print("Validação Cruzada")
     print("Erro de Validação Cruzada v1nn: ", round(mediav1nn,2), "% Erro de Validação Cruzada m2: ", round(mediam2,2), "% Erro de Validação Cruzada m10: ", round(mediam10,2), "% Erro de Validação Cruzada qnn: ", round(mediaqnn,2), "%")
-
+    print("Precisão")
+    print("Precisão v1nn: ", round(acuracia,2), "% Precisão m2: ", round(acuraciam2,2), "% Precisão m10: ", round(acuraciam10,2), "% Precisão qnn: ", round(acuraciaqnn,2), "%")
        
 def main():
     
@@ -278,7 +295,7 @@ def main():
         print()
         print()
         iris()
-        wine()    
+        wine() 
         wineQualityRed()
         wineQualityWhite()
         breastCancer()
