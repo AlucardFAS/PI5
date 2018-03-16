@@ -11,6 +11,7 @@ def carregaDados(filename):
         dataset = list(lines)#Cria uma lista
         return dataset
 
+
 #Acha vizinhos
 #Recebe os conjuntos, sendo um de treino onde estão os dados com as classes, um de teste,
 #onde estão as instâncias sem a classe(que você quer saber os vizinhos mais próximos),
@@ -29,6 +30,9 @@ def getVizinhos(conjuntoTratado, instanciaTeste, k):
 		vizinhos.append(distancia[x][0])#para o numero k de vizinhos, varre a lista e obtém as instancias de vizinhos
 	return vizinhos
 
+#Divisão segura para o caso ZERO
+def divisaoSegura(x, y):
+    return 0 if y == 0 else x / y
 
 #calculo de distancia eucliadiana
 def distanciaEuclidiana(instancia1, instancia2, length):
@@ -50,9 +54,8 @@ def getResposta(vizinhos):
 	votosOrdenados = sorted(classeVotos.items(), key=operator.itemgetter(1), reverse=True)# Ordena os valores do maior pro menor
 	return votosOrdenados[0][0]
 
- 
+
 def iris():
-    
     print('==Iris==')
     iris = carregaDados('DadosKNN\iris.csv')
     for x in range(len(iris)):
@@ -110,13 +113,13 @@ def breastCancer():
             breastC[x][y] = float(breastC[x][y])
     
     print()
-    crossValidation(breastC,10,11,569)
+    crossValidation(breastC,10,11,569,1)
     print()
     print()
 
 def abalone():
     print('==Abalone==')
-    abalone = carregaDados('DadosKNN\lone.csv')
+    abalone = carregaDados('DadosKNNs\lone.csv')
     for x in range (len(abalone)):
         for y in range(8):
             abalone[x][y] = float(abalone[x][y])
@@ -135,7 +138,7 @@ def adult():
             adult[x][y] = float(adult[x][y])
 
     print()
-    crossValidation(adult,15,15,48842)
+    crossValidation(adult,15,15,48842,1)
     print()
     print()
 
@@ -152,15 +155,16 @@ def preparaDataset(dataset, conjuntoTratado, conjuntoTeste,amostra,amostraInicia
                     conjuntoTratado.append(dataset[x])
                    
 def multiclasses(pontosAcertados,pontosErrados):
-    precisao = 0
+    precisao = acuracia = 0
     for x in (range(0,10)):
         precisao += (pontosAcertados/(pontosAcertados + pontosErrados))*10
         acuracia = precisao/10
 
     return acuracia
 
-def crossValidation(dataset,coluna,m,linhas,tipoclasse):
 
+
+def crossValidation(dataset,coluna,m,linhas,tipoclasse):
     myfile = open('result.txt','a')
 
     amostra = int(linhas/10)
@@ -168,7 +172,8 @@ def crossValidation(dataset,coluna,m,linhas,tipoclasse):
     trainingSet = []
     testSet = []
     acerto = erro = acertom2 = errom2 = acertom10 = errom10 = acertoqnn = erroqnn = erroCruzadov1nn = mediav1nn = erroCruzadom2 = erroCruzadom10 = erroCruzadoqnn = 0
-    acuracia = acuraciam2 = acuraciam10 = acuraciaqnn = 0
+    acuracia = acuraciam2 = acuraciam10 = acuraciaqnn = tp = fp = tn = fn = tp2 = fp2 = tn2 = fn2 = tp10 = fp10 = tn10 = fn10 = tpnn = fpnn = tnnn = fnnn = sensibilidade = especificidade = precisaoBinaria = revocacao = 0
+    sensibilidade2 = especificidade2 = precisaoBinaria2 = revocacao2 = sensibilidade10 = especificidade10 = precisaoBinaria10 = revocacao10 = sensibilidadenn = especificidadenn = precisaoBinariann = revocacaonn = 0
     i = 0
     for x in (range(0,10)):
        i+=1
@@ -181,8 +186,21 @@ def crossValidation(dataset,coluna,m,linhas,tipoclasse):
            v1nn = getVizinhos(trainingSet,testSet[y],1)
            result = (getResposta(v1nn))
            atual = (testSet[y][-1])
-           
-           if result in atual:
+
+           #binario TP TN FP FN
+           if tipoclasse is 1:
+                if 0 is result:
+                    if result is atual:
+                        tn+=1
+                    else:
+                        fn+=1
+                else:
+                    if result is atual:
+                        tp+=1
+                    else:
+                        fp+=1
+
+           if result is atual:
                acerto+=1
            else:
                erro+=1
@@ -192,7 +210,20 @@ def crossValidation(dataset,coluna,m,linhas,tipoclasse):
            resultm2 = getResposta(m2nn)
            atualm2 = testSet[y][-1]
 
-           if resultm2 in atualm2:
+           # binario TP TN FP FN
+           if tipoclasse is 1:
+               if 0 is resultm2:
+                   if resultm2 is atualm2:
+                       tn2 += 1
+                   else:
+                       fn2 += 1
+               else:
+                   if resultm2 is atualm2:
+                       tp2 += 1
+                   else:
+                       fp2 += 1
+
+           if resultm2 is atualm2:
                acertom2+=1
            else:
                errom2+=1
@@ -203,7 +234,20 @@ def crossValidation(dataset,coluna,m,linhas,tipoclasse):
            resultm10 = getResposta(m2nn)
            atualm10 = testSet[y][-1]
 
-           if resultm10 in atualm10:
+           # binario TP TN FP FN
+           if tipoclasse is 1:
+               if 0 is resultm10:
+                   if resultm10 is atualm10:
+                       tn10 += 1
+                   else:
+                       fn10 += 1
+               else:
+                   if resultm10 is atualm10:
+                       tp10 += 1
+                   else:
+                       fp10 += 1
+
+           if resultm10 is atualm10:
                acertom10+=1
            else:
                errom10+=1
@@ -217,7 +261,21 @@ def crossValidation(dataset,coluna,m,linhas,tipoclasse):
            resultqnn = getResposta(qnn)
            atualqnn = testSet[y][-1]
 
-           if resultqnn in atualqnn:
+           #print(resultqnn)
+           # binario TP TN FP FN
+           if tipoclasse is 1:
+               if 0 is resultqnn:
+                   if resultqnn is atualqnn:
+                       tnnn += 1
+                   else:
+                       fnnn += 1
+               else:
+                   if resultqnn is atualqnn:
+                       tpnn += 1
+                   else:
+                       fpnn += 1
+
+           if resultqnn is atualqnn:
                acertoqnn+=1
            else:
                erroqnn+=1
@@ -232,7 +290,9 @@ def crossValidation(dataset,coluna,m,linhas,tipoclasse):
            acuraciam2 += multiclasses(acertom2,errom2)
            acuraciam10 += multiclasses(acertom10,errom10)
            acuraciaqnn += multiclasses(acertoqnn,erroqnn)
-       
+
+
+
        
        #Calculos de Erro Amostral, Erro d Validação Cruzado e Acurácia
            #v1nn
@@ -251,24 +311,56 @@ def crossValidation(dataset,coluna,m,linhas,tipoclasse):
        erroCruzadom10 += erroAmostralm10
        mediam10 = erroCruzadom10/10
        
-
+       print("k %d de Fold\n" % i)
            #qnn
        erroAmostralqnn = (erroqnn/(linhas-amostraInicial))*100
        erroCruzadoqnn += erroAmostralqnn
        mediaqnn = erroCruzadoqnn/10
-
-
-
        myfile.write("k %d Fold\n" %i)
        myfile.write("Erro Amostral v1nn: %f  Erro Amostral m2: %f  Erro Amostral m10: %f  Erro Amostral qnn: %f\n" % (erroAmostral,erroAmostralm2,erroAmostralm10,erroAmostralqnn))
        myfile.write("\n")
+    myfile.write("Validação Cruzada\n")
+    myfile.write("Erro de Validação Cruzada v1nn: %f  Erro de Validação Cruzada m2: %f  Erro de Validação Cruzada m10: %f  Erro de Validação Cruzada qnn: %f\n" % (mediav1nn,mediam2,mediam10,mediaqnn))
 
     if tipoclasse is 0:
-        myfile.write("Validação Cruzada\n")
-        myfile.write("Erro de Validação Cruzada v1nn: %f  Erro de Validação Cruzada m2: %f  Erro de Validação Cruzada m10: %f  Erro de Validação Cruzada qnn: %f\n" % (mediav1nn,mediam2,mediam10,mediaqnn))
         myfile.write("Precisão\n")
         myfile.write("Precisão v1nn: %f  Precisão m2: %f  Precisão m10: %f  Precisão qnn: %f\n" % (acuracia,acuraciam2,acuraciam10,acuraciaqnn))
         myfile.write("\n")
+
+    if tipoclasse is 1:
+        sensibilidade = divisaoSegura(tp ,(tp + fn))
+        especificidade = divisaoSegura(tn , (tn + fp))
+        precisaoBinaria = divisaoSegura(tp , (tp + fp))
+        revocacao = divisaoSegura(tn , (tn + fn))
+        sensibilidade2 = divisaoSegura(tp2 , (tp2 + fn2))
+        especificidade2 = divisaoSegura(tn2 , (tn2 + fp2))
+        precisaoBinaria2 = divisaoSegura(tp2 , (tp2 + fp2))
+        revocacao2 = divisaoSegura(tn2 , (tn2 + fn2))
+        sensibilidade10 = divisaoSegura(tp10 , (tp10 + fn10))
+        especificidade10 = divisaoSegura(tn10 , (tn10 + fp10))
+        precisaoBinaria10 = divisaoSegura(tp10 , (tp10 + fp10))
+        revocacao10 = divisaoSegura(tn10 , (tn10 + fn10))
+        sensibilidadenn = divisaoSegura(tpnn , (tpnn + fnnn))
+        especificidadenn = divisaoSegura(tnnn , (tnnn + fpnn))
+        precisaoBinariann = divisaoSegura(tpnn , (tpnn + fpnn))
+        revocacaonn = divisaoSegura(tnnn , (tnnn + fnnn))
+        myfile.write("Acertos: %f Erros: %f\n" % (acerto, erro))
+        myfile.write("Matriz Confusão\n")
+        myfile.write("v1nn: TP: %f - TN: %f - FP: %f - FN: %f\n" % (tp, tn, fp, fn))
+        myfile.write("m2: TP: %f - TN: %f - FP: %f - FN: %f\n" % (tp2, tn2, fp2, fn2))
+        myfile.write("m10: TP: %f - TN: %f - FP: %f - FN: %f\n" % (tp10, tn10, fp10, fn10))
+        myfile.write("qnn: TP: %f - TN: %f - FP: %f - FN: %f\n" % (tpnn, tnnn, fpnn, fnnn))
+        myfile.write("Sensibilidade v1nn: %f  Sensibilidade m2: %f  Sensibilidade m10: %f  Sensibilidade qnn: %f\n" % (
+            sensibilidade, sensibilidade2, sensibilidade10, sensibilidadenn))
+        myfile.write(
+            "Especificidade v1nn: %f  Especificidade m2: %f  Especificidade m10: %f  Especificidade qnn: %f\n" % (
+                especificidade, especificidade2, especificidade10, especificidadenn))
+        myfile.write("Precisão v1nn: %f  Precisão m2: %f  Precisão m10: %f  Precisão qnn: %f\n" % (
+            precisaoBinaria, precisaoBinaria2, precisaoBinaria10, precisaoBinariann))
+        myfile.write("Revocação v1nn: %f  Revocação m2: %f  Revocação m10: %f  Revocação qnn: %f\n" % (
+            revocacao, revocacao2, revocacao10, revocacaonn))
+        myfile.write("\n")
+
     myfile.close()   
 
 
@@ -287,12 +379,12 @@ def main():
         print('REALIZANDO CROSS VALIDATION DE TODOS OS DADOS')
         print()
         print()
-        iris()
-        wine() 
-        wineQualityRed()
-        wineQualityWhite()
-        breastCancer()
-        abalone()
+        #iris()
+        #wine()
+        #wineQualityRed()
+        #wineQualityWhite()
+        #breastCancer()
+        #abalone()
         adult()
     if(confirmacao == 'n'):
         print('Fim')
