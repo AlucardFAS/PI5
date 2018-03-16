@@ -11,15 +11,6 @@ def carregaDados(filename):
         dataset = list(lines)#Cria uma lista
         return dataset
 
-def treinoDadosRandom(divisor, trainingSet, testSet):
-    for x in range(len(dataset)):
-            for y in range(4):#le os n elementos de cada linha
-                dataset[x][y] = float(dataset[x][y])#Gera uma matriz de elementos do dataset
-            if random.random() < divideConjunto:#Randomiza os valores, ve o que esta abaixo do float enviado e armazena nos conjuntos
-                conjuntoTratado.append(dataset[x])
-            else:
-                conjuntoTeste.append(dataset[x])
-
 #Acha vizinhos
 #Recebe os conjuntos, sendo um de treino onde estão os dados com as classes, um de teste,
 #onde estão as instâncias sem a classe(que você quer saber os vizinhos mais próximos),
@@ -35,7 +26,7 @@ def getVizinhos(conjuntoTratado, instanciaTeste, k):
 	distancia.sort(key=operator.itemgetter(1))#Ordena o vetor de distancia['valores', distancia] pela distancia
 	vizinhos = []
 	for x in range(int(k)):
-		vizinhos.append(distancia[x][0])#para o numero k de vizinhos, varre a matriz e obtém as instancias de vizinhos
+		vizinhos.append(distancia[x][0])#para o numero k de vizinhos, varre a lista e obtém as instancias de vizinhos
 	return vizinhos
 
 
@@ -59,15 +50,7 @@ def getResposta(vizinhos):
 	votosOrdenados = sorted(classeVotos.items(), key=operator.itemgetter(1), reverse=True)# Ordena os valores do maior pro menor
 	return votosOrdenados[0][0]
 
-
-#verifica a precisao dos dados
-def getPrecisao(conjuntoTeste, previsoes):
-	correto= 0
-	for x in range(len(conjuntoTeste)):
-		if conjuntoTeste[x][-1] is previsoes: #se o test for igual a previsao, incrementa 1 aos corretos
-			correto += 1
-	return (correto/float(len(conjuntoTeste))) * 100.0 #divide os corretos pelo total e transforma em porcentagem
-
+ 
 def iris():
     
     print('==Iris==')
@@ -273,14 +256,19 @@ def crossValidation(dataset,coluna,m,linhas,tipoclasse):
        erroAmostralqnn = (erroqnn/(linhas-amostraInicial))*100
        erroCruzadoqnn += erroAmostralqnn
        mediaqnn = erroCruzadoqnn/10
+
+
+
        myfile.write("k %d Fold\n" %i)
        myfile.write("Erro Amostral v1nn: %f  Erro Amostral m2: %f  Erro Amostral m10: %f  Erro Amostral qnn: %f\n" % (erroAmostral,erroAmostralm2,erroAmostralm10,erroAmostralqnn))
        myfile.write("\n")
-    myfile.write("Validação Cruzada\n")
-    myfile.write("Erro de Validação Cruzada v1nn: %f  Erro de Validação Cruzada m2: %f  Erro de Validação Cruzada m10: %f  Erro de Validação Cruzada qnn: %f\n" % (mediav1nn,mediam2,mediam10,mediaqnn))
-    myfile.write("Precisão\n")
-    myfile.write("Precisão v1nn: %f  Precisão m2: %f  Precisão m10: %f  Precisão qnn: %f\n" % (acuracia,acuraciam2,acuraciam10,acuraciaqnn))
-    myfile.write("\n")
+
+    if tipoclasse is 0:
+        myfile.write("Validação Cruzada\n")
+        myfile.write("Erro de Validação Cruzada v1nn: %f  Erro de Validação Cruzada m2: %f  Erro de Validação Cruzada m10: %f  Erro de Validação Cruzada qnn: %f\n" % (mediav1nn,mediam2,mediam10,mediaqnn))
+        myfile.write("Precisão\n")
+        myfile.write("Precisão v1nn: %f  Precisão m2: %f  Precisão m10: %f  Precisão qnn: %f\n" % (acuracia,acuraciam2,acuraciam10,acuraciaqnn))
+        myfile.write("\n")
     myfile.close()   
 
 
