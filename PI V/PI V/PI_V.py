@@ -144,7 +144,7 @@ def abalone():
     print()
 
 
-def adult():#TODO
+def adult():
     print('==Adult==')
     adult = carregaDados('DadosKNN\dult.csv')
     for x in range (len(adult)):
@@ -177,6 +177,9 @@ def multiclasses(pontosAcertados,pontosErrados):
     return acuracia
 
 def crossValidation(dataset,coluna,m,linhas,tipoclasse):
+
+    myfile = open('result.txt','a')
+
     amostra = int(linhas/10)
     amostraInicial = amostra
     trainingSet = []
@@ -270,17 +273,19 @@ def crossValidation(dataset,coluna,m,linhas,tipoclasse):
        erroAmostralqnn = (erroqnn/(linhas-amostraInicial))*100
        erroCruzadoqnn += erroAmostralqnn
        mediaqnn = erroCruzadoqnn/10
+       myfile.write("k %d Fold\n" %i)
+       myfile.write("Erro Amostral v1nn: %f  Erro Amostral m2: %f  Erro Amostral m10: %f  Erro Amostral qnn: %f\n" % (erroAmostral,erroAmostralm2,erroAmostralm10,erroAmostralqnn))
+       myfile.write("\n")
+    myfile.write("Validação Cruzada\n")
+    myfile.write("Erro de Validação Cruzada v1nn: %f  Erro de Validação Cruzada m2: %f  Erro de Validação Cruzada m10: %f  Erro de Validação Cruzada qnn: %f\n" % (mediav1nn,mediam2,mediam10,mediaqnn))
+    myfile.write("Precisão\n")
+    myfile.write("Precisão v1nn: %f  Precisão m2: %f  Precisão m10: %f  Precisão qnn: %f\n" % (acuracia,acuraciam2,acuraciam10,acuraciaqnn))
+    myfile.write("\n")
+    myfile.close()   
+
+
+
        
-
-
-
-       print("k",i,"Fold")
-       print("Erro Amostral v1nn: ", round(erroAmostral,2), "%   Erro Amostral m2: ", round(erroAmostralm2,2), "% Erro Amostral m10: ", round(erroAmostralm10,2), "% Erro Amostral qnn: ", round(erroAmostralqnn,2), "%")
-       print()
-    print("Validação Cruzada")
-    print("Erro de Validação Cruzada v1nn: ", round(mediav1nn,2), "% Erro de Validação Cruzada m2: ", round(mediam2,2), "% Erro de Validação Cruzada m10: ", round(mediam10,2), "% Erro de Validação Cruzada qnn: ", round(mediaqnn,2), "%")
-    print("Precisão")
-    print("Precisão v1nn: ", round(acuracia,2), "% Precisão m2: ", round(acuraciam2,2), "% Precisão m10: ", round(acuraciam10,2), "% Precisão qnn: ", round(acuraciaqnn,2), "%")
        
 def main():
     
