@@ -1,0 +1,43 @@
+k 1 Fold
+Erro Amostral v1nn: 4.483431  Erro Amostral m2: 5.847953  Erro Amostral m10: 5.847953  Erro Amostral qnn: 5.068226
+
+k 2 Fold
+Erro Amostral v1nn: 7.992203  Erro Amostral m2: 11.695906  Erro Amostral m10: 11.695906  Erro Amostral qnn: 10.526316
+
+k 3 Fold
+Erro Amostral v1nn: 11.111111  Erro Amostral m2: 17.153996  Erro Amostral m10: 17.153996  Erro Amostral qnn: 14.035088
+
+k 4 Fold
+Erro Amostral v1nn: 16.569201  Erro Amostral m2: 21.832359  Erro Amostral m10: 21.832359  Erro Amostral qnn: 19.493177
+
+k 5 Fold
+Erro Amostral v1nn: 21.052632  Erro Amostral m2: 26.510721  Erro Amostral m10: 26.510721  Erro Amostral qnn: 25.536062
+
+k 6 Fold
+Erro Amostral v1nn: 26.510721  Erro Amostral m2: 31.773879  Erro Amostral m10: 31.773879  Erro Amostral qnn: 30.604288
+
+k 7 Fold
+Erro Amostral v1nn: 30.799220  Erro Amostral m2: 34.502924  Erro Amostral m10: 34.502924  Erro Amostral qnn: 33.138402
+
+k 8 Fold
+Erro Amostral v1nn: 33.528265  Erro Amostral m2: 37.231969  Erro Amostral m10: 37.231969  Erro Amostral qnn: 35.867446
+
+k 9 Fold
+Erro Amostral v1nn: 36.647173  Erro Amostral m2: 40.350877  Erro Amostral m10: 40.350877  Erro Amostral qnn: 38.596491
+
+k 10 Fold
+Erro Amostral v1nn: 38.986355  Erro Amostral m2: 42.884990  Erro Amostral m10: 42.884990  Erro Amostral qnn: 40.935673
+
+Validação Cruzada
+Erro de Validação Cruzada v1nn: 22.768031  Erro de Validação Cruzada m2: 26.978558  Erro de Validação Cruzada m10: 26.978558  Erro de Validação Cruzada qnn: 25.380117
+Acertos: 360.000000 Erros: 200.000000
+Matriz Confusão
+v1nn: TP: 89.000000 - TN: 271.000000 - FP: 79.000000 - FN: 121.000000
+m2: TP: 94.000000 - TN: 246.000000 - FP: 104.000000 - FN: 116.000000
+m10: TP: 94.000000 - TN: 246.000000 - FP: 104.000000 - FN: 116.000000
+qnn: TP: 0.000000 - TN: 350.000000 - FP: 0.000000 - FN: 210.000000
+Sensibilidade v1nn: 0.423810  Sensibilidade m2: 0.447619  Sensibilidade m10: 0.447619  Sensibilidade qnn: 0.000000
+Especificidade v1nn: 0.774286  Especificidade m2: 0.702857  Especificidade m10: 0.702857  Especificidade qnn: 1.000000
+Precisão v1nn: 0.529762  Precisão m2: 0.474747  Precisão m10: 0.474747  Precisão qnn: 0.000000
+Revocação v1nn: 0.691327  Revocação m2: 0.679558  Revocação m10: 0.679558  Revocação qnn: 0.625000
+
