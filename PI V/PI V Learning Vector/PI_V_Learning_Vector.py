@@ -9,6 +9,8 @@ import operator
 
 
 
+
+
 #Carrega o arquivo CSV
 def carregaDados(filename):
     with open(filename, 'r') as csvfile:#Carrega como CSV File
@@ -16,7 +18,6 @@ def carregaDados(filename):
         dataset = list(lines)#Cria uma lista
         print('Dados carregados')
         return dataset
-
 
 def iris():
     print('==Iris==')
@@ -29,7 +30,6 @@ def iris():
     print()
     print()
 
-
 def wine():
     print('==Wine==')
     wine = carregaDados('Dados\wine.csv')
@@ -40,7 +40,6 @@ def wine():
     print('Dados passados para matriz')
     print()
     print()
-
 
 def wineQualityRed():
     print('==WineQualityRed==')
@@ -62,7 +61,6 @@ def wineQualityWhite():
     print('Dados passados para matriz')
     print()
     print()
-
 
 def breastCancer():
     print('==BreastCancer==')
@@ -86,7 +84,6 @@ def abalone():
     print()
     print()
 
-
 def adult():
     print('==Adult==')
     adult = carregaDados('Dados\dult.csv')
@@ -105,8 +102,19 @@ def distanciaEuclidiana(instancia1, instancia2):
 		distancia += pow((instancia1[x] - instancia2[x]), 2)
 	return math.sqrt(distancia)  
 
+#calculo para achar a melhor unidade do conjunto tratado
+def getMelhorUnidade(conjuntoTratado, instaciaTeste):
+    distancias = list()
+    for tratamento in conjuntoTratado:#transforma o TRATAMENTO em um conjunto tratado e calcula a distancia euclidiana do conjunto
+        dist = distanciaEuclidiana(linhatratada, instancia2)
+        distancias.append((conjuntoTratado, dist))#cria a uma lista de distancias com o conjunto tratado e sua respectiva distancia
+    distancias.sort(Key=lambda tup: tup[1])#ordena a lista da menor distancia pra maior
+    return distancias[0][0]#retorna a menor distancia
 
-
+def linhaTratada_Aleatoria(tratar):
+    nRegistros = len(tratar)
+    nCaracteristicas = len(tratar[0])
+    linhaTratada = [tratar[randrange(nRegistros)][i] for i in range(nCaracteristicas)]
 
 
 def main():
