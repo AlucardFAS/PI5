@@ -95,6 +95,45 @@ def adult():
     print()
     print()
 
+def cross_validation_split(dataset, n_folds):
+	dataset_split = list()
+	dataset_copy = list(dataset)
+	fold_size = int(len(dataset) / n_folds)
+	for i in range(n_folds):
+		fold = list()
+		while len(fold) < fold_size:
+			index = randrange(len(dataset_copy))
+			fold.append(dataset_copy.pop(index))
+		dataset_split.append(fold)
+	return dataset_split
+ 
+# Calculate accuracy percentage
+def accuracy_metric(actual, predicted):
+	correct = 0
+	for i in range(len(actual)):
+		if actual[i] == predicted[i]:
+			correct += 1
+	return correct / float(len(actual)) * 100.0
+ 
+# Evaluate an algorithm using a cross validation split
+def evaluate_algorithm(dataset, algorithm, n_folds, *args):
+	folds = cross_validation_split(dataset, n_folds)
+	scores = list()
+	for fold in folds:
+		train_set = list(folds)
+		train_set.remove(fold)
+		train_set = sum(train_set, [])
+		test_set = list()
+		for row in fold:
+			row_copy = list(row)
+			test_set.append(row_copy)
+			row_copy[-1] = None
+		predicted = algorithm(train_set, test_set, *args)
+		actual = [row[-1] for row in fold]
+		accuracy = accuracy_metric(actual, predicted)
+		scores.append(accuracy)
+	return scores
+
 #calculo de distancia eucliadiana
 def distanciaEuclidiana(instancia1, instancia2):
 	distancia = 0.0
@@ -103,18 +142,50 @@ def distanciaEuclidiana(instancia1, instancia2):
 	return math.sqrt(distancia)  
 
 #calculo para achar a melhor unidade do conjunto tratado
-def getMelhorUnidade(conjuntoTratado, instaciaTeste):
+def getMelhorUnidade(blocoCodigos, instaciaTeste):
     distancias = list()
-    for tratamento in conjuntoTratado:#transforma o TRATAMENTO em um conjunto tratado e calcula a distancia euclidiana do conjunto
+    for tratamento in blocoCodigos:#transforma o TRATAMENTO em um bloco e calcula a distancia euclidiana do conjunto
         dist = distanciaEuclidiana(linhatratada, instancia2)
-        distancias.append((conjuntoTratado, dist))#cria a uma lista de distancias com o conjunto tratado e sua respectiva distancia
+        distancias.append((blocoCodigos, dist))#cria a uma lista de distancias com o conjunto tratado e sua respectiva distancia
     distancias.sort(Key=lambda tup: tup[1])#ordena a lista da menor distancia pra maior
     return distancias[0][0]#retorna a menor distancia
 
+def prever(blocoCodigos, linhaTeste):
+	mu = getMelhorUnidade(blocoCodigos, linhaTeste)
+	return mu[-1]
+
+#Função para 'criar' ou 'encontrar' uma linha do bloco de códigos
 def linhaTratada_Aleatoria(tratar):
-    nRegistros = len(tratar)
-    nCaracteristicas = len(tratar[0])
-    linhaTratada = [tratar[randrange(nRegistros)][i] for i in range(nCaracteristicas)]
+    nRegistros = len(tratar)#tamanho dos registros
+    nCaracteristicas = len(tratar[0])#tamanho de um registro
+    linhaTratada = [tratar[randrange(nRegistros)][i] for i in range(nCaracteristicas)]#armazena a linha com a função randrange(gerar aleatórios inteiros)
+    return linhaTratada
+
+#Trata o bloco de códigos a partir das linhas 
+def tratar_BlocoCodigos(conjunto, numBlocoCodigos, taxaLVQ, etapas):#etapas é Constante do decaimento da função taxa
+    blocoCodigos = [linhaTratada_Aleatoria(conjunto) for i in range(numBlocoCodigos)]#atribui à variavel blocoCodigos as linha tratadas na quantidade de blocos(numBlocoCodigos)
+    for etapa in range(etapas):
+        taxa = taxaLQV * (1.0 - (etapa / float(etapas)))#taxa de aprendizado
+        sErro=0.0
+        for linha in conjunto:
+            mu = getMelhorUnidade(blocoCodigos, linha)
+            for i in range(len(linha)-1):
+                erro = linha[i] - mu[i]
+                sErro += erro ** 2
+                if mu[-1] == linha[-1]:
+                    mu[i] += taxa * erro
+                else:
+                    mu[i] -= taxa * erro
+    return blocoCodigos
+
+def learning_vector_quantization(conjunto, teste, numBlocoCodigos, taxaLVQ, etapas):
+	blocoCodigos = tratar_BlocoCodigos(cconjunto, numBlocoCodigos, taxaLVQ, etapas)
+	previsoes = list()
+	for linha in teste:
+		saida = prever(blocoCodigos, linha)
+		previsoes.append(saida)
+	return(previsoes)
+
 
 
 def main():
