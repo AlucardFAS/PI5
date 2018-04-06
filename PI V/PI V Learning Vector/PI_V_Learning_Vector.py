@@ -143,17 +143,33 @@ def distanciaEuclidiana(instancia1, instancia2):
 	return math.sqrt(distancia)  
 
 #calculo para achar a melhor unidade do conjunto tratado
-def getMelhorUnidade(blocoCodigos, instaciaTeste):
+def getMelhoresUnidades(blocoCodigos, instaciaTeste, k):
     distancias = list()
     for tratamento in blocoCodigos:#transforma o TRATAMENTO em um bloco e calcula a distancia euclidiana do conjunto
         dist = distanciaEuclidiana(linhatratada, instancia2)
         distancias.append((blocoCodigos, dist))#cria a uma lista de distancias com o conjunto tratado e sua respectiva distancia
     distancias.sort(Key=lambda tup: tup[1])#ordena a lista da menor distancia pra maior
-    return distancias[0][0]#retorna a menor distancia
+    vizinhos = []
+    for x in range(int(k)):
+        vizinhos.append(distancia[x][0])#para o numero k de vizinhos, varre a lista e obtém as instancias de vizinhos
+    return vizinhos
+
+#Define a classe tendo como base os vizinhos
+def getResposta(vizinhos):
+	classeVotos = {}#Cria um Dict(Tipo um JSON)
+	for x in range(len(vizinhos)):#le ate o ultimo vizinho
+		resposta = vizinhos[x][-1]#armazena de cada linha o ultimo valor
+		if resposta in classeVotos:#se o valor armazenado pertence a um dict, incrementa esse valor
+			classeVotos[resposta] += 1
+		else:#senão, cria um novo dict e define que existe 1 instancia
+			classeVotos[resposta] = 1
+	votosOrdenados = sorted(classeVotos.items(), key=operator.itemgetter(1), reverse=True)# Ordena os valores do maior pro menor
+	return votosOrdenados[0][0]
 
 def prever(blocoCodigos, linhaTeste):
-	mu = getMelhorUnidade(blocoCodigos, linhaTeste)
-	return mu[-1]
+	mu = getMelhoresUnidades(blocoCodigos, linhaTeste, k
+    resposta = getResposta(mu)
+	return resposta[-1]
 
 #Função para 'criar' ou 'encontrar' uma linha do bloco de códigos
 def linhaTratada_Aleatoria(tratar):
@@ -169,14 +185,15 @@ def tratar_BlocoCodigos(conjunto, numBlocoCodigos, taxaLVQ, etapas):#etapas é C
         taxa = taxaLQV * (1.0 - (etapa / float(etapas)))#taxa de aprendizado
         sErro=0.0
         for linha in conjunto:
-            mu = getMelhorUnidade(blocoCodigos, linha)
+            mu = getMelhoresUnidades(blocoCodigos, linha, k)
+            resposta = getResposta(mu)
             for i in range(len(linha)-1):
-                erro = linha[i] - mu[i]
+                erro = linha[i] - resposta[i]
                 sErro += erro ** 2
-                if mu[-1] == linha[-1]:
-                    mu[i] += taxa * erro
+                if resposta[-1] == linha[-1]:
+                    resposta[i] += taxa * erro
                 else:
-                    mu[i] -= taxa * erro
+                    resposta[i] -= taxa * erro
     return blocoCodigos
 
 #Função apenas compara se o LVQ acertou as classes
