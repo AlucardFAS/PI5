@@ -95,44 +95,45 @@ def adult():
     print()
     print()
 
-def cross_validation_split(dataset, n_folds):
-	dataset_split = list()
-	dataset_copy = list(dataset)
-	fold_size = int(len(dataset) / n_folds)
+def cross_validation(dataset, n_folds):
+	dataset_cross = list()
+	dataset_copia = list(dataset)
+	tamanhoFold = int(len(dataset) / n_folds)
 	for i in range(n_folds):
 		fold = list()
-		while len(fold) < fold_size:
-			index = randrange(len(dataset_copy))
-			fold.append(dataset_copy.pop(index))
-		dataset_split.append(fold)
-	return dataset_split
- 
+		while len(fold) < fold:
+			index = randrange(len(dataset_copia))
+			fold.append(dataset_copia.pop(index))
+		dataset_cross.append(tamanhofold)
+	return dataset_cross
+
 # Calculate accuracy percentage
-def accuracy_metric(actual, predicted):
-	correct = 0
-	for i in range(len(actual)):
-		if actual[i] == predicted[i]:
-			correct += 1
-	return correct / float(len(actual)) * 100.0
- 
-# Evaluate an algorithm using a cross validation split
-def evaluate_algorithm(dataset, algorithm, n_folds, *args):
-	folds = cross_validation_split(dataset, n_folds)
-	scores = list()
+def acuracia(atual, previsão):
+	correto = 0
+	for i in range(len(atual)):
+		if atual[i] == previsão[i]:
+			correto += 1
+	return correto / float(len(atual)) * 100.0
+
+# Validando o LVQ com o cross validation
+def validacao_LVQ(dataset, algoritmo, n_folds, *args):
+	folds = crossValidation(dataset, n_folds)#roda o cross com folds parametrizadas
+	acertos = list()
 	for fold in folds:
-		train_set = list(folds)
-		train_set.remove(fold)
-		train_set = sum(train_set, [])
-		test_set = list()
-		for row in fold:
-			row_copy = list(row)
-			test_set.append(row_copy)
-			row_copy[-1] = None
-		predicted = algorithm(train_set, test_set, *args)
-		actual = [row[-1] for row in fold]
-		accuracy = accuracy_metric(actual, predicted)
-		scores.append(accuracy)
-	return scores
+        #criando um conjunto e separando o tratamento do teste
+		conjunto_tratamento = list(folds)
+		conjunto_tratamento.remove(fold)
+		conjunto_tratamento = sum(conjunto_tratamento, [])
+		conjunto_teste = list()
+		for linha in fold:#lista do conjunto teste
+			linhaL = list(linha)
+			conjunto_teste.append(linhaL)
+			linhaL[-1] = None
+		prever = algoritmo(conjunto_tratamento, conjunto_teste, *args)#chama o LVQ para a realização das previsões
+		atual = [linha[-1] for linha in fold]
+		acuracia = acuracia(atual, prever)#calculo para o Multiclasses
+		acertos.append(acuracia)
+	return acertos
 
 #calculo de distancia eucliadiana
 def distanciaEuclidiana(instancia1, instancia2):
@@ -178,6 +179,7 @@ def tratar_BlocoCodigos(conjunto, numBlocoCodigos, taxaLVQ, etapas):#etapas é C
                     mu[i] -= taxa * erro
     return blocoCodigos
 
+#Função apenas compara se o LVQ acertou as classes
 def learning_vector_quantization(conjunto, teste, numBlocoCodigos, taxaLVQ, etapas):
 	blocoCodigos = tratar_BlocoCodigos(cconjunto, numBlocoCodigos, taxaLVQ, etapas)
 	previsoes = list()
