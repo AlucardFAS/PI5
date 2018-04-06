@@ -1,7 +1,7 @@
 import csv
 import sys
 import math
-import random
+import random 
 import operator
 
 #Enunciado https://docs.google.com/document/d/1Ikjw-XMH9Qz8V06GALQcGtT3nzZ7nK4rT0gO-ZlIXZw/edit 
@@ -12,20 +12,10 @@ import operator
 
 
 #Carrega o arquivo CSV
-def carregaDados(filename):
-    with open(filename, 'r') as csvfile:#Carrega como CSV File
-        lines = csv.reader(csvfile)#Armazena os valores em linhas
-        dataset = list(lines)#Cria uma lista
-        print('Dados carregados')
-        return dataset
-
 def iris():
     print('==Iris==')
-    iris = carregaDados('Dados\iris.csv')
-    for x in range(len(iris)):
-         for y in range(4):
-                iris[x][y] = float(iris[x][y])
-
+    iris = carrega_csv('Dados\iris.csv')
+    irisLVQ = validacao_LVQ(iris,learning_vector_quantization,10,20,0.3,15,1)
     print('Dados passados para matriz')
     print()
     print()
@@ -95,16 +85,27 @@ def adult():
     print()
     print()
 
+
+def carrega_csv(filename):
+	dataset = list()
+	with open(filename, 'r') as file:
+		csv_reader = csv.reader(file)
+		for row in csv_reader:
+			if not row:
+				continue
+			dataset.append(row)
+	return dataset
+
 def cross_validation(dataset, n_folds):
 	dataset_cross = list()
 	dataset_copia = list(dataset)
 	tamanhoFold = int(len(dataset) / n_folds)
 	for i in range(n_folds):
 		fold = list()
-		while len(fold) < fold:
-			index = randrange(len(dataset_copia))
+		while len(fold) < tamanhoFold:
+			index = random.randrange(len(dataset_copia))
 			fold.append(dataset_copia.pop(index))
-		dataset_cross.append(tamanhofold)
+		dataset_cross.append(fold)
 	return dataset_cross
 
 # Calculate accuracy percentage
@@ -117,7 +118,7 @@ def acuracia(atual, previsão):
 
 # Validando o LVQ com o cross validation
 def validacao_LVQ(dataset, algoritmo, n_folds, *args):
-	folds = crossValidation(dataset, n_folds)#roda o cross com folds parametrizadas
+	folds = cross_validation(dataset, n_folds)#roda o cross com folds parametrizadas
 	acertos = list()
 	for fold in folds:
         #criando um conjunto e separando o tratamento do teste
@@ -139,14 +140,14 @@ def validacao_LVQ(dataset, algoritmo, n_folds, *args):
 def distanciaEuclidiana(instancia1, instancia2):
 	distancia = 0.0
 	for x in range(len(instancia1)-1):
-		distancia += pow((instancia1[x] - instancia2[x]), 2)
+		distancia += (instancia1[x] - instancia2[x])**2
 	return math.sqrt(distancia)  
 
 #calculo para achar a melhor unidade do conjunto tratado
-def getMelhoresUnidades(blocoCodigos, instaciaTeste, k):
+def getMelhoresUnidades(blocoCodigos, instanciaTeste, k):
     distancias = list()
     for tratamento in blocoCodigos:#transforma o TRATAMENTO em um bloco e calcula a distancia euclidiana do conjunto
-        dist = distanciaEuclidiana(linhatratada, instancia2)
+        dist = distanciaEuclidiana(blocoCodigos, instanciaTeste)
         distancias.append((blocoCodigos, dist))#cria a uma lista de distancias com o conjunto tratado e sua respectiva distancia
     distancias.sort(Key=lambda tup: tup[1])#ordena a lista da menor distancia pra maior
     vizinhos = []
@@ -166,23 +167,23 @@ def getResposta(vizinhos):
 	votosOrdenados = sorted(classeVotos.items(), key=operator.itemgetter(1), reverse=True)# Ordena os valores do maior pro menor
 	return votosOrdenados[0][0]
 
-def prever(blocoCodigos, linhaTeste):
-	mu = getMelhoresUnidades(blocoCodigos, linhaTeste, k
+def prever(blocoCodigos, linhaTeste, k):
+    mu = getMelhoresUnidades(blocoCodigos, linhaTeste, k)
     resposta = getResposta(mu)
-	return resposta[-1]
+    return resposta[-1]
 
 #Função para 'criar' ou 'encontrar' uma linha do bloco de códigos
 def linhaTratada_Aleatoria(tratar):
     nRegistros = len(tratar)#tamanho dos registros
     nCaracteristicas = len(tratar[0])#tamanho de um registro
-    linhaTratada = [tratar[randrange(nRegistros)][i] for i in range(nCaracteristicas)]#armazena a linha com a função randrange(gerar aleatórios inteiros)
+    linhaTratada = [tratar[random.randrange(nRegistros)][i] for i in range(nCaracteristicas)]#armazena a linha com a função randrange(gerar aleatórios inteiros)
     return linhaTratada
 
 #Trata o bloco de códigos a partir das linhas 
-def tratar_BlocoCodigos(conjunto, numBlocoCodigos, taxaLVQ, etapas):#etapas é Constante do decaimento da função taxa
+def tratar_BlocoCodigos(conjunto, numBlocoCodigos, taxaLVQ, etapas, k):#etapas é Constante do decaimento da função taxa
     blocoCodigos = [linhaTratada_Aleatoria(conjunto) for i in range(numBlocoCodigos)]#atribui à variavel blocoCodigos as linha tratadas na quantidade de blocos(numBlocoCodigos)
     for etapa in range(etapas):
-        taxa = taxaLQV * (1.0 - (etapa / float(etapas)))#taxa de aprendizado
+        taxa = taxaLVQ * (1.0 - (etapa / float(etapas)))#taxa de aprendizado
         sErro=0.0
         for linha in conjunto:
             mu = getMelhoresUnidades(blocoCodigos, linha, k)
@@ -197,8 +198,8 @@ def tratar_BlocoCodigos(conjunto, numBlocoCodigos, taxaLVQ, etapas):#etapas é C
     return blocoCodigos
 
 #Função apenas compara se o LVQ acertou as classes
-def learning_vector_quantization(conjunto, teste, numBlocoCodigos, taxaLVQ, etapas):
-	blocoCodigos = tratar_BlocoCodigos(cconjunto, numBlocoCodigos, taxaLVQ, etapas)
+def learning_vector_quantization(conjunto, teste, numBlocoCodigos, taxaLVQ, etapas , k):
+	blocoCodigos = tratar_BlocoCodigos(conjunto, numBlocoCodigos, taxaLVQ, etapas, k)
 	previsoes = list()
 	for linha in teste:
 		saida = prever(blocoCodigos, linha)
@@ -220,12 +221,12 @@ def main():
         print()
         print()
         iris()
-        wine()
+        '''wine()
         wineQualityRed()
         wineQualityWhite()
         breastCancer()
         abalone()
-        adult()
+        adult()'''
 
         print('Processo encerrado')
     elif(confirmacao == 'n'):
