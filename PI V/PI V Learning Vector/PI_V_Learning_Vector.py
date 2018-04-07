@@ -4,6 +4,7 @@ import math
 import random 
 import operator
 
+
 #Enunciado https://docs.google.com/document/d/1Ikjw-XMH9Qz8V06GALQcGtT3nzZ7nK4rT0gO-ZlIXZw/edit 
 #Ajuda para desenvolver o algoritmmo https://machinelearningmastery.com/implement-learning-vector-quantization-scratch-python/ 
 
@@ -85,6 +86,10 @@ def adult():
     print()
     print()
 
+def str_column_to_float(dataset, column):
+	for row in dataset:
+		row[column] = float(row[column].strip())
+
 
 def carrega_csv(filename):
 	dataset = list()
@@ -129,7 +134,7 @@ def validacao_LVQ(dataset, algoritmo, n_folds, *args):
 		for linha in fold:#lista do conjunto teste
 			linhaL = list(linha)
 			conjunto_teste.append(linhaL)
-			linhaL[-1] = None
+			linhaL[-1] = '0.0'
 		prever = algoritmo(conjunto_tratamento, conjunto_teste, *args)#chama o LVQ para a realização das previsões
 		atual = [linha[-1] for linha in fold]
 		acuracia = acuracia(atual, prever)#calculo para o Multiclasses
@@ -139,9 +144,13 @@ def validacao_LVQ(dataset, algoritmo, n_folds, *args):
 #calculo de distancia eucliadiana
 def distanciaEuclidiana(instancia1, instancia2):
 	distancia = 0.0
+	resultado = 0.0
+
 	for x in range(len(instancia1)-1):
-		distancia += (instancia1[x] - instancia2[x])**2
-	return math.sqrt(distancia)  
+		for y in range(len(instancia2)-1):
+			resultado = (float(instancia1[x][y]) - float(instancia2[x][y]))
+		distancia += pow((instancia1[x]- instancia2[x]), 2)
+	return math.sqrt(distancia)
 
 #calculo para achar a melhor unidade do conjunto tratado
 def getMelhoresUnidades(blocoCodigos, instanciaTeste, k):
@@ -152,7 +161,7 @@ def getMelhoresUnidades(blocoCodigos, instanciaTeste, k):
     distancias.sort(Key=lambda tup: tup[1])#ordena a lista da menor distancia pra maior
     vizinhos = []
     for x in range(int(k)):
-        vizinhos.append(distancia[x][0])#para o numero k de vizinhos, varre a lista e obtém as instancias de vizinhos
+        vizinhos.append(distancias[x][0])#para o numero k de vizinhos, varre a lista e obtém as instancias de vizinhos
     return vizinhos
 
 #Define a classe tendo como base os vizinhos
@@ -182,7 +191,7 @@ def linhaTratada_Aleatoria(tratar):
 #Trata o bloco de códigos a partir das linhas 
 def tratar_BlocoCodigos(conjunto, numBlocoCodigos, taxaLVQ, etapas, k):#etapas é Constante do decaimento da função taxa
     blocoCodigos = [linhaTratada_Aleatoria(conjunto) for i in range(numBlocoCodigos)]#atribui à variavel blocoCodigos as linha tratadas na quantidade de blocos(numBlocoCodigos)
-    for etapa in range(etapas):
+    '''for etapa in range(etapas):
         taxa = taxaLVQ * (1.0 - (etapa / float(etapas)))#taxa de aprendizado
         sErro=0.0
         for linha in conjunto:
@@ -194,7 +203,7 @@ def tratar_BlocoCodigos(conjunto, numBlocoCodigos, taxaLVQ, etapas, k):#etapas �
                 if resposta[-1] == linha[-1]:
                     resposta[i] += taxa * erro
                 else:
-                    resposta[i] -= taxa * erro
+                    resposta[i] -= taxa * erro'''
     return blocoCodigos
 
 #Função apenas compara se o LVQ acertou as classes
@@ -202,7 +211,7 @@ def learning_vector_quantization(conjunto, teste, numBlocoCodigos, taxaLVQ, etap
 	blocoCodigos = tratar_BlocoCodigos(conjunto, numBlocoCodigos, taxaLVQ, etapas, k)
 	previsoes = list()
 	for linha in teste:
-		saida = prever(blocoCodigos, linha)
+		saida = prever(blocoCodigos, teste, k)
 		previsoes.append(saida)
 	return(previsoes)
 
