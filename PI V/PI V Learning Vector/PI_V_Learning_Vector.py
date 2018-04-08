@@ -1,249 +1,174 @@
-import csv
-import sys
-import math
-import random 
-import operator
-
-
 #Enunciado https://docs.google.com/document/d/1Ikjw-XMH9Qz8V06GALQcGtT3nzZ7nK4rT0gO-ZlIXZw/edit 
 #Ajuda para desenvolver o algoritmmo https://machinelearningmastery.com/implement-learning-vector-quantization-scratch-python/ 
 
-
-
-
-
-#Carrega o arquivo CSV
-def iris():
-    print('==Iris==')
-    iris = carrega_csv('Dados\iris.csv')
-    irisLVQ = validacao_LVQ(iris,learning_vector_quantization,10,20,0.3,15,1)
-    print('Dados passados para matriz')
-    print()
-    print()
-
-def wine():
-    print('==Wine==')
-    wine = carregaDados('Dados\wine.csv')
-    for x in range (len(wine)):
-        for y in range(13):
-            wine[x][y] = float(wine[x][y])
-
-    print('Dados passados para matriz')
-    print()
-    print()
-
-def wineQualityRed():
-    print('==WineQualityRed==')
-    wineQred = carregaDados('Dados\winequalityredOutput.csv')
-    for x in range (len(wineQred)):
-        for y in range(11):
-            wineQred[x][y] = float(wineQred[x][y])
-    print('Dados passados para matriz')
-    print()
-    print()
-
-def wineQualityWhite():
-    print('==WineQualitywhite==')
-    wineQualitywhite = carregaDados('Dados\winequalitywhiteOutput.csv')
-    for x in range (len(wineQualitywhite)):
-        for y in range(11):
-            wineQualitywhite[x][y] = float(wineQualitywhite[x][y])
-
-    print('Dados passados para matriz')
-    print()
-    print()
-
-def breastCancer():
-    print('==BreastCancer==')
-    breastC = carregaDados('Dados\eastcancer.csv')
-    for x in range (len(breastC)):
-        for y in range(10):
-            breastC[x][y] = float(breastC[x][y])
-    
-    print('Dados passados para matriz')
-    print()
-    print()
-
-def abalone():
-    print('==Abalone==')
-    abalone = carregaDados('Dados\lone.csv')
-    for x in range (len(abalone)):
-        for y in range(8):
-            abalone[x][y] = float(abalone[x][y])
-    
-    print('Dados passados para matriz')
-    print()
-    print()
-
-def adult():
-    print('==Adult==')
-    adult = carregaDados('Dados\dult.csv')
-    for x in range (len(adult)):
-        for y in range(14):
-            adult[x][y] = float(adult[x][y])
-
-    print('Dados passados para matriz')
-    print()
-    print()
-
-def str_column_to_float(dataset, column):
-	for row in dataset:
-		row[column] = float(row[column].strip())
-
-
-def carrega_csv(filename):
+from random import seed
+from random import randrange
+from csv import reader
+from math import sqrt
+from operator import itemgetter
+ 
+# Load a CSV file
+def load_csv(filename):
 	dataset = list()
 	with open(filename, 'r') as file:
-		csv_reader = csv.reader(file)
+		csv_reader = reader(file)
 		for row in csv_reader:
 			if not row:
 				continue
 			dataset.append(row)
 	return dataset
-
-def cross_validation(dataset, n_folds):
-	dataset_cross = list()
-	dataset_copia = list(dataset)
-	tamanhoFold = int(len(dataset) / n_folds)
+ 
+# Convert string column to float
+def strFloat(dataset, column):
+	for row in dataset:
+		row[column] = float(row[column].strip())
+ 
+# Convert string column to integer
+def strInt(dataset, column):
+	class_values = [row[column] for row in dataset]
+	unique = set(class_values)
+	lookup = dict()
+	for i, value in enumerate(unique):
+		lookup[value] = i
+	for row in dataset:
+		row[column] = lookup[row[column]]
+	return lookup
+ 
+# Split a dataset into k folds
+def crossValidation(dataset, n_folds):
+	dataset_split = list()
+	dataset_copy = list(dataset)
+	fold_size = int(len(dataset) / n_folds)
 	for i in range(n_folds):
 		fold = list()
-		while len(fold) < tamanhoFold:
-			index = random.randrange(len(dataset_copia))
-			fold.append(dataset_copia.pop(index))
-		dataset_cross.append(fold)
-	return dataset_cross
-
+		while len(fold) < fold_size:
+			index = randrange(len(dataset_copy))
+			fold.append(dataset_copy.pop(index))
+		dataset_split.append(fold)
+	return dataset_split
+ 
 # Calculate accuracy percentage
-def acuracia(atual, previsão):
-	correto = 0
-	for i in range(len(atual)):
-		if atual[i] == previsão[i]:
-			correto += 1
-	return correto / float(len(atual)) * 100.0
-
-# Validando o LVQ com o cross validation
-def validacao_LVQ(dataset, algoritmo, n_folds, *args):
-	folds = cross_validation(dataset, n_folds)#roda o cross com folds parametrizadas
-	acertos = list()
+def k_foldError(actual, predicted):
+	erro = 0
+	for i in range(len(actual)):
+		if actual[i] != predicted[i]:
+			erro += 1
+	return erro / float(len(actual)) * 100.0
+ 
+# Evaluate an algorithm using a cross validation split
+def evaluate_algorithm(dataset, algorithm, n_folds, *args):
+	folds = cross_validation_split(dataset, n_folds)
+	scores = list()
 	for fold in folds:
-        #criando um conjunto e separando o tratamento do teste
-		conjunto_tratamento = list(folds)
-		conjunto_tratamento.remove(fold)
-		conjunto_tratamento = sum(conjunto_tratamento, [])
-		conjunto_teste = list()
-		for linha in fold:#lista do conjunto teste
-			linhaL = list(linha)
-			conjunto_teste.append(linhaL)
-			linhaL[-1] = '0.0'
-		prever = algoritmo(conjunto_tratamento, conjunto_teste, *args)#chama o LVQ para a realização das previsões
-		atual = [linha[-1] for linha in fold]
-		acuracia = acuracia(atual, prever)#calculo para o Multiclasses
-		acertos.append(acuracia)
-	return acertos
+		train_set = list(folds)
+		train_set.remove(fold)
+		train_set = sum(train_set, [])
+		test_set = list()
+		for row in fold:
+			row_copy = list(row)
+			test_set.append(row_copy)
+			row_copy[-1] = None
+		predicted = algorithm(train_set, test_set, *args)
+		actual = [row[-1] for row in fold]
+		accuracy = accuracy_metric(actual, predicted)
+		scores.append(accuracy)
+	return scores
+ 
+# calculate the Euclidean distance between two vectors
+def euclidean_distance(row1, row2):
+	distance = 0.0
+	for i in range(len(row1)-1):
+		distance += (row1[i] - row2[i])**2
+	return sqrt(distance)
+ 
+def get_best_matching_unit(codebooks, test_row, k):
+	distances = []
+	for codebook in codebooks:
+		dist = euclidean_distance(codebook, test_row)
+		distances.append((codebook, dist))
+	distances.sort(key=lambda tup: tup[1])
+	neighbors = []
+	for x in range(int(k)):
+		neighbors.append(distances[x][0])
+	return neighbors[0]
 
-#calculo de distancia eucliadiana
-def distanciaEuclidiana(instancia1, instancia2):
-	distancia = 0.0
-	resultado = 0.0
+# Locate the best matching unit
+def get_matching_units(codebooks, test_row, k):
+	distances = []
+	for codebook in codebooks:
+		dist = euclidean_distance(codebook, test_row)
+		distances.append((codebook, dist))
+	distances.sort(key=lambda tup: tup[1])
+	neighbors = []
+	for x in range(int(k)):
+		neighbors.append(distances[x][0])
+	return neighbors
 
-	for x in range(len(instancia1)-1):
-		for y in range(len(instancia2)-1):
-			resultado = (float(instancia1[x][y]) - float(instancia2[x][y]))
-		distancia += pow((instancia1[x]- instancia2[x]), 2)
-	return math.sqrt(distancia)
+def getNeighbor(neighbors):
+    classVotes = {}
+    for x in range(len(neighbors)):
+        result = neighbors[x][-1]
+        if result in classVotes:
+            classVotes[result] += 1
+        else:
+            classVotes[result] = 1
+    sortVotes = sorted(classVotes.items(), key=itemgetter(1), reverse=True)
+    return sortVotes[0][0]
 
-#calculo para achar a melhor unidade do conjunto tratado
-def getMelhoresUnidades(blocoCodigos, instanciaTeste, k):
-    distancias = list()
-    for tratamento in blocoCodigos:#transforma o TRATAMENTO em um bloco e calcula a distancia euclidiana do conjunto
-        dist = distanciaEuclidiana(blocoCodigos, instanciaTeste)
-        distancias.append((blocoCodigos, dist))#cria a uma lista de distancias com o conjunto tratado e sua respectiva distancia
-    distancias.sort(Key=lambda tup: tup[1])#ordena a lista da menor distancia pra maior
-    vizinhos = []
-    for x in range(int(k)):
-        vizinhos.append(distancias[x][0])#para o numero k de vizinhos, varre a lista e obtém as instancias de vizinhos
-    return vizinhos
+# Make a prediction with codebook vectors
+def predict(codebooks, test_row, k):
+	mus = get_matching_units(codebooks, test_row, k)
+	result = getNeighbor(mus)
+	return result
+ 
+# Create a random codebook vector
+def codebook(train):
+	n_records = len(train)
+	n_features = len(train[0])
+	codebook = [train[randrange(n_records)][i] for i in range(n_features)]
+	return codebook
+ 
+# Train a set of codebook vectors
+def train_codebooks(train, n_codebooks, lrate, epochs, k):
+	codebooks = [codebook(train) for i in range(n_codebooks)]
+	for epoch in range(epochs):
+		rate = lrate * (1.0-(epoch/float(epochs)))
+		for row in train:
+			bmu = get_best_matching_unit(codebooks, row, k)
+			for i in range(len(row)-1):
+				error = row[i] - bmu[i]
+				if bmu[-1] == row[-1]:
+					bmu[i] += rate * error
+				else:
+					bmu[i] -= rate * error
+	return codebooks
+ 
+# LVQ Algorithm
+def lvq(train, test, n_codebooks, lrate, epochs, k):
+	codebooks = train_codebooks(train, n_codebooks, lrate, epochs, k)
+	predictions = list()
+	for row in test:
+		output = predict(codebooks, row, k)
+		predictions.append(output)
+	return(predictions)
 
-#Define a classe tendo como base os vizinhos
-def getResposta(vizinhos):
-	classeVotos = {}#Cria um Dict(Tipo um JSON)
-	for x in range(len(vizinhos)):#le ate o ultimo vizinho
-		resposta = vizinhos[x][-1]#armazena de cada linha o ultimo valor
-		if resposta in classeVotos:#se o valor armazenado pertence a um dict, incrementa esse valor
-			classeVotos[resposta] += 1
-		else:#senão, cria um novo dict e define que existe 1 instancia
-			classeVotos[resposta] = 1
-	votosOrdenados = sorted(classeVotos.items(), key=operator.itemgetter(1), reverse=True)# Ordena os valores do maior pro menor
-	return votosOrdenados[0][0]
+seed(1)
+# load and prepare data
+filename = ['Dados\iris.csv', 'Dados\wine.csv', 'Dados\winequalityredOutput.csv' ,'Dados\winequalitywhiteOutput.csv', 'Dados\wdbc.csv', 'Dados\eastcancer.csv', 'Dados\lone.csv', 'Dados\dult.csv']
+n_codebooks = [36, 225, 169, 169, 1089, 144, 100, 256]
 
-def prever(blocoCodigos, linhaTeste, k):
-    mu = getMelhoresUnidades(blocoCodigos, linhaTeste, k)
-    resposta = getResposta(mu)
-    return resposta[-1]
+n_folds = 10
+learn_rate = 0.3
+n_epochs = 10
+k = 1
 
-#Função para 'criar' ou 'encontrar' uma linha do bloco de códigos
-def linhaTratada_Aleatoria(tratar):
-    nRegistros = len(tratar)#tamanho dos registros
-    nCaracteristicas = len(tratar[0])#tamanho de um registro
-    linhaTratada = [tratar[random.randrange(nRegistros)][i] for i in range(nCaracteristicas)]#armazena a linha com a função randrange(gerar aleatórios inteiros)
-    return linhaTratada
+dataset = load_csv(filename[1])
+for i in range(len(dataset[0])-1):
+    str_column_to_float(dataset, i)
+# convert class column to integers
+str_column_to_int(dataset, len(dataset[0])-1)
 
-#Trata o bloco de códigos a partir das linhas 
-def tratar_BlocoCodigos(conjunto, numBlocoCodigos, taxaLVQ, etapas, k):#etapas é Constante do decaimento da função taxa
-    blocoCodigos = [linhaTratada_Aleatoria(conjunto) for i in range(numBlocoCodigos)]#atribui à variavel blocoCodigos as linha tratadas na quantidade de blocos(numBlocoCodigos)
-    '''for etapa in range(etapas):
-        taxa = taxaLVQ * (1.0 - (etapa / float(etapas)))#taxa de aprendizado
-        sErro=0.0
-        for linha in conjunto:
-            mu = getMelhoresUnidades(blocoCodigos, linha, k)
-            resposta = getResposta(mu)
-            for i in range(len(linha)-1):
-                erro = linha[i] - resposta[i]
-                sErro += erro ** 2
-                if resposta[-1] == linha[-1]:
-                    resposta[i] += taxa * erro
-                else:
-                    resposta[i] -= taxa * erro'''
-    return blocoCodigos
-
-#Função apenas compara se o LVQ acertou as classes
-def learning_vector_quantization(conjunto, teste, numBlocoCodigos, taxaLVQ, etapas , k):
-	blocoCodigos = tratar_BlocoCodigos(conjunto, numBlocoCodigos, taxaLVQ, etapas, k)
-	previsoes = list()
-	for linha in teste:
-		saida = prever(blocoCodigos, teste, k)
-		previsoes.append(saida)
-	return(previsoes)
-
-
-
-def main():
-    
-    
-    print('O teste a seguir pode demorar.')
-    confirmacao = input('Deseja continuar? (s/n)    ')
-
-    if(confirmacao == 's'):
-        print()
-        print()
-        print()
-        print()
-        print()
-        iris()
-        '''wine()
-        wineQualityRed()
-        wineQualityWhite()
-        breastCancer()
-        abalone()
-        adult()'''
-
-        print('Processo encerrado')
-    elif(confirmacao == 'n'):
-        print('Fim')
-    else:
-        print()
-        print('Comando inválido')
-        print('xxxCloseOperation')
-
-main()
-
+# evaluate algorithm
+scores = evaluate_algorithm(dataset, lvq, n_folds, n_codebooks[1], learn_rate, n_epochs, k)
+print('Scores: %s' % scores)
+print('Mean Accuracy: %.3f%%' % (sum(scores)/float(len(scores))))
