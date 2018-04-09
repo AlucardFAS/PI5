@@ -25,3 +25,15 @@ This project aims to explore some Machine Learning techniques and apply them to 
 <a href="https://github.com/AlucardFAS/PI5/tree/master/PI%20V/PI%20V%20Learning%20Vector">Parte 1 - K Nearest Neighbors</a></br>
 <a href="https://github.com/AlucardFAS/PI5/tree/master/PI%20V/PI%20V%20Learning%20Vector">Parte 2 - Learning Vector Quantization</a></br>
 </h3>
+
+<h2>Resultados</h2>
+<h3>
+<a href="https://github.com/AlucardFAS/PI5/blob/master/PI%20V/PI%20V/result.txt">K Nearest Neighbors</a></br>
+<a href="https://github.com/AlucardFAS/PI5/blob/master/PI%20V/PI%20V%20Learning%20Vector/result.txt">Learning Vector Quantization</a></br>
+</h3>
+
+<h2>Relatórios</h2>
+<h3>
+<a href="https://github.com/AlucardFAS/PI5/blob/master/PI%20V/PI%20V/Relat%C3%B3rio/KNN.pdf">Relatório final K Nearest Neighbors</a></br>
+<a href="https://github.com/AlucardFAS/PI5/blob/master/PI%20V/PI%20V%20Learning%20Vector/Relat%C3%B3rio/LVQ.pdf">Relatório final Learning Vector Quantization</a></br>
+</h3>
