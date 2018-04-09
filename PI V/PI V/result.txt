@@ -1,0 +1,229 @@
+======================IRIS======================
+
+k 1 Fold
+Erro Amostral v1nn: 0.000000  Erro Amostral m2: 0.000000  Erro Amostral m10: 0.000000  Erro Amostral qnn: 0.000000
+
+k 2 Fold
+Erro Amostral v1nn: 0.000000  Erro Amostral m2: 0.000000  Erro Amostral m10: 0.000000  Erro Amostral qnn: 0.000000
+
+k 3 Fold
+Erro Amostral v1nn: 0.000000  Erro Amostral m2: 0.000000  Erro Amostral m10: 0.000000  Erro Amostral qnn: 0.000000
+
+k 4 Fold
+Erro Amostral v1nn: 0.740741  Erro Amostral m2: 0.000000  Erro Amostral m10: 0.000000  Erro Amostral qnn: 2.222222
+
+k 5 Fold
+Erro Amostral v1nn: 2.222222  Erro Amostral m2: 1.481481  Erro Amostral m10: 1.481481  Erro Amostral qnn: 5.925926
+
+k 6 Fold
+Erro Amostral v1nn: 3.703704  Erro Amostral m2: 2.962963  Erro Amostral m10: 2.962963  Erro Amostral qnn: 11.111111
+
+k 7 Fold
+Erro Amostral v1nn: 3.703704  Erro Amostral m2: 2.962963  Erro Amostral m10: 2.962963  Erro Amostral qnn: 11.851852
+
+k 8 Fold
+Erro Amostral v1nn: 5.185185  Erro Amostral m2: 4.444444  Erro Amostral m10: 4.444444  Erro Amostral qnn: 15.555556
+
+k 9 Fold
+Erro Amostral v1nn: 6.666667  Erro Amostral m2: 6.666667  Erro Amostral m10: 6.666667  Erro Amostral qnn: 20.740741
+
+k 10 Fold
+Erro Amostral v1nn: 6.666667  Erro Amostral m2: 6.666667  Erro Amostral m10: 6.666667  Erro Amostral qnn: 25.185185
+
+Validação Cruzada
+Erro de Validação Cruzada v1nn: 2.888889  Erro de Validação Cruzada m2: 2.518519  Erro de Validação Cruzada m10: 2.518519  Erro de Validação Cruzada qnn: 9.259259
+Precisão
+Precisão v1nn: 96.551587  Precisão m2: 97.141270  Precisão m10: 97.141270  Precisão qnn: 89.152116
+
+======================WINE======================
+
+k 1 Fold
+Erro Amostral v1nn: 0.000000  Erro Amostral m2: 0.000000  Erro Amostral m10: 0.000000  Erro Amostral qnn: 0.000000
+
+k 2 Fold
+Erro Amostral v1nn: 0.000000  Erro Amostral m2: 0.000000  Erro Amostral m10: 0.000000  Erro Amostral qnn: 2.469136
+
+k 3 Fold
+Erro Amostral v1nn: 0.000000  Erro Amostral m2: 0.617284  Erro Amostral m10: 0.617284  Erro Amostral qnn: 5.555556
+
+k 4 Fold
+Erro Amostral v1nn: 1.234568  Erro Amostral m2: 1.851852  Erro Amostral m10: 1.851852  Erro Amostral qnn: 6.172840
+
+k 5 Fold
+Erro Amostral v1nn: 3.086420  Erro Amostral m2: 4.320988  Erro Amostral m10: 4.320988  Erro Amostral qnn: 9.876543
+
+k 6 Fold
+Erro Amostral v1nn: 3.703704  Erro Amostral m2: 4.938272  Erro Amostral m10: 4.938272  Erro Amostral qnn: 11.111111
+
+k 7 Fold
+Erro Amostral v1nn: 4.320988  Erro Amostral m2: 5.555556  Erro Amostral m10: 5.555556  Erro Amostral qnn: 12.345679
+
+k 8 Fold
+Erro Amostral v1nn: 6.172840  Erro Amostral m2: 6.172840  Erro Amostral m10: 6.172840  Erro Amostral qnn: 13.580247
+
+k 9 Fold
+Erro Amostral v1nn: 6.172840  Erro Amostral m2: 6.172840  Erro Amostral m10: 6.172840  Erro Amostral qnn: 24.074074
+
+k 10 Fold
+Erro Amostral v1nn: 6.172840  Erro Amostral m2: 6.172840  Erro Amostral m10: 6.172840  Erro Amostral qnn: 32.716049
+
+Validação Cruzada
+Erro de Validação Cruzada v1nn: 3.086420  Erro de Validação Cruzada m2: 3.580247  Erro de Validação Cruzada m10: 3.580247  Erro de Validação Cruzada qnn: 11.790123
+Precisão
+Precisão v1nn: 95.964052  Precisão m2: 95.021475  Precisão m10: 95.021475  Precisão qnn: 82.976190
+
+======================WINE QUALITY RED======================
+
+k 1 Fold
+Erro Amostral v1nn: 5.138889  Erro Amostral m2: 4.513889  Erro Amostral m10: 4.513889  Erro Amostral qnn: 3.888889
+
+k 2 Fold
+Erro Amostral v1nn: 10.763889  Erro Amostral m2: 9.652778  Erro Amostral m10: 9.652778  Erro Amostral qnn: 9.236111
+
+k 3 Fold
+Erro Amostral v1nn: 16.875000  Erro Amostral m2: 15.347222  Erro Amostral m10: 15.347222  Erro Amostral qnn: 15.694444
+
+k 4 Fold
+Erro Amostral v1nn: 23.125000  Erro Amostral m2: 20.555556  Erro Amostral m10: 20.555556  Erro Amostral qnn: 21.111111
+
+k 5 Fold
+Erro Amostral v1nn: 27.986111  Erro Amostral m2: 24.930556  Erro Amostral m10: 24.930556  Erro Amostral qnn: 24.583333
+
+k 6 Fold
+Erro Amostral v1nn: 33.541667  Erro Amostral m2: 30.347222  Erro Amostral m10: 30.347222  Erro Amostral qnn: 30.625000
+
+k 7 Fold
+Erro Amostral v1nn: 39.513889  Erro Amostral m2: 36.041667  Erro Amostral m10: 36.041667  Erro Amostral qnn: 36.319444
+
+k 8 Fold
+Erro Amostral v1nn: 45.555556  Erro Amostral m2: 40.625000  Erro Amostral m10: 40.625000  Erro Amostral qnn: 42.083333
+
+k 9 Fold
+Erro Amostral v1nn: 51.458333  Erro Amostral m2: 45.625000  Erro Amostral m10: 45.625000  Erro Amostral qnn: 47.013889
+
+k 10 Fold
+Erro Amostral v1nn: 57.291667  Erro Amostral m2: 50.416667  Erro Amostral m10: 50.416667  Erro Amostral qnn: 53.125000
+
+Validação Cruzada
+Erro de Validação Cruzada v1nn: 31.125000  Erro de Validação Cruzada m2: 27.805556  Erro de Validação Cruzada m10: 27.805556  Erro de Validação Cruzada qnn: 28.368056
+Precisão
+Precisão v1nn: 49.373016  Precisão m2: 54.737871  Precisão m10: 54.737871  Precisão qnn: 54.696865
+
+======================WINE QUALITY WHITE======================
+
+k 1 Fold
+Erro Amostral v1nn: 5.942391  Erro Amostral m2: 5.511454  Erro Amostral m10: 5.511454  Erro Amostral qnn: 6.055795
+
+k 2 Fold
+Erro Amostral v1nn: 12.542527  Erro Amostral m2: 11.363121  Erro Amostral m10: 11.363121  Erro Amostral qnn: 12.565208
+
+k 3 Fold
+Erro Amostral v1nn: 18.961216  Erro Amostral m2: 17.350873  Erro Amostral m10: 17.350873  Erro Amostral qnn: 18.757088
+
+k 4 Fold
+Erro Amostral v1nn: 25.039692  Erro Amostral m2: 22.930370  Erro Amostral m10: 22.930370  Erro Amostral qnn: 24.586074
+
+k 5 Fold
+Erro Amostral v1nn: 30.936720  Erro Amostral m2: 27.784078  Erro Amostral m10: 27.784078  Erro Amostral qnn: 31.276934
+
+k 6 Fold
+Erro Amostral v1nn: 36.788387  Erro Amostral m2: 32.819233  Erro Amostral m10: 32.819233  Erro Amostral qnn: 37.809027
+
+k 7 Fold
+Erro Amostral v1nn: 42.821501  Erro Amostral m2: 38.761624  Erro Amostral m10: 38.761624  Erro Amostral qnn: 43.638013
+
+k 8 Fold
+Erro Amostral v1nn: 48.469041  Erro Amostral m2: 44.136993  Erro Amostral m10: 44.136993  Erro Amostral qnn: 49.693808
+
+k 9 Fold
+Erro Amostral v1nn: 53.594919  Erro Amostral m2: 49.058743  Erro Amostral m10: 49.058743  Erro Amostral qnn: 55.409390
+
+k 10 Fold
+Erro Amostral v1nn: 59.310501  Erro Amostral m2: 54.592878  Erro Amostral m10: 54.592878  Erro Amostral qnn: 60.104332
+
+Validação Cruzada
+Erro de Validação Cruzada v1nn: 33.440689  Erro de Validação Cruzada m2: 30.430937  Erro de Validação Cruzada m10: 30.430937  Erro de Validação Cruzada qnn: 33.989567
+Precisão
+Precisão v1nn: 44.842641  Precisão m2: 49.778265  Precisão m10: 49.778265  Precisão qnn: 44.182483
+
+======================ABALONE======================
+
+k 1 Fold
+Erro Amostral v1nn: 6.090426  Erro Amostral m2: 5.452128  Erro Amostral m10: 5.452128  Erro Amostral qnn: 6.037234
+
+k 2 Fold
+Erro Amostral v1nn: 12.845745  Erro Amostral m2: 11.595745  Erro Amostral m10: 11.595745  Erro Amostral qnn: 12.898936
+
+k 3 Fold
+Erro Amostral v1nn: 17.420213  Erro Amostral m2: 15.531915  Erro Amostral m10: 15.531915  Erro Amostral qnn: 16.648936
+
+k 4 Fold
+Erro Amostral v1nn: 22.765957  Erro Amostral m2: 20.505319  Erro Amostral m10: 20.505319  Erro Amostral qnn: 21.622340
+
+k 5 Fold
+Erro Amostral v1nn: 28.297872  Erro Amostral m2: 25.585106  Erro Amostral m10: 25.585106  Erro Amostral qnn: 26.276596
+
+k 6 Fold
+Erro Amostral v1nn: 35.026596  Erro Amostral m2: 31.675532  Erro Amostral m10: 31.675532  Erro Amostral qnn: 33.058511
+
+k 7 Fold
+Erro Amostral v1nn: 39.840426  Erro Amostral m2: 35.425532  Erro Amostral m10: 35.425532  Erro Amostral qnn: 37.127660
+
+k 8 Fold
+Erro Amostral v1nn: 45.797872  Erro Amostral m2: 41.276596  Erro Amostral m10: 41.276596  Erro Amostral qnn: 42.898936
+
+k 9 Fold
+Erro Amostral v1nn: 51.117021  Erro Amostral m2: 46.090426  Erro Amostral m10: 46.090426  Erro Amostral qnn: 47.579787
+
+k 10 Fold
+Erro Amostral v1nn: 56.329787  Erro Amostral m2: 51.329787  Erro Amostral m10: 51.329787  Erro Amostral qnn: 52.872340
+
+Validação Cruzada
+Erro de Validação Cruzada v1nn: 31.553191  Erro de Validação Cruzada m2: 28.446809  Erro de Validação Cruzada m10: 28.446809  Erro de Validação Cruzada qnn: 29.702128
+Precisão
+Precisão v1nn: 47.488276  Precisão m2: 52.730026  Precisão m10: 52.730026  Precisão qnn: 50.004444
+
+======================Breast Cancer======================
+
+k 1 Fold
+Erro Amostral v1nn: 4.483431  Erro Amostral m2: 5.847953  Erro Amostral m10: 5.847953  Erro Amostral qnn: 5.068226
+
+k 2 Fold
+Erro Amostral v1nn: 7.992203  Erro Amostral m2: 11.695906  Erro Amostral m10: 11.695906  Erro Amostral qnn: 10.526316
+
+k 3 Fold
+Erro Amostral v1nn: 11.111111  Erro Amostral m2: 17.153996  Erro Amostral m10: 17.153996  Erro Amostral qnn: 14.035088
+
+k 4 Fold
+Erro Amostral v1nn: 16.569201  Erro Amostral m2: 21.832359  Erro Amostral m10: 21.832359  Erro Amostral qnn: 19.493177
+
+k 5 Fold
+Erro Amostral v1nn: 21.052632  Erro Amostral m2: 26.510721  Erro Amostral m10: 26.510721  Erro Amostral qnn: 25.536062
+
+k 6 Fold
+Erro Amostral v1nn: 26.510721  Erro Amostral m2: 31.773879  Erro Amostral m10: 31.773879  Erro Amostral qnn: 30.604288
+
+k 7 Fold
+Erro Amostral v1nn: 30.799220  Erro Amostral m2: 34.502924  Erro Amostral m10: 34.502924  Erro Amostral qnn: 33.138402
+
+k 8 Fold
+Erro Amostral v1nn: 33.528265  Erro Amostral m2: 37.231969  Erro Amostral m10: 37.231969  Erro Amostral qnn: 35.867446
+
+k 9 Fold
+Erro Amostral v1nn: 36.647173  Erro Amostral m2: 40.350877  Erro Amostral m10: 40.350877  Erro Amostral qnn: 38.596491
+
+k 10 Fold
+Erro Amostral v1nn: 38.986355  Erro Amostral m2: 42.884990  Erro Amostral m10: 42.884990  Erro Amostral qnn: 40.935673
+
+Validação Cruzada
+Erro de Validação Cruzada v1nn: 22.768031  Erro de Validação Cruzada m2: 26.978558  Erro de Validação Cruzada m10: 26.978558  Erro de Validação Cruzada qnn: 25.380117
+Acertos: 360.000000 Erros: 200.000000
+Matriz Confusão
+v1nn: TP: 89.000000 - TN: 271.000000 - FP: 79.000000 - FN: 121.000000
+m2: TP: 94.000000 - TN: 246.000000 - FP: 104.000000 - FN: 116.000000
+m10: TP: 94.000000 - TN: 246.000000 - FP: 104.000000 - FN: 116.000000
+qnn: TP: 0.000000 - TN: 350.000000 - FP: 0.000000 - FN: 210.000000
+Sensibilidade v1nn: 0.423810  Sensibilidade m2: 0.447619  Sensibilidade m10: 0.447619  Sensibilidade qnn: 0.000000
+Especificidade v1nn: 0.774286  Especificidade m2: 0.702857  Especificidade m10: 0.702857  Especificidade qnn: 1.000000
+Precisão v1nn: 0.529762  Precisão m2: 0.474747  Precisão m10: 0.474747  Precisão qnn: 0.000000
+Revocação v1nn: 0.691327  Revocação m2: 0.679558  Revocação m10: 0.679558  Revocação qnn: 0.625000
