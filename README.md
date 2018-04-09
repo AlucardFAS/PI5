@@ -15,8 +15,10 @@ Este projeto visa explorar algumas técnicas de Machine Learning e aplica-las a 
 This project aims to explore some Machine Learning techniques and apply them to a final data set.</br>
 
 <h2>Enunciados</h2>
+<h3>
 <a href="https://docs.google.com/document/d/1KMhviI2vlMpBUwwVYIJ7xQVnJfs1S8F1BxdusB5R8Zw/edit">Desafio 1</a></br>
 <a href="https://docs.google.com/document/d/1Ikjw-XMH9Qz8V06GALQcGtT3nzZ7nK4rT0gO-ZlIXZw/edit">Desafio 2</a></br>
+</h3>
 
 <h2>Etapas</h2>
 <h3>
