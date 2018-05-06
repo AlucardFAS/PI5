@@ -1,59 +1,70 @@
-# searchStudio.py
-
-import urllib2
+#import urllib2
+import urllib.request
+import string
+import searchStudio
+from textwrap import dedent
 from bs4 import BeautifulSoup
 
-def studioSearch(studio,soup):
+replace = "-"
 
-    if(soup.find_all('a', title="Kinema Citrus")):
-        studio = "Kinema Citrus"
-    elif(soup.find_all('a', title="Bones")):
-        studio = "Bones"
-    elif(soup.find_all('a', title="A-1 Pictures")):
-        studio = "A-1 Pictures"
-    elif(soup.find_all('a', title="Production I.G")):
-        studio = "Production I.G"
-    elif(soup.find_all('a', title="Kyoto Animation")):
-        studio = "Kyoto Animation"
-    elif(soup.find_all('a', title="J.C.Staff")):
-        studio = "J.C. Staff"
-    elif(soup.find_all('a', title="Madhouse")):
-        studio = "Madhouse Inc."
-    elif(soup.find_all('a', title="Wit Studio")):
-        studio = "Wit Studio"
-    elif(soup.find_all('a', title="Aniplex")):
-        studio = "Aniplex"
-    elif(soup.find_all('a', title="ADV Films")):
-        studio = "ADV Films"
-    elif(soup.find_all('a', title="Aniplex of America")):
-        studio = "Aniplex of America"
-    elif(soup.find_all('a', title="Bandai Visual")):
-        studio = "Bandai Visual"
-    elif(soup.find_all('a', title="Sunrise")):
-        studio = "Sunrise"
-    elif(soup.find_all('a', title="Manglobe")):
-        studio = "Manglobe"
-    elif(soup.find_all('a', title="Toei Animation")):
-        studio = "Toei Animation"
-    elif(soup.find_all('a', title="Studio Pierrot")):
-        studio = "Studio Pierrot"
-    elif(soup.find_all('a', title="Funimation")):
-        studio = "Funimation"
-    elif(soup.find_all('a', title="White Fox")):
-        studio = "White Fox"
-    elif(soup.find_all('a', title="TNK")):
-        studio = "TNK"
-    elif(soup.find_all('a', title="Lerche")):
-        studio = "Lerche"
-    elif(soup.find_all('a', title="Imagin")):
-        studio = "Imagin"
-    elif(soup.find_all('a', title="AIC Build")):
-        studio = "AIC Build"
-    elif(soup.find_all('a', title="TMS Entertainment")):
-        studio = "TMS Entertainment"
-    elif(soup.find_all('a', title="Nippon Animation")):
-        studio = "Nippon Animation"
+url = "https://myanimelist.net/anime/"
+
+file = open("test.txt", "w", encoding="utf-8")
+
+for x in range(1, 1000) :
+
+    try:
+        page = urllib.request.urlopen(url + str(x))
+    except urllib.error.HTTPError as err:
+            print("/////////////////////////////////////////////////////////////////////////////")
+            print("No anime with the ID " + str(x))
+
     else:
-        studio = "Estudio nao listado"
+        soup = BeautifulSoup(page,"html.parser")
+        spanTagDark = soup.find_all("span", {"class": "dark_text"})
+        
+##title anime
+        print("/////////////////////////////////////////////////////////////////////////////")
+        title = soup.title.string
+        title = title.replace(" - MyAnimeList.net\n", "")
+        title = title.replace(" ", replace)
+        print(title)
 
-    return studio
+        idstr = "Anime ID: " + str(x)
+        idstr = idstr.replace("\n", "")
+        print(idstr)
+
+##episodes
+        episode = soup.find('span', id="curEps").string
+        print ("Episodios: " + episode) 
+
+##Score
+        ratingValue = soup.find('span', itemprop="ratingValue").string
+        print ("Pontuacao/Nota: " + ratingValue) 
+
+##number of members rating
+        ratingCount = soup.find('span', itemprop="ratingCount").string
+        ratingCount = ratingCount.replace(",", "")
+        print ("Numero de votos: " + ratingCount) 
+
+##Studio
+        studio = searchStudio.studioSearch((""),soup)
+        studio = studio.replace(" ", replace)
+        print ("Estudio: " + studio)
+
+##rating
+        for tag in spanTagDark: #search for rating in span = dark_text
+            if 'Rating:' in tag:
+                rating = tag.parent
+
+#exclude code(div and scan), normalize rating in string(less indent)
+        rating = str(rating)
+        ratingLine = rating.split("\n")
+        rating = ratingLine[2]
+        rating = dedent(rating)
+        rating = rating.replace(" ", replace)
+        print("Classificacao: " + rating)
+        file.write(title + ", " + studio + ", " + rating + ", " + episode + ", " + ratingCount + ", " + ratingValue)
+
+file.close()
+
