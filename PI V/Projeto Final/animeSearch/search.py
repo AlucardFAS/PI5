@@ -10,7 +10,7 @@ url = "https://myanimelist.net/anime/"
 
 file = open("test.txt", "w", encoding="utf-8")
 
-for x in range(1, 1000) :
+for x in range(11750, 11759) :
 
     try:
         page = urllib.request.urlopen(url + str(x))
@@ -44,7 +44,7 @@ for x in range(1, 1000) :
 ##number of members rating
         ratingCount = soup.find('span', itemprop="ratingCount").string
         ratingCount = ratingCount.replace(",", "")
-        print ("Numero de votos: " + ratingCount) 
+        print ("Numero de votos: " + ratingCount)
 
 ##Studio
         studio = searchStudio.studioSearch((""),soup)
@@ -52,9 +52,53 @@ for x in range(1, 1000) :
         print ("Estudio: " + studio)
 
 ##rating
+        
         for tag in spanTagDark: #search for rating in span = dark_text
             if 'Rating:' in tag:
                 rating = tag.parent
+
+#Source
+
+        for tag in spanTagDark:
+            if 'Source:' in tag:
+                source = tag.parent
+
+        source = str(source)
+        sourceLine = source.split("\n")
+        source = sourceLine[2]
+        source = dedent(source)
+        source = source.replace(" ", replace)
+        print("Origem: " + source)
+
+#Genres
+
+        for tag in spanTagDark:
+            if 'Genres:' in tag:
+                genres = tag.parent
+
+        #print(genres)
+
+        genres = str(genres)
+        firstIndex = genres.find("")
+
+        firstGenre = secondGenre = thirdGenre = ""
+        
+        split = genres.split("title=\"")
+
+        if len(split) >= 1:
+            firstEnd = split[1].find("\"")
+            firstGenre = split[1][:firstEnd]
+
+        if len(split) >= 2: 
+            secondEnd = split[2].find("\"")
+            secondGenre = split[2][:secondEnd]
+
+        if len(split) >= 3: 
+            thirdEnd = split[3].find("\"")
+            thirdGenre = split[3][:thirdEnd]
+
+        print("Generos: " + firstGenre + ", " + secondGenre + ", " + thirdGenre)
+        
 
 #exclude code(div and scan), normalize rating in string(less indent)
         rating = str(rating)
