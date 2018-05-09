@@ -3804,3 +3804,444 @@
 30279, Finished Airing, Sotsu, Estudio-nao-listado, Manga, Comedy, School, Shoujo Ai, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 8.03
 30290, Finished Airing, NAZ, Lerche, Original, Mystery, Comedy, Super Power, 1-hr.-8-min., G---All-Ages, 1, 7.17
 30292, Finished Airing, TV-Tokyo, Estudio-nao-listado, Unknown, Game, School, Slice of Life, 12-min., PG-13---Teens-13-or-older, 1, 6.81
+32016, Finished Airing, Queen-Bee, Estudio-nao-listado, Manga, Hentai, Comedy, Supernatural, 20-min.-per-ep., Rx---Hentai, 2, 6.24
+32023, Finished Airing, Dentsu, Estudio-nao-listado, Original, Action, Sci-Fi, Drama, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.40
+32051, Finished Airing, Fuji-TV, Toei-Animation, Manga, Action, Adventure, Comedy, 1-hr.-46-min., PG-13---Teens-13-or-older, 1, 7.44
+32071, Finished Airing, Dentsu, Estudio-nao-listado, Manga, Action, Sci-Fi, Horror, 1-hr.-36-min., R+---Mild-Nudity, 1, 7.62
+32084, Finished Airing, Bushiroad, Estudio-nao-listado, Card-game, Game, Comedy, School, 1-min.-per-ep., PG-13---Teens-13-or-older, 12, 5.40
+32086, Finished Airing, Starchild-Records, Estudio-nao-listado, Manga, Action, Sci-Fi, Psychological, 1-hr.-45-min., PG-13---Teens-13-or-older, 1, 7.34
+32093, Finished Airing, Bandai-Visual, Bandai-Visual, Web-manga, Slice of Life, Comedy, School, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 8.03
+32094, Finished Airing, Haoliners-Animation-League, Studio-Deen, Light-novel, Comedy, Magic, Fantasy, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.23
+32105, Finished Airing, TV-Tokyo, Studio-Pierrot, Manga, Action, Supernatural, Romance, 24-min.-per-ep., PG-13---Teens-13-or-older, 50, 7.41
+32108, Finished Airing, Bandai, Toei-Animation, Original, Action, Adventure, Comedy, 1-hr.-28-min., PG-13---Teens-13-or-older, 1, 7.69
+32122, Finished Airing, TV-Tokyo, Estudio-nao-listado, Manga, Action, Comedy, Historical, 12-min., PG-13---Teens-13-or-older, 1, 8.14
+32151, Finished Airing, Starchild-Records, Estudio-nao-listado, Original, Sci-Fi, Music, Slice of Life, 8-min.-per-ep., PG-13---Teens-13-or-older, 4, 7.01
+32160, Finished Airing, Kinoshita-Group-Holdings, Toei-Animation, Original, Action, Music, Comedy, 1-hr.-10-min., G---All-Ages, 1, 7.06
+32171, Finished Airing, Sotsu, Estudio-nao-listado, Card-game, Adventure, Magic, Fantasy, 23-min.-per-ep., R+---Mild-Nudity, 12, 6.13
+32175, Finished Airing, Kadokawa-Shoten, Funimation, Manga, Comedy, Shoujo, Slice of Life, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.41
+32182, Finished Airing, Warner-Bros., Bones, Web-manga, Action, Slice of Life, Comedy, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 8.51
+32202, Finished Airing, Broccoli, Sunrise, Original, Magic, Music, Romance, 6-min., PG-13---Teens-13-or-older, 1, 6.74
+32214, Finished Airing, Lantis, Funimation, Manga, Action, Comedy, Ecchi, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.60
+32215, Finished Airing, Genco, TNK, Light-novel, Action, Ecchi, Comedy, 24-min., R+---Mild-Nudity, 1, 7.64
+32228, Finished Airing, DAX-Production, Estudio-nao-listado, Manga, Comedy, Shounen, Sports, 2-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.80
+32245, Finished Airing, Sotsu, Estudio-nao-listado, Original, Action, Sci-Fi, Mecha, 24-min.-per-ep., R---17+-(violence-&amp;-profanity), 26, 7.35
+32248, Currently Airing, JTB-Entertainment, Estudio-nao-listado, Original, Action, Historical, Samurai, 16-min., PG-13---Teens-13-or-older, ?, 6.02
+32262, Finished Airing, TV-Tokyo, Funimation, Web-manga, Harem, Comedy, Supernatural, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.90
+32268, Finished Airing, Aniplex, Aniplex, Light-novel, Mystery, Comedy, Supernatural, 14-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 7.77
+32271, Finished Airing, Genco, Funimation, Visual-novel, Action, Military, Super Power, 23-min.-per-ep., R---17+-(violence-&amp;-profanity), 11, 5.48
+32281, Finished Airing, Kadokawa-Shoten, Funimation, Original, Supernatural, Drama, Romance, 1-hr.-46-min., PG-13---Teens-13-or-older, 1, 9.19
+32282, Finished Airing, Dentsu, J.C.-Staff, Manga, Ecchi, School, Shounen, 24-min.-per-ep., PG-13---Teens-13-or-older, 13, 8.46
+32301, Finished Airing, Sotsu, Estudio-nao-listado, Original, Sci-Fi, Comedy, Police, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.49
+32311, Finished Airing, EMI, Estudio-nao-listado, Original, Action, Drama, Mecha, 2-min., G---All-Ages, 1, 6.63
+32313, Finished Airing, Bandai-Visual, Bones, Original, Action, Sci-Fi, Mystery, 24-min.-per-ep., R+---Mild-Nudity, 11, 7.16
+32321, Finished Airing, Telecom-Animation-Film, TMS-Entertainment, Original, Action, Adventure, Comedy, 1-hr.-31-min., PG-13---Teens-13-or-older, 1, 6.53
+32323, Finished Airing, Tencent-Animation, Estudio-nao-listado, Web-manga, Comedy, Harem, Romance, 13-min.-per-ep., PG-13---Teens-13-or-older, 15, 7.22
+32360, Finished Airing, Aniplex, A-1-Pictures, Original, Action, Supernatural, Magic, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.65
+32370, Finished Airing, TV-Tokyo, Aniplex, Manga, Action, Adventure, Super Power, 24-min.-per-ep., R---17+-(violence-&amp;-profanity), 13, 7.92
+32379, Finished Airing, WOWOW, Funimation, Manga, Action, Adventure, Demons, 24-min.-per-ep., R+---Mild-Nudity, 12, 6.70
+32380, Finished Airing, Half-H.P-Studio, Studio-Deen, Light-novel, Adventure, Comedy, Supernatural, 23-min., PG-13---Teens-13-or-older, 1, 7.86
+32409, Finished Airing, Kadokawa-Shoten, Estudio-nao-listado, Light-novel, Comedy, Demons, Ecchi, 4-min.-per-ep., R+---Mild-Nudity, 5, 7.16
+32437, Finished Airing, Fuji-TV, Toei-Animation, Manga, Action, Adventure, Comedy, 1-hr.-15-min., PG-13---Teens-13-or-older, 1, 6.94
+32438, Finished Airing, WOWOW, Estudio-nao-listado, Original, Mystery, Comedy, Horror, 24-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 5.66
+32454, Finished Airing, DAX-Production, Estudio-nao-listado, Manga, Comedy, Sports, Shounen, 3-min.-per-ep., PG-13---Teens-13-or-older, 12, 5.87
+32483, Finished Airing, Bandai-Visual, Bandai-Visual, Novel, Sports, Drama, School, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.84
+32491, Finished Airing, Lantis, Estudio-nao-listado, Original, Slice of Life, Psychological, Romance, 7-min.-per-ep., G---All-Ages, 4, 7.77
+32494, Finished Airing, Dentsu, Estudio-nao-listado, Manga, Sports, School, Shounen, 24-min.-per-ep., PG-13---Teens-13-or-older, 24, 7.31
+32521, Finished Airing, Bandai, Estudio-nao-listado, Game, Game, Comedy, Kids, 30-min., G---All-Ages, 1, 5.63
+32526, Finished Airing, Bandai-Visual, Bandai-Visual, Other, Music, Slice of Life, School, 24-min.-per-ep., PG-13---Teens-13-or-older, 13, 7.54
+32542, Finished Airing, Kadokawa-Shoten, Studio-Deen, Manga, Slice of Life, Comedy, School, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.68
+32543, Finished Airing, Penta-Show-Studios, Estudio-nao-listado, Original, Action, Adventure, Comedy, 12-min.-per-ep., PG-13---Teens-13-or-older, 13, 7.11
+32551, Finished Airing, Bandai, Toei-Animation, Original, Action, Adventure, Comedy, 1-hr.-45-min., PG-13---Teens-13-or-older, 1, 7.96
+32555, Finished Airing, Kadokawa-Shoten, Estudio-nao-listado, 4-koma-manga, Game, Slice of Life, Comedy, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.92
+32574, Finished Airing, TOHO-animation, Bones, Manga, Action, Comedy, Super Power, 24-min., R---17+-(violence-&amp;-profanity), 1, 7.45
+32582, Finished Airing, TV-Tokyo, Estudio-nao-listado, Original, Action, Adventure, Comedy, 24-min.-per-ep., PG-13---Teens-13-or-older, 51, 5.59
+32601, Finished Airing, Shogakukan-Productions, OLM, Manga, Romance, School, Shoujo, 24-min.-per-ep., PG---Children, 12, 6.58
+32603, Finished Airing, DAX-Production, Estudio-nao-listado, Manga, Comedy, Romance, Ecchi, 8-min.-per-ep., R+---Mild-Nudity, 12, 6.81
+32606, Finished Airing, Being, Estudio-nao-listado, Game, Comedy, Supernatural, Fantasy, 4-min.-per-ep., PG-13---Teens-13-or-older, 13, 5.45
+32648, Finished Airing, Square-Enix, Funimation, Manga, Slice of Life, Comedy, Shounen, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.46
+32664, Finished Airing, TMS-Entertainment, TMS-Entertainment, Original, Slice of Life, Comedy, Kids, 3-min.-per-ep., G---All-Ages, 13, 6.79
+32673, Finished Airing, VAP, Estudio-nao-listado, Manga, Slice of Life, Fantasy, Seinen, 22-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.79
+32681, Finished Airing, Half-H.P-Studio, Funimation, Original, Action, Adventure, Comedy, 7-min.-per-ep., PG-13---Teens-13-or-older, 13, 7.71
+32682, Finished Airing, Directions, Estudio-nao-listado, Original, Mystery, Horror, Supernatural, 7-min.-per-ep., R---17+-(violence-&amp;-profanity), 13, 6.53
+32684, Finished Airing, Bandai-Visual, Bandai-Visual, Visual-novel, Comedy, School, Shoujo, 25-min., PG-13---Teens-13-or-older, 1, 6.59
+32686, Finished Airing, Sotsu, Xebec, Manga, Action, Sports, Ecchi, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.30
+32696, Finished Airing, Square-Enix, Funimation, Web-manga, Comedy, Demons, Supernatural, 24-min.-per-ep., PG-13---Teens-13-or-older, 13, 7.45
+32697, Finished Airing, Hobi-Animation, Estudio-nao-listado, Visual-novel, Harem, Historical, Romance, 5-min.-per-ep., PG-13---Teens-13-or-older, 12, 5.49
+32707, Finished Airing, Sanrio, Estudio-nao-listado, Original, Comedy, Magic, Fantasy, 4-min.-per-ep., PG---Children, 3, 5.92
+32717, Finished Airing, TV-Tokyo, Estudio-nao-listado, Original, Music, Slice of Life, School, 24-min.-per-ep., PG---Children, 100, 7.78
+32729, Finished Airing, TMS-Entertainment, Funimation, Manga, Sci-Fi, Drama, Romance, 24-min.-per-ep., PG-13---Teens-13-or-older, 13, 7.71
+32789, Finished Airing, Amuse, Estudio-nao-listado, Music, Music, Supernatural, Vampire, 2-min., G---All-Ages, 1, 5.24
+32790, Finished Airing, Amuse, Estudio-nao-listado, Music, Music, Supernatural, Vampire, 4-min., PG---Children, 1, 5.12
+32792, Finished Airing, Bandai-Visual, Bandai-Visual, Novel, Action, Drama, Mecha, 23-min.-per-ep., PG-13---Teens-13-or-older, 22, 7.56
+32816, Finished Airing, DAX-Production, Estudio-nao-listado, Manga, Comedy, Sports, Shounen, 2-min.-per-ep., PG-13---Teens-13-or-older, 2, 6.23
+32817, Finished Airing, Earth-Star-Entertainment, Estudio-nao-listado, Manga, Comedy, Sports, Shounen, 2-min.-per-ep., PG-13---Teens-13-or-older, 2, 6.31
+32828, Finished Airing, Toei-Video, Shin-Ei-Animation, Manga, Comedy, Seinen, Slice of Life, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.57
+32836, Finished Airing, Memory-Tech, Estudio-nao-listado, Original, Action, Music, Sci-Fi, 24-min.-per-ep., PG-13---Teens-13-or-older, 13, 7.66
+32866, Finished Airing, Kadokawa-Shoten, Funimation, Original, Action, Military, Sci-Fi, 23-min.-per-ep., R+---Mild-Nudity, 12, 6.89
+32867, Finished Airing, Lantis, Bones, Manga, Action, Mystery, Supernatural, 23-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 8.32
+32878, Finished Airing, Yomiuri-Telecasting, Studio-Pierrot, Manga, Action, Sci-Fi, Space, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.30
+32881, Finished Airing, TV-Asahi, Toei-Animation, Manga, Action, Sports, Drama, 23-min.-per-ep., PG-13---Teens-13-or-older, 38, 7.08
+32887, Finished Airing, Genco, J.C.-Staff, Light-novel, Action, Adventure, Fantasy, 25-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.10
+32899, Finished Airing, TBS, Funimation, Manga, Harem, Comedy, Romance, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.41
+32900, Finished Airing, Aniplex, Aniplex, Light-novel, Action, Magic, Supernatural, 1-hr.-30-min., R---17+-(violence-&amp;-profanity), 1, 7.59
+32901, Finished Airing, Aniplex, A-1-Pictures, Light-novel, Comedy, Drama, Romance, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.90
+32902, Finished Airing, Production-I.G, Production-I.G, Manga, Slice of Life, Magic, Fantasy, 23-min.-per-ep., PG-13---Teens-13-or-older, 3, 8.26
+32924, Finished Airing, TBS, J.C.-Staff, 4-koma-manga, Slice of Life, Comedy, Fantasy, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.19
+32935, Finished Airing, TOHO-animation, Production-I.G, Manga, Comedy, Sports, Drama, 24-min.-per-ep., PG-13---Teens-13-or-older, 10, 8.99
+32937, Finished Airing, Kadokawa-Shoten, Studio-Deen, Light-novel, Adventure, Comedy, Parody, 23-min.-per-ep., PG-13---Teens-13-or-older, 10, 8.36
+32947, Finished Airing, Aniplex, Aniplex, Novel, Slice of Life, Sports, Drama, 23-min.-per-ep., PG-13---Teens-13-or-older, 11, 5.78
+32948, Finished Airing, Aniplex, Aniplex, Novel, Slice of Life, Drama, Romance, 22-min.-per-ep., PG-13---Teens-13-or-older, 11, 7.68
+32949, Finished Airing, Aniplex, Aniplex, Manga, Drama, Romance, Ecchi, 22-min.-per-ep., R+---Mild-Nudity, 12, 7.60
+32951, Finished Airing, Media-Factory, Funimation, Light-novel, Action, Magic, Fantasy, 24-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 7.36
+32954, Finished Airing, VAP, Estudio-nao-listado, Manga, Slice of Life, Comedy, Supernatural, 2-min.-per-ep., PG-13---Teens-13-or-older, 9, 5.99
+32961, Finished Airing, Sotsu, Funimation, Original, Action, Sci-Fi, Mecha, 24-min.-per-ep., PG-13---Teens-13-or-older, 13, 6.03
+32979, Finished Airing, Sotsu, Estudio-nao-listado, Original, Sci-Fi, Adventure, Comedy, 23-min.-per-ep., PG-13---Teens-13-or-older, 13, 7.78
+32983, Finished Airing, TV-Tokyo, Aniplex, Manga, Slice of Life, Supernatural, Drama, 23-min.-per-ep., PG-13---Teens-13-or-older, 11, 8.64
+32998, Finished Airing, Shochiku, Funimation, Original, Action, Drama, Historical, 24-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 7.89
+33003, Finished Airing, Genco, Lerche, Light-novel, Action, Supernatural, Magic, 24-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 7.13
+33011, Finished Airing, Pony-Canyon, Estudio-nao-listado, Original, Comedy, Parody, Fantasy, 5-min.-per-ep., PG---Children, 12, 6.00
+33013, Finished Airing, Kadokawa-Shoten, Studio-Deen, Manga, Slice of Life, Comedy, Drama, 23-min.-per-ep., PG-13---Teens-13-or-older, 2, 7.77
+33018, Finished Airing, Aniplex, Aniplex, Card-game, Action, Fantasy, Historical, 23-min.-per-ep., PG-13---Teens-13-or-older, 13, 6.80
+33019, Finished Airing, Haoliners-Animation-League, Studio-Deen, Light-novel, Comedy, Magic, Fantasy, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.05
+33023, Finished Airing, Marvelous, Funimation, Card-game, Action, Slice of Life, Comedy, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.89
+33024, Finished Airing, Sotsu, Estudio-nao-listado, Manga, Action, Sci-Fi, Space, 23-min., PG-13---Teens-13-or-older, 1, 6.48
+33026, Finished Airing, Yomiuri-Telecasting, Tatsunoko-Production, Original, Adventure, Comedy, Mecha, 23-min.-per-ep., PG-13---Teens-13-or-older, 24, 5.87
+33027, Finished Airing, Yomiuri-Telecasting, Tatsunoko-Production, Original, Action, Sci-Fi, Super Power, 22-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.63
+33032, Finished Airing, NBCUniversal-Entertainment-Japan, Estudio-nao-listado, Manga, Action, Adventure, Comedy, 41-min., R---17+-(violence-&amp;-profanity), 1, 7.84
+33034, Finished Airing, Genco, Estudio-nao-listado, 4-koma-manga, Slice of Life, Comedy, School, 50-min., PG-13---Teens-13-or-older, 1, 7.58
+33036, Finished Airing, Aniplex, Aniplex, Music, Comedy, Drama, Romance, 1-hr.-3-min., PG-13---Teens-13-or-older, 1, 7.21
+33041, Finished Airing, Dentsu, Estudio-nao-listado, Original, Action, Sci-Fi, Drama, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.98
+33047, Finished Airing, Aniplex, Aniplex, Game, Action, Magic, Fantasy, 24-min.-per-ep., R---17+-(violence-&amp;-profanity), 10, 6.52
+33048, Finished Airing, Sunrise, Sunrise, Original, Action, Sci-Fi, Romance, Unknown, PG-13---Teens-13-or-older, 1, 6.18
+33051, Finished Airing, Sotsu, Sunrise, Original, Action, Drama, Mecha, 24-min.-per-ep., R---17+-(violence-&amp;-profanity), 25, 8.26
+33075, Finished Airing, Lantis, Kyoto-Animation, Light-novel, Action, Comedy, Fantasy, 23-min., PG-13---Teens-13-or-older, 1, 6.82
+33089, Finished Airing, TV-Tokyo, Estudio-nao-listado, Game, Adventure, Comedy, Fantasy, 24-min.-per-ep., PG---Children, 12, 7.73
+33095, Finished Airing, Mainichi-Broadcasting-System, Studio-Deen, Manga, Drama, Historical, Josei, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 8.87
+33113, Finished Airing, Sotsu, Funimation, Visual-novel, Sci-Fi, Adventure, Harem, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 5.32
+33142, Finished Airing, TV-Tokyo, Funimation, Light-novel, Adventure, Comedy, Parody, 2-min.-per-ep., PG-13---Teens-13-or-older, 11, 6.76
+33156, Finished Airing, Bandai-Visual, Bandai-Visual, Original, Comedy, School, Slice of Life, 11-min., PG-13---Teens-13-or-older, 1, 6.56
+33161, Finished Airing, 5pb., Estudio-nao-listado, Light-novel, Comedy, Romance, School, 23-min., PG-13---Teens-13-or-older, 1, 8.19
+33164, Finished Airing, Lantis, Kyoto-Animation, Light-novel, Comedy, Supernatural, Fantasy, 6-min.-per-ep., PG-13---Teens-13-or-older, 7, 6.33
+33173, Finished Airing, TOHO-animation, Estudio-nao-listado, 4-koma-manga, Comedy, School, Slice of Life, 6-min.-per-ep., PG-13---Teens-13-or-older, 3, 6.73
+33183, Finished Airing, ABC-Animation, Toei-Animation, Original, Action, Slice of Life, Magic, 1-hr.-4-min., G---All-Ages, 1, 7.39
+33184, Finished Airing, flying-DOG, Estudio-nao-listado, Game, Action, Sci-Fi, School, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 5.87
+33191, Currently Airing, Warner-Bros., Estudio-nao-listado, Manga, Action, Mystery, Supernatural, 23-min.-per-ep., R---17+-(violence-&amp;-profanity), 2, 7.38
+33195, Finished Airing, L²Studio, Estudio-nao-listado, Web-manga, Action, Adventure, Comedy, 1-hr.-40-min., PG-13---Teens-13-or-older, 1, 6.74
+33203, Finished Airing, Shogakukan-Productions, Estudio-nao-listado, Manga, Music, Romance, Shoujo, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.16
+33204, Finished Airing, Production-I.G, Production-I.G, Original, Sci-Fi, Adventure, Fantasy, 1-hr.-50-min., PG-13---Teens-13-or-older, 1, 7.11
+33205, Finished Airing, Production-I.G, Production-I.G, Game, Action, Sci-Fi, Space, 14-min., G---All-Ages, 1, 6.29
+33206, Finished Airing, Lantis, Kyoto-Animation, Manga, Slice of Life, Comedy, Fantasy, 24-min.-per-ep., PG-13---Teens-13-or-older, 13, 8.19
+33209, Finished Airing, Tencent-Animation, Estudio-nao-listado, Manga, Comedy, Historical, Supernatural, 15-min.-per-ep., PG-13---Teens-13-or-older, 14, 7.68
+33219, Finished Airing, Aniplex, Aniplex, Music, Sci-Fi, Slice of Life, Comedy, 20-min., PG-13---Teens-13-or-older, 1, 6.89
+33222, Finished Airing, DAX-Production, Estudio-nao-listado, Manga, Slice of Life, Comedy, School, 3-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.66
+33253, Finished Airing, TOHO-animation, Estudio-nao-listado, Manga, Action, Mystery, Horror, 24-min.-per-ep., R---17+-(violence-&amp;-profanity), 13, 7.91
+33255, Finished Airing, TV-Tokyo, J.C.-Staff, Manga, Slice of Life, Comedy, Supernatural, 5-min.-per-ep., PG-13---Teens-13-or-older, 120, 8.56
+33263, Finished Airing, Aniplex, Aniplex, Novel, Action, Mystery, Supernatural, 30-min.-per-ep., R---17+-(violence-&amp;-profanity), 8, 7.92
+33286, Finished Airing, Movic, Estudio-nao-listado, Light-novel, Action, Supernatural, Ecchi, 25-min.-per-ep., R+---Mild-Nudity, 8, 7.27
+33299, Finished Airing, Broccoli, Sunrise, Original, Music, Magic, Romance, 23-min.-per-ep., PG-13---Teens-13-or-older, 13, 7.26
+33309, Finished Airing, Tencent-Animation, Estudio-nao-listado, Web-manga, Action, Mystery, Supernatural, 13-min.-per-ep., PG-13---Teens-13-or-older, 14, 6.47
+33337, Finished Airing, Bandai-Visual, Madhouse-Inc., Manga, Mystery, Police, Drama, 24-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 7.73
+33339, Finished Airing, Tencent-Animation, Estudio-nao-listado, Web-manga, Comedy, Supernatural, Thriller, 10-min.-per-ep., PG-13---Teens-13-or-older, 63, 6.72
+33352, Finished Airing, Lantis, Kyoto-Animation, Light-novel, Slice of Life, Drama, Fantasy, 23-min.-per-ep., PG-13---Teens-13-or-older, 13, 8.59
+33354, Currently Airing, NHK, Madhouse-Inc., Manga, Adventure, Comedy, Fantasy, 25-min.-per-ep., PG---Children, 22, 8.23
+33357, Finished Airing, Tencent-Animation, Estudio-nao-listado, Web-manga, Action, Comedy, Horror, 11-min.-per-ep., PG-13---Teens-13-or-older, 39, 6.58
+33362, Finished Airing, NBCUniversal-Entertainment-Japan, Estudio-nao-listado, Original, Music, Slice of Life, School, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.48
+33371, Finished Airing, NHK, Production-I.G, Manga, Action, Sci-Fi, Mecha, 25-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.95
+33377, Finished Airing, Bandai-Visual, Shin-Ei-Animation, Original, Sci-Fi, Mystery, Psychological, 23-min.-per-ep., PG-13---Teens-13-or-older, 24, 6.29
+33378, Finished Airing, Warner-Bros., Nippon-Animation, Manga, Comedy, Historical, Romance, 1-hr.-37-min., None, 1, 7.21
+33417, Finished Airing, Kadokawa-Shoten, Studio-Deen, Manga, Slice of Life, Comedy, Drama, 24-min.-per-ep., PG-13---Teens-13-or-older, 10, 7.69
+33419, Finished Airing, Shogakukan-Productions, OLM, Manga, Romance, School, Shoujo, 24-min.-per-ep., PG---Children, 12, 6.79
+33421, Finished Airing, Haoliners-Animation-League, Estudio-nao-listado, Manga, Action, Super Power, Supernatural, 24-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 6.74
+33433, Finished Airing, Shochiku, Funimation, Original, Action, Historical, Military, 25-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 6.84
+33434, Finished Airing, Bandai, Estudio-nao-listado, Original, Sci-Fi, Comedy, Parody, 23-min.-per-ep., PG---Children, 50, 5.89
+33446, Finished Airing, Tencent-Animation, Estudio-nao-listado, Manga, Comedy, Historical, Supernatural, 14-min.-per-ep., PG-13---Teens-13-or-older, 13, 7.75
+33475, Finished Airing, Media-Factory, Estudio-nao-listado, Manga, Action, Comedy, School, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.14
+33478, Finished Airing, Kodansha, J.C.-Staff, Manga, Action, Sci-Fi, Magic, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.14
+33486, Finished Airing, Dentsu, Bones, Manga, Action, Comedy, Super Power, 23-min.-per-ep., PG-13---Teens-13-or-older, 25, 8.76
+33487, Finished Airing, Sotsu, Funimation, Manga, Harem, Comedy, Romance, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.03
+33489, Finished Airing, Ultra-Super-Pictures, Estudio-nao-listado, Original, Adventure, Comedy, Fantasy, 24-min.-per-ep., PG---Children, 25, 8.13
+33490, Finished Airing, Shogakukan-Productions, Shin-Ei-Animation, Manga, Adventure, Mystery, Comedy, 24-min.-per-ep., PG---Children, 13, 7.40
+33491, Finished Airing, TBS, Funimation, Manga, Slice of Life, Comedy, Shoujo, 24-min., PG---Children, 1, 7.13
+33493, Finished Airing, Next, Estudio-nao-listado, Original, Action, Mecha, Sci-Fi, 7-min., PG-13---Teens-13-or-older, 1, 5.11
+33502, Finished Airing, Lantis, Funimation, Light-novel, Sci-Fi, Drama, Romance, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.85
+33506, Finished Airing, Aniplex, A-1-Pictures, Manga, Action, Demons, Supernatural, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.69
+33508, Finished Airing, Yaoqi, Estudio-nao-listado, Original, Game, Mystery, Parody, 9-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 5.53
+33524, Finished Airing, TBS, Studio-Deen, Manga, Slice of Life, Comedy, School, 24-min., PG-13---Teens-13-or-older, 1, 6.85
+33541, Finished Airing, Pony-Canyon-Enterprise, Estudio-nao-listado, Original, Game, Space, Comedy, 13-min.-per-ep., PG---Children, 12, 4.83
+33546, Finished Airing, Ultra-Super-Pictures, Estudio-nao-listado, Game, Action, Fantasy, Game, 51-min., PG---Children, 1, 6.99
+33562, Finished Airing, Wawayu-Animation, Estudio-nao-listado, Manga, Action, Comedy, Supernatural, 11-min.-per-ep., None, 12, 6.46
+33566, Finished Airing, TMS-Entertainment, TMS-Entertainment, Manga, Action, Martial Arts, Shounen, 15-min., R---17+-(violence-&amp;-profanity), 1, 6.19
+33581, Finished Airing, Avex-Pictures, Estudio-nao-listado, Manga, Action, Harem, Comedy, 55-min., PG-13---Teens-13-or-older, 1, 7.41
+33589, Finished Airing, KlockWorx, Estudio-nao-listado, Original, Action, Drama, Magic, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.26
+33605, Finished Airing, Tencent-Animation, Estudio-nao-listado, Web-manga, Action, Comedy, Supernatural, 14-min.-per-ep., PG-13---Teens-13-or-older, 20, 7.13
+33654, Finished Airing, Sotsu, Estudio-nao-listado, Manga, Drama, Romance, School, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.61
+33669, Finished Airing, Kinoshita-Group-Holdings, Estudio-nao-listado, Original, Action, Slice of Life, Magic, 6-min., G---All-Ages, 1, 6.10
+33672, Finished Airing, TV-Asahi, Shin-Ei-Animation, Manga, Adventure, Comedy, Kids, 1-hr.-41-min., PG---Children, 1, 7.46
+33681, Finished Airing, VAP, Estudio-nao-listado, Manga, Comedy, Slice of Life, Supernatural, 2-min., PG-13---Teens-13-or-older, 1, 6.02
+33685, Finished Airing, Production-I.G, Production-I.G, Manga, Action, Sci-Fi, Adventure, 2-hr., PG---Children, 1, 6.47
+33702, Finished Airing, Tencent-Animation, Estudio-nao-listado, Web-manga, Adventure, Horror, Police, 10-min.-per-ep., R---17+-(violence-&amp;-profanity), 10, 6.62
+33709, Finished Airing, Pony-Canyon, Funimation, Original, Action, Demons, Fantasy, 23-min., PG-13---Teens-13-or-older, 1, 6.24
+33713, Finished Airing, Sotsu, Sunrise, Manga, Action, Adventure, Comedy, 25-min.-per-ep., R+---Mild-Nudity, 2, 7.17
+33724, Finished Airing, Warner-Bros., Estudio-nao-listado, Game, Action, Game, Fantasy, 1-hr.-44-min., G---All-Ages, 1, 6.91
+33726, Finished Airing, Studio-Pierrot, Studio-Pierrot, Manga, Action, Adventure, Comedy, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.36
+33728, Finished Airing, flying-DOG, Estudio-nao-listado, Game, Action, Adventure, Fantasy, 1-hr.-26-min., PG-13---Teens-13-or-older, 1, 7.19
+33729, Finished Airing, Pazzy-Entertainment, Estudio-nao-listado, Game, Action, Adventure, Fantasy, 1-hr.-29-min., PG-13---Teens-13-or-older, 1, 7.18
+33730, Finished Airing, Pazzy-Entertainment, Estudio-nao-listado, Game, Action, Adventure, Fantasy, 1-hr.-33-min., PG-13---Teens-13-or-older, 1, 7.21
+33731, Finished Airing, Media-Factory, Estudio-nao-listado, Manga, Comedy, Demons, Supernatural, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.57
+33743, Finished Airing, Studio-Tulip, Funimation, Manga, Drama, Ecchi, Music, 24-min.-per-ep., R+---Mild-Nudity, 12, 6.73
+33758, Finished Airing, Tencent-Penguin-Pictures, Estudio-nao-listado, Manga, Action, Historical, Supernatural, 16-min.-per-ep., PG-13---Teens-13-or-older, 30, 7.38
+33771, Finished Airing, Haoliners-Animation-League, Estudio-nao-listado, Novel, Action, Comedy, School, 12-min.-per-ep., PG-13---Teens-13-or-older, 12, 5.56
+33783, Finished Airing, TOHO-animation, Estudio-nao-listado, Other, Action, Adventure, Sci-Fi, 1-hr.-29-min., None, 1, 6.73
+33788, Finished Airing, Sotsu, J.C.-Staff, Music, Music, Comedy, School, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.83
+33797, Finished Airing, Bandai-Visual, Bandai-Visual, Original, Sci-Fi, Space, Mecha, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.78
+33803, Finished Airing, King-Records, Estudio-nao-listado, Original, Historical, Demons, Supernatural, 3-min.-per-ep., PG-13---Teens-13-or-older, 13, 5.90
+33811, Finished Airing, DAX-Production, Estudio-nao-listado, Manga, Comedy, Sports, Shounen, 2-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.78
+33846, Finished Airing, Pony-Canyon, DLE, Original, Comedy, Fantasy, Parody, 2-min.-per-ep., G---All-Ages, 21, 5.42
+33850, Currently Airing, Pony-Canyon, Estudio-nao-listado, Visual-novel, Fantasy, Historical, Romance, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 5.87
+33883, Finished Airing, KJJ-Animation, Estudio-nao-listado, Web-manga, Comedy, Parody, Fantasy, 9-min.-per-ep., PG-13---Teens-13-or-older, 4, 5.96
+33889, Currently Airing, TBS, Funimation, Light-novel, Action, Drama, Fantasy, 23-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 5.60
+33947, Finished Airing, Universal-Studios, Estudio-nao-listado, Manga, Action, Fantasy, Shounen, 11-min., PG---Children, 1, 6.33
+33950, Finished Airing, Shueisha, Xebec, Manga, Action, Comedy, Magic, 27-min., PG-13---Teens-13-or-older, 1, 7.01
+33964, Finished Airing, Shochiku, Funimation, Original, Action, Historical, Drama, 24-min., R---17+-(violence-&amp;-profanity), 1, 6.37
+33985, Finished Airing, Emon, Estudio-nao-listado, Web-manga, Action, Supernatural, Vampire, 24-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 5.69
+33988, Finished Airing, Aniplex, A-1-Pictures, Manga, Comedy, Vampire, Fantasy, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.76
+33997, Finished Airing, TV-Tokyo, Estudio-nao-listado, Manga, Adventure, Game, Shounen, 26-min., G---All-Ages, 1, 6.91
+34012, Finished Airing, TV-Tokyo, Funimation, Light-novel, Comedy, Fantasy, Mystery, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.39
+34019, Finished Airing, Animax, Funimation, Manga, Action, Comedy, Supernatural, 24-min.-per-ep., R+---Mild-Nudity, 12, 7.13
+34021, Finished Airing, TMS-Entertainment, TMS-Entertainment, Manga, Action, Adventure, Comedy, 53-min., R+---Mild-Nudity, 1, 7.85
+34032, Finished Airing, Avex-Pictures, Tatsunoko-Production, Original, Music, Sports, Shoujo, Unknown, PG---Children, 1, 6.99
+34034, Currently Airing, TV-Tokyo, OLM, Game, Action, Fantasy, Game, 24-min., PG---Children, ?, 6.94
+34036, Finished Airing, YTV, TMS-Entertainment, Manga, Adventure, Mystery, Comedy, 1-hr.-33-min., PG-13---Teens-13-or-older, 1, 8.47
+34051, Finished Airing, AT-X, DLE, Game, Action, Comedy, Supernatural, 23-min.-per-ep., PG-13---Teens-13-or-older, 13, 6.71
+34055, Finished Airing, WOWOW, Funimation, Manga, Action, Adventure, Demons, 24-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 7.09
+34076, Finished Airing, Lantis, Estudio-nao-listado, Novel, Slice of Life, Comedy, Drama, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 8.22
+34085, Finished Airing, EMI, Estudio-nao-listado, Original, Action, Sci-Fi, Music, 4-min., PG-13---Teens-13-or-older, 1, 7.16
+34086, Finished Airing, Bandai-Visual, Bandai-Visual, Game, Action, Adventure, Magic, 23-min.-per-ep., PG-13---Teens-13-or-older, 13, 7.44
+34088, Finished Airing, DAX-Production, Estudio-nao-listado, Manga, Action, Comedy, Historical, 2-min.-per-ep., G---All-Ages, 12, 5.71
+34096, Finished Airing, TV-Tokyo, Aniplex, Manga, Action, Comedy, Historical, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 9.02
+34102, Finished Airing, Media-Factory, Estudio-nao-listado, Light-novel, Mystery, Super Power, Supernatural, 25-min.-per-ep., PG-13---Teens-13-or-older, 24, 7.39
+34104, Finished Airing, Bandai-Visual, Bandai-Visual, Light-novel, Action, Fantasy, Mecha, 24-min.-per-ep., PG-13---Teens-13-or-older, 13, 7.31
+34106, Finished Airing, Shogakukan-Productions, Estudio-nao-listado, Manga, Comedy, Supernatural, Romance, 24-min.-per-ep., PG-13---Teens-13-or-older, 25, 7.09
+34125, Finished Airing, Cromea, Estudio-nao-listado, Original, Action, Military, School, 24-min.-per-ep., PG-13---Teens-13-or-older, 2, 7.21
+34126, Finished Airing, Aniplex, Aniplex, Visual-novel, Action, Comedy, Supernatural, 24-min.-per-ep., PG-13---Teens-13-or-older, 11, 7.44
+34136, Finished Airing, TMS-Entertainment, TMS-Entertainment, Manga, Sci-Fi, Drama, Romance, 1-hr.-3-min., PG-13---Teens-13-or-older, 1, 7.54
+34177, Finished Airing, Sotsu, Estudio-nao-listado, Light-novel, Music, School, Slice of Life, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.79
+34208, Finished Airing, DIVE-II-Entertainment, Lerche, Other, Sci-Fi, Music, Slice of Life, 25-min.-per-ep., PG-13---Teens-13-or-older, 2, 6.72
+34223, Finished Airing, Showgate, Estudio-nao-listado, Picture-book, Music, Comedy, Fantasy, 10-min.-per-ep., PG---Children, 13, 3.31
+34238, Finished Airing, Avex-Pictures, Studio-Pierrot, Manga, Comedy, Parody, Sports, 24-min., R---17+-(violence-&amp;-profanity), 1, 7.41
+34239, Finished Airing, TV-Tokyo, Studio-Pierrot, Manga, Comedy, Parody, Sports, 2-min.-per-ep., PG-13---Teens-13-or-older, 6, 6.44
+34262, Finished Airing, TV-Tokyo, Funimation, Manga, Slice of Life, Comedy, Historical, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.58
+34277, Finished Airing, Kadokawa-Shoten, Estudio-nao-listado, 4-koma-manga, Slice of Life, Comedy, Ecchi, 22-min., PG-13---Teens-13-or-older, 1, 7.46
+34279, Currently Airing, Aniplex, A-1-Pictures, Light-novel, Action, Drama, Romance, 23-min.-per-ep., R---17+-(violence-&amp;-profanity), 24, 6.72
+34280, Finished Airing, Sony-Pictures-Entertainment, Funimation, Light-novel, Comedy, Romance, School, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.25
+34284, Finished Airing, Dentsu, Estudio-nao-listado, Light-novel, Slice of Life, Drama, Magic, 24-min.-per-ep., PG-13---Teens-13-or-older, 6, 7.66
+34289, Finished Airing, Square-Enix, J.C.-Staff, Game, Action, Sci-Fi, School, 24-min.-per-ep., PG-13---Teens-13-or-older, 13, 5.72
+34290, Finished Airing, Asatsu-DK, Toei-Animation, Original, Action, Fantasy, Magic, 24-min.-per-ep., G---All-Ages, 49, 6.94
+34300, Finished Airing, Tencent-Penguin-Pictures, Estudio-nao-listado, Novel, Action, Magic, Fantasy, 18-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.55
+34302, Finished Airing, Kinoshita-Group-Holdings, Toei-Animation, Original, Action, Comedy, Magic, 1-hr.-11-min., G---All-Ages, 1, 6.89
+34321, Finished Airing, Aniplex, Aniplex, Game, Action, Supernatural, Magic, 1-hr.-14-min., PG-13---Teens-13-or-older, 1, 6.97
+34350, Finished Airing, Bandai-Visual, J.C.-Staff, Manga, Adventure, Mystery, Seinen, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.20
+34368, Finished Airing, WOWOW, J.C.-Staff, Novel, Mystery, Supernatural, Drama, 24-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 6.43
+34374, Finished Airing, Mainichi-Broadcasting-System, Estudio-nao-listado, Light-novel, Slice of Life, Drama, Magic, 48-min., PG-13---Teens-13-or-older, 1, 7.60
+34375, Finished Airing, Pony-Canyon, Estudio-nao-listado, Light-novel, Drama, Fantasy, Magic, 47-min., PG-13---Teens-13-or-older, 1, 7.93
+34376, Finished Airing, Pony-Canyon, Estudio-nao-listado, Light-novel, Drama, Fantasy, Magic, 48-min., PG-13---Teens-13-or-older, 1, 8.18
+34382, Finished Airing, Sotsu, Funimation, Manga, Drama, Romance, School, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.88
+34383, Finished Airing, DMM.com, Estudio-nao-listado, Manga, Drama, Romance, Shoujo Ai, 9-min.-per-ep., R+---Mild-Nudity, 12, 5.52
+34399, Currently Airing, ZIZ-Entertainment-(ZIZ), Estudio-nao-listado, Visual-novel, Demons, Hentai, Supernatural, 30-min., Rx---Hentai, ?, 6.67
+34403, Finished Airing, Kadokawa-Shoten, Funimation, Manga, Comedy, Romance, Ecchi, 23-min.-per-ep., R+---Mild-Nudity, 10, 6.53
+34414, Finished Airing, comico, Funimation, Web-manga, Action, Comedy, Drama, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.62
+34427, Finished Airing, Frontier-Works, Estudio-nao-listado, Other, Action, Sci-Fi, Slice of Life, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.49
+34445, Finished Airing, Dentsu, Estudio-nao-listado, Original, Slice of Life, Drama, Magic, 24-min.-per-ep., PG-13---Teens-13-or-older, 6, 7.70
+34451, Finished Airing, Nihon-Ad-Systems, Bones, Manga, Action, Comedy, Fantasy, 24-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 8.08
+34467, Finished Airing, TV-Tokyo, Estudio-nao-listado, Original, Dementia, Horror, Supernatural, 4-min.-per-ep., PG-13---Teens-13-or-older, 13, 5.63
+34480, Finished Airing, Warner-Bros., J.C.-Staff, Manga, Ecchi, School, Shounen, 25-min.-per-ep., PG-13---Teens-13-or-older, 2, 7.71
+34497, Finished Airing, Sotsu, Funimation, Light-novel, Adventure, Harem, Fantasy, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.89
+34501, Finished Airing, Grooove, Funimation, Visual-novel, Action, Martial Arts, School, 8-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.61
+34504, Finished Airing, KlockWorx, Estudio-nao-listado, 4-koma-manga, Slice of Life, Comedy, School, 1-hr., R---17+-(violence-&amp;-profanity), 1, 7.95
+34525, Finished Airing, Tokuma-Shoten, Funimation, Manga, Comedy, Fantasy, Seinen, 23-min.-per-ep., R+---Mild-Nudity, 12, 6.57
+34533, Finished Airing, comico, Estudio-nao-listado, Web-manga, Action, Comedy, School, 23-min., PG-13---Teens-13-or-older, 1, 6.86
+34540, Finished Airing, TV-Tokyo, OLM, Game, Action, Adventure, Comedy, 1-hr.-38-min., PG---Children, 1, 7.36
+34541, Finished Airing, Khara, Estudio-nao-listado, Book, Adventure, Fantasy, Magic, 1-hr.-42-min., G---All-Ages, 1, 7.45
+34542, Finished Airing, Aniplex, Aniplex, Manga, Action, Drama, Psychological, 22-min.-per-ep., R---17+-(violence-&amp;-profanity), 11, 7.90
+34547, Finished Airing, Aniplex, Aniplex, Manga, Adventure, Historical, Drama, 24-min.-per-ep., PG-13---Teens-13-or-older, 24, 7.54
+34550, Finished Airing, TMS-Entertainment, Shin-Ei-Animation, Manga, Comedy, Drama, Seinen, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.28
+34561, Finished Airing, Aniplex, Aniplex, Original, Action, Sci-Fi, Fantasy, 24-min.-per-ep., R---17+-(violence-&amp;-profanity), 22, 7.69
+34566, Currently Airing, TV-Tokyo, Aniplex, Manga, Action, Adventure, Martial Arts, 23-min., PG-13---Teens-13-or-older, ?, 7.03
+34572, Currently Airing, TV-Tokyo, Studio-Pierrot, Manga, Action, Comedy, Magic, 23-min.-per-ep., PG-13---Teens-13-or-older, 51, 6.61
+34577, Currently Airing, Aniplex, A-1-Pictures, Manga, Action, Adventure, Supernatural, 24-min.-per-ep., PG-13---Teens-13-or-older, 24, 8.41
+34580, Finished Airing, Toei-Video, TMS-Entertainment, Manga, Game, School, Seinen, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.82
+34591, Finished Airing, TV-Tokyo, Aniplex, Manga, Drama, Fantasy, Shoujo, 23-min.-per-ep., PG-13---Teens-13-or-older, 11, 8.74
+34599, Finished Airing, Media-Factory, Kinema-Citrus, Web-manga, Sci-Fi, Adventure, Mystery, 25-min.-per-ep., R---17+-(violence-&amp;-profanity), 13, 8.91
+34602, Finished Airing, bilibili, Estudio-nao-listado, Novel, Drama, Romance, School, 11-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.24
+34604, Currently Airing, Kodansha, Estudio-nao-listado, Manga, Action, Sci-Fi, Magic, 22-min.-per-ep., PG-13---Teens-13-or-older, 3, 7.31
+34612, Currently Airing, TV-Tokyo, J.C.-Staff, Manga, Slice of Life, Comedy, Supernatural, 24-min.-per-ep., PG-13---Teens-13-or-older, 24, 8.67
+34613, Finished Airing, Pony-Canyon, DLE, Original, Comedy, Fantasy, Parody, 1-min.-per-ep., PG---Children, 23, 5.53
+34615, Finished Airing, DAX-Production, Estudio-nao-listado, Manga, Comedy, Sports, Shounen, 3-min., PG-13---Teens-13-or-older, 1, 5.69
+34623, Finished Airing, Lantis, TMS-Entertainment, Manga, Comedy, Seinen, Slice of Life, 2-min.-per-ep., PG-13---Teens-13-or-older, 4, 6.06
+34636, Finished Airing, Dentsu, Production-I.G, Manga, Comedy, Sports, Drama, 24-min.-per-ep., PG-13---Teens-13-or-older, 24, 8.34
+34642, Finished Airing, Cygames, Estudio-nao-listado, Game, Action, Adventure, Demons, 9-min.-per-ep., PG-13---Teens-13-or-older, 2, 7.16
+34661, Finished Airing, Studio-Hibari, Estudio-nao-listado, Game, Action, Fantasy, Game, 8-min., PG---Children, 1, 6.40
+34662, Finished Airing, Aniplex, A-1-Pictures, Light-novel, Action, Supernatural, Drama, 23-min.-per-ep., R---17+-(violence-&amp;-profanity), 25, 7.19
+34675, Finished Airing, Tencent-Animation, Estudio-nao-listado, Web-manga, Action, Game, Adventure, 13-min.-per-ep., PG-13---Teens-13-or-older, 20, 6.49
+34712, Finished Airing, Bandai-Visual, J.C.-Staff, Manga, Drama, Fantasy, Mystery, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.35
+34734, Finished Airing, Genco, J.C.-Staff, Manga, Sports, School, Shounen, 23-min., PG-13---Teens-13-or-older, 1, 6.50
+34738, Finished Airing, King-Records, Estudio-nao-listado, Original, Historical, Demons, Supernatural, 3-min.-per-ep., PG-13---Teens-13-or-older, 13, 5.93
+34745, Finished Airing, TV-Tokyo, Production-I.G, Manga, Adventure, Fantasy, Magic, 24-min.-per-ep., PG-13---Teens-13-or-older, 24, 7.96
+34787, Finished Airing, TV-Tokyo, Tatsunoko-Production, Game, Music, School, Shoujo, 24-min.-per-ep., PG---Children, 51, 7.22
+34792, Finished Airing, Fuji-TV, Estudio-nao-listado, Original, Adventure, Music, Fantasy, 1-hr.-57-min., None, 1, 7.48
+34800, Finished Airing, TBS, Estudio-nao-listado, Original, Slice of Life, Comedy, School, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.57
+34820, Finished Airing, Warner-Music-Japan, Toei-Animation, Manga, Action, Sci-Fi, Comedy, 1-hr.-35-min., PG-13---Teens-13-or-older, 1, 6.97
+34823, Finished Airing, Kujou-kun-no-Bonnou-wo-Mimamoru-kai, Estudio-nao-listado, Manga, Drama, Romance, Ecchi, 3-min.-per-ep., R+---Mild-Nudity, 12, 4.60
+34825, Finished Airing, Sotsu, TMS-Entertainment, Manga, Comedy, Seinen, Sports, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.03
+34830, Finished Airing, DIVE-II-Entertainment, Estudio-nao-listado, Original, Harem, Demons, Supernatural, 2-hr., R---17+-(violence-&amp;-profanity), 1, 6.92
+34834, Finished Airing, Bandai-Visual, Bandai-Visual, Card-game, Action, Comedy, Fantasy, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.75
+34863, Finished Airing, Marvelous, Funimation, Card-game, Action, Comedy, Drama, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.38
+34866, Currently Airing, TV-Tokyo, Estudio-nao-listado, Manga, Action, Fantasy, Game, 24-min., PG-13---Teens-13-or-older, ?, 6.77
+34881, Finished Airing, Nihon-Ad-Systems, Estudio-nao-listado, 4-koma-manga, Comedy, Romance, School, 12-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.26
+34884, Finished Airing, Sotsu, Xebec, Manga, Comedy, Ecchi, Shounen, 3-min.-per-ep., PG-13---Teens-13-or-older, 6, 6.59
+34895, Currently Airing, Queen-Bee, Estudio-nao-listado, Manga, Hentai, Drama, School, 30-min., Rx---Hentai, ?, 5.83
+34901, Finished Airing, TV-Tokyo, OLM, Original, Action, Sci-Fi, Adventure, 24-min.-per-ep., PG---Children, 51, 6.66
+34902, Finished Airing, Nihon-Ad-Systems, Funimation, 4-koma-manga, Comedy, Romance, School, 12-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.89
+34903, Finished Airing, DJI, Gonzo, Original, Action, Mecha, School, 24-min.-per-ep., PG-13---Teens-13-or-older, 6, 6.61
+34914, Finished Airing, Frontier-Works, Funimation, 4-koma-manga, Game, Slice of Life, Comedy, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.91
+34933, Finished Airing, Dentsu, Estudio-nao-listado, Manga, Drama, Game, Mystery, 24-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 7.56
+34934, Finished Airing, Frontier-Works, Estudio-nao-listado, Manga, Drama, Romance, School, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.81
+34940, Finished Airing, Tencent-Animation, Estudio-nao-listado, Manga, Adventure, Historical, Demons, 14-min.-per-ep., PG-13---Teens-13-or-older, 15, 6.46
+34964, Finished Airing, Sotsu, Estudio-nao-listado, Manga, Action, Sci-Fi, Ecchi, 24-min.-per-ep., R+---Mild-Nudity, 12, 6.86
+34966, Finished Airing, Aniplex, Aniplex, Original, Horror, Mystery, Psychological, 23-min.-per-ep., R---17+-(violence-&amp;-profanity), 6, 6.60
+34973, Finished Airing, Bandai-Visual, Bandai-Visual, Original, Music, School, Slice of Life, 23-min.-per-ep., PG-13---Teens-13-or-older, 13, 7.78
+35009, Finished Airing, LIDENFILMS, Estudio-nao-listado, Manga, Action, Adventure, Demons, 24-min., R---17+-(violence-&amp;-profanity), 1, 6.17
+35015, Finished Airing, bilibili, Estudio-nao-listado, Manga, Slice of Life, Comedy, School, 3-min.-per-ep., PG---Children, 12, 7.38
+35029, Currently Airing, PoRO, Estudio-nao-listado, Light-novel, Harem, Hentai, Supernatural, 20-min., Rx---Hentai, ?, 6.74
+35062, Finished Airing, Production-I.G, Production-I.G, Manga, Slice of Life, Fantasy, Magic, 24-min.-per-ep., PG-13---Teens-13-or-older, 24, 8.30
+35073, Finished Airing, AT-X, Madhouse-Inc., Light-novel, Action, Adventure, Fantasy, 23-min.-per-ep., R---17+-(violence-&amp;-profanity), 13, 8.01
+35075, Finished Airing, Kodansha, Studio-Deen, Manga, Comedy, Demons, Supernatural, 23-min.-per-ep., PG-13---Teens-13-or-older, 13, 7.91
+35078, Finished Airing, Frontier-Works, Estudio-nao-listado, Manga, Slice of Life, Comedy, Shounen, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.52
+35079, Finished Airing, Movic, Funimation, Light-novel, Action, Adventure, Slice of Life, 23-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 7.61
+35081, Finished Airing, Bandai-Namco-Entertainment, Estudio-nao-listado, Game, Comedy, Music, Slice of Life, 9-min., PG-13---Teens-13-or-older, 1, 6.72
+35082, Finished Airing, Lantis, Kyoto-Animation, Novel, Music, School, Drama, 1-hr.-55-min., PG-13---Teens-13-or-older, 1, 7.59
+35120, Finished Airing, Aniplex, Aniplex, Manga, Action, Horror, Demons, 25-min.-per-ep., R+---Mild-Nudity, 10, 8.04
+35122, Finished Airing, Kodansha, Estudio-nao-listado, Manga, Action, Fantasy, Shounen, 7-min., PG-13---Teens-13-or-older, 1, 6.37
+35134, Finished Airing, Bandai-Visual, Bones, Original, Adventure, Mecha, Drama, Unknown, PG-13---Teens-13-or-older, 1, 6.22
+35159, Finished Airing, Pony-Canyon, Estudio-nao-listado, Manga, Romance, School, Shoujo Ai, 6-min., PG-13---Teens-13-or-older, 1, 7.35
+35180, Finished Airing, Aniplex, Aniplex, Manga, Drama, Game, Seinen, 25-min.-per-ep., PG-13---Teens-13-or-older, 22, 9.10
+35183, Currently Airing, Ai-Addiction, Studio-Deen, Manga, Comedy, Sports, Drama, 23-min., PG-13---Teens-13-or-older, ?, 5.67
+35203, Finished Airing, Sotsu, Funimation, Light-novel, Adventure, Harem, Comedy, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.80
+35220, Finished Airing, TMS-Entertainment, Shin-Ei-Animation, Novel, Slice of Life, Mystery, Supernatural, 23-min.-per-ep., PG-13---Teens-13-or-older, 26, 7.18
+35222, Finished Airing, Bandai-Visual, Bandai-Visual, Manga, Comedy, School, Shoujo, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.91
+35230, Finished Airing, Production-I.G, Production-I.G, Manga, Comedy, Super Power, Shounen, 3-min.-per-ep., PG-13---Teens-13-or-older, 10, 6.08
+35240, Finished Airing, Bandai-Visual, Bandai-Visual, Original, Action, Mystery, Historical, 25-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 7.71
+35241, Finished Airing, Genco, Funimation, Manga, Slice of Life, Fantasy, Seinen, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.70
+35247, Finished Airing, Aniplex, Aniplex, Light-novel, Comedy, Mystery, Supernatural, 22-min.-per-ep., R---17+-(violence-&amp;-profanity), 7, 9.02
+35250, Finished Airing, VAP, Funimation, Web-manga, Comedy, Fantasy, Psychological, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 5.89
+35251, Finished Airing, TV-Asahi, Estudio-nao-listado, Game, Historical, Romance, Fantasy, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.07
+35254, Finished Airing, Yomiuri-Telecasting, Tatsunoko-Production, Original, Adventure, Comedy, Historical, 23-min.-per-ep., PG-13---Teens-13-or-older, 24, 5.76
+35263, Finished Airing, Space-Shower-Music, Estudio-nao-listado, Music, Drama, Fantasy, Music, 3-min., PG---Children, 1, 5.51
+35267, Finished Airing, Pony-Canyon, Estudio-nao-listado, Manga, Action, Fantasy, Shounen, Unknown, PG-13---Teens-13-or-older, 3, 6.98
+35285, Finished Airing, Aniplex, Aniplex, 4-koma-manga, Comedy, School, Seinen, 23-min., PG-13---Teens-13-or-older, 1, 6.98
+35320, Finished Airing, NHK, Madhouse-Inc., Manga, Fantasy, Romance, Shoujo, 26-min., G---All-Ages, 1, 8.14
+35330, Finished Airing, King-Records, Funimation, 4-koma-manga, Comedy, Parody, Dementia, 12-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.39
+35333, Currently Airing, Tencent-Animation, Estudio-nao-listado, Manga, Action, Super Power, Supernatural, 24-min., R---17+-(violence-&amp;-profanity), ?, 7.31
+35338, Finished Airing, Aniplex, A-1-Pictures, Light-novel, Harem, Comedy, Romance, 22-min., PG-13---Teens-13-or-older, 1, 7.37
+35376, Finished Airing, AT-X, Estudio-nao-listado, Manga, Comedy, School, Seinen, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.49
+35427, Finished Airing, W-Toon-Studio, Funimation, Original, Comedy, Parody, School, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.63
+35465, Finished Airing, XFLAG-Pictures, Estudio-nao-listado, Game, Action, Game, Music, 21-min., G---All-Ages, 1, 6.33
+35466, Finished Airing, comico, TMS-Entertainment, Web-manga, Romance, School, Slice of Life, 23-min.-per-ep., PG-13---Teens-13-or-older, 4, 8.30
+35480, Finished Airing, Production-I.G, Production-I.G, Manga, Horror, School, Shounen, 3-min.-per-ep., R---17+-(violence-&amp;-profanity), 10, 5.54
+35484, Finished Airing, VAP, Estudio-nao-listado, Web-manga, Comedy, Romance, Slice of Life, 3-min.-per-ep., PG-13---Teens-13-or-older, 13, 6.94
+35507, Finished Airing, Studio-Hibari, Funimation, Light-novel, Drama, Psychological, School, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.93
+35512, Currently Airing, Pink-Pineapple, Estudio-nao-listado, Visual-novel, Harem, Hentai, School, 30-min., Rx---Hentai, ?, 7.45
+35522, Finished Airing, Kadokawa-Shoten, Estudio-nao-listado, 4-koma-manga, Comedy, School, Slice of Life, 13-min.-per-ep., PG-13---Teens-13-or-older, 2, 6.75
+35540, Finished Airing, Aniplex, A-1-Pictures, 4-koma-manga, Slice of Life, Comedy, School, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.13
+35557, Finished Airing, Mainichi-Broadcasting-System, Estudio-nao-listado, Manga, Action, Mystery, Drama, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 8.48
+35635, Finished Airing, XFLAG-Pictures, Estudio-nao-listado, Game, Action, Game, Music, 14-min.-per-ep., PG---Children, 5, 5.89
+35639, Finished Airing, Sotsu, Estudio-nao-listado, Original, Slice of Life, Drama, Romance, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.41
+35658, Finished Airing, Bandai-Visual, Production-I.G, Manga, Comedy, Sports, Shounen, 2-min., PG-13---Teens-13-or-older, 1, 7.78
+35676, Finished Airing, LIDENFILMS, Estudio-nao-listado, Manga, Action, Adventure, Demons, 24-min., R---17+-(violence-&amp;-profanity), 1, 5.78
+35677, Finished Airing, Lantis, Kyoto-Animation, Novel, Music, Drama, School, 1-hr.-30-min., PG-13---Teens-13-or-older, 1, 7.48
+35712, Finished Airing, AT-X, Estudio-nao-listado, Web-manga, Comedy, Ecchi, Romance, 23-min.-per-ep., PG-13---Teens-13-or-older, 10, 6.46
+35714, Finished Airing, TV-Tokyo, Estudio-nao-listado, Original, Dementia, Horror, Supernatural, 4-min.-per-ep., PG-13---Teens-13-or-older, 13, 6.22
+35730, Finished Airing, DAX-Production, Estudio-nao-listado, Light-novel, Military, Sci-Fi, Space, 3-min.-per-ep., PG-13---Teens-13-or-older, 12, 4.10
+35776, Finished Airing, Square-Enix, Estudio-nao-listado, Game, Action, Fantasy, Magic, 1-hr.-2-min., PG-13---Teens-13-or-older, 1, 7.11
+35788, Finished Airing, Lantis, J.C.-Staff, Manga, Ecchi, School, Shounen, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 8.50
+35828, Finished Airing, TBS, Estudio-nao-listado, Web-manga, Slice of Life, Comedy, Supernatural, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.52
+35838, Finished Airing, AT-X, White-Fox, Web-manga, Adventure, Mystery, Sci-Fi, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 8.19
+35843, Finished Airing, TV-Tokyo, Aniplex, Manga, Action, Sci-Fi, Comedy, 23-min.-per-ep., PG-13---Teens-13-or-older, 13, 8.59
+35849, Currently Airing, Aniplex, A-1-Pictures, Original, Action, Sci-Fi, Drama, 24-min.-per-ep., PG-13---Teens-13-or-older, 24, 8.16
+35857, Currently Airing, Nippon-Television-Network, Estudio-nao-listado, Manga, Action, Adventure, Mystery, 22-min.-per-ep., PG-13---Teens-13-or-older, 24, 7.99
+35860, Finished Airing, TMS-Entertainment, Shin-Ei-Animation, Manga, Comedy, Romance, School, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.94
+35905, Finished Airing, AT-X, Estudio-nao-listado, Light-novel, Slice of Life, Game, Comedy, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.07
+35928, Currently Airing, Kodansha, Estudio-nao-listado, Manga, Action, Supernatural, Drama, 24-min., R---17+-(violence-&amp;-profanity), ?, 6.49
+35964, Currently Airing, Kodansha, Funimation, Novel, Action, Martial Arts, Historical, 23-min.-per-ep., R---17+-(violence-&amp;-profanity), 24, 5.90
+35971, Finished Airing, Asmik-Ace-Entertainment, Estudio-nao-listado, Other, Music, Comedy, School, 3-min.-per-ep., G---All-Ages, 12, 4.53
+35988, Finished Airing, AZ-Creative, Estudio-nao-listado, Visual-novel, Adventure, Comedy, Romance, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.60
+35997, Finished Airing, Lantis, Estudio-nao-listado, Light-novel, Magic, Fantasy, School, 23-min.-per-ep., PG-13---Teens-13-or-older, 10, 5.49
+35999, Finished Airing, Square-Enix, Estudio-nao-listado, Original, Action, Adventure, Magic, 3-min.-per-ep., PG-13---Teens-13-or-older, 12, 4.86
+36023, Currently Airing, CloverWorks, A-1-Pictures, Game, Action, Supernatural, Fantasy, 24-min.-per-ep., R---17+-(violence-&amp;-profanity), 24, 7.38
+36027, Finished Airing, AT-X, Funimation, Novel, Dementia, Supernatural, School, 23-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 5.18
+36028, Currently Airing, NBCUniversal-Entertainment-Japan, Funimation, Manga, Action, Adventure, Historical, 23-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 7.53
+36029, Currently Airing, NBCUniversal-Entertainment-Japan, Funimation, Manga, Adventure, Demons, Supernatural, 23-min.-per-ep., PG-13---Teens-13-or-older, 23, 5.10
+36038, Finished Airing, DAX-Production, Funimation, Web-manga, Game, Comedy, Romance, 23-min.-per-ep., PG-13---Teens-13-or-older, 10, 7.86
+36049, Finished Airing, Pony-Canyon, Funimation, Manga, Slice of Life, Comedy, Shounen, 12-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.98
+36094, Finished Airing, Lantis, Lerche, Manga, Slice of Life, Fantasy, Seinen, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.59
+36119, Finished Airing, Aoni-Production, Estudio-nao-listado, Game, Comedy, Sports, Fantasy, 3-min., G---All-Ages, 1, 6.50
+36124, Finished Airing, Nippon-Columbia, Studio-Deen, Manga, Comedy, Demons, Drama, 24-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 6.21
+36144, Finished Airing, Tohokushinsha-Film-Corporation, Funimation, Original, Action, Demons, Fantasy, 24-min.-per-ep., R---17+-(violence-&amp;-profanity), 24, 7.30
+36148, Finished Airing, iQIYI, Estudio-nao-listado, Novel, Adventure, Comedy, Fantasy, 15-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.99
+36160, Finished Airing, Tencent-Animation, Estudio-nao-listado, Web-manga, Action, Comedy, Romance, 16-min.-per-ep., R---17+-(violence-&amp;-profanity), 21, 8.06
+36185, Finished Airing, Colored-Pencil-Animation-Design, Estudio-nao-listado, Web-manga, Magic, Romance, School, 13-min.-per-ep., PG-13---Teens-13-or-older, 9, 6.91
+36194, Finished Airing, Sola-Digital-Arts, Estudio-nao-listado, Original, Action, Military, Sci-Fi, 1-hr.-27-min., R---17+-(violence-&amp;-profanity), 1, 6.68
+36196, Finished Airing, Pony-Canyon, Estudio-nao-listado, Original, Comedy, Fantasy, Parody, 5-min.-per-ep., PG---Children, 12, 6.10
+36198, Finished Airing, Studio-Mausu, Estudio-nao-listado, Digital-manga, Romance, Ecchi, School, 4-min.-per-ep., R+---Mild-Nudity, 12, 5.57
+36220, Finished Airing, Aniplex, Aniplex, Music, Comedy, Drama, Romance, 23-min.-per-ep., PG-13---Teens-13-or-older, 6, 7.68
+36229, Finished Airing, CBS, Estudio-nao-listado, Music, Music, Romance, Fantasy, 28-min., G---All-Ages, 1, 6.17
+36259, Finished Airing, NHK, Estudio-nao-listado, Other, Slice of Life, Comedy, Kids, 7-min.-per-ep., G---All-Ages, 26, 8.65
+36296, Currently Airing, Magic-Capsule, Funimation, Manga, Sci-Fi, Slice of Life, Comedy, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 8.03
+36309, Currently Airing, Lantis, Estudio-nao-listado, Original, Comedy, School, Supernatural, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 5.76
+36318, Finished Airing, Shanghai-Foch-Film-Culture-Investment, Estudio-nao-listado, Novel, Action, Magic, Fantasy, 18-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.65
+36440, Finished Airing, Tencent-Penguin-Pictures, Estudio-nao-listado, Game, Action, Adventure, Fantasy, 14-min.-per-ep., None, 26, 6.01
+36456, Currently Airing, Shueisha, Bones, Manga, Action, Comedy, School, 23-min.-per-ep., PG-13---Teens-13-or-older, 25, 8.75
+36485, Finished Airing, Bandai-Visual, Bandai-Visual, Original, Action, Drama, Mystery, 3-min.-per-ep., PG-13---Teens-13-or-older, 6, 6.38
+36491, Finished Airing, Tencent-Penguin-Pictures, Estudio-nao-listado, Novel, Action, Adventure, Comedy, 20-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.44
+36511, Currently Airing, Pierrot-Plus, Studio-Pierrot, Manga, Action, Drama, Horror, 24-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 7.90
+36516, Currently Airing, Kadokawa-Shoten, Estudio-nao-listado, Novel, Action, Drama, Romance, 24-min.-per-ep., PG-13---Teens-13-or-older, 24, 6.15
+36522, Currently Airing, Tencent-Animation, Estudio-nao-listado, Web-manga, Action, Comedy, Magic, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.57
+36524, Finished Airing, Genco, Funimation, Visual-novel, Action, Super Power, Magic, 23-min., PG-13---Teens-13-or-older, 1, 5.44
+36531, Currently Airing, TBS, OLM, Other, Action, Kids, Mecha, 24-min., PG---Children, ?, 6.07
+36539, Finished Airing, Sotsu, Estudio-nao-listado, Original, Comedy, Romance, School, 15-min., PG-13---Teens-13-or-older, 1, 7.31
+36544, Finished Airing, bilibili, Estudio-nao-listado, Manga, Action, Comedy, Supernatural, 15-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.64
+36545, Finished Airing, Tencent-Animation, Estudio-nao-listado, Manga, Comedy, Historical, Supernatural, 15-min.-per-ep., PG-13---Teens-13-or-older, 15, 7.70
+36548, Finished Airing, Twin-Engine, Estudio-nao-listado, Manga, Psychological, Supernatural, Drama, 23-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 7.22
+36561, Finished Airing, Tencent-Penguin-Pictures, Estudio-nao-listado, Novel, Action, Adventure, Demons, 25-min.-per-ep., PG-13---Teens-13-or-older, 2, 6.92
+36565, Currently Airing, NHK, Estudio-nao-listado, Manga, Comedy, Sports, Drama, 24-min., PG-13---Teens-13-or-older, ?, 7.59
+36593, Currently Airing, Asahi-Broadcasting, Toei-Animation, Original, Action, Fantasy, Magic, 24-min., G---All-Ages, ?, 7.36
+36629, Finished Airing, DAX-Production, Estudio-nao-listado, Manga, Slice of Life, Comedy, School, 4-min., PG-13---Teens-13-or-older, 1, 6.35
+36652, Currently Airing, NHK, Estudio-nao-listado, Manga, Adventure, Music, Comedy, 25-min.-per-ep., PG-13---Teens-13-or-older, 12, 7.21
+36688, Finished Airing, Kadokawa-Shoten, Estudio-nao-listado, Light-novel, Action, Ecchi, Fantasy, 1-hr., R+---Mild-Nudity, 1, 7.05
+36692, Finished Airing, Memory-Tech, Estudio-nao-listado, Original, Sci-Fi, Music, Slice of Life, 7-min.-per-ep., PG-13---Teens-13-or-older, 4, 7.00
+36720, Currently Airing, T-Rex, Estudio-nao-listado, Visual-novel, Fantasy, Harem, Hentai, 16-min., Rx---Hentai, ?, 7.61
+36762, Finished Airing, Tencent-Animation, Estudio-nao-listado, Web-manga, Action, Adventure, Mystery, 22-min.-per-ep., R---17+-(violence-&amp;-profanity), 26, 6.55
+36823, Finished Airing, Tencent-Animation, Estudio-nao-listado, Manga, Comedy, Historical, Supernatural, 14-min.-per-ep., PG-13---Teens-13-or-older, 8, 7.62
+36824, Currently Airing, Tencent-Animation, Estudio-nao-listado, Manga, Comedy, Historical, Romance, 17-min., PG-13---Teens-13-or-older, ?, 7.50
+36825, Finished Airing, TV-Tokyo, OLM, Game, Action, Adventure, Comedy, 24-min., PG---Children, 1, 6.38
+36827, Finished Airing, Bushiroad, J.C.-Staff, Card-game, Comedy, Mystery, Super Power, 23-min., PG-13---Teens-13-or-older, 1, 6.65
+36838, Finished Airing, TV-Tokyo, Aniplex, Manga, Action, Sci-Fi, Comedy, 24-min.-per-ep., PG-13---Teens-13-or-older, 12, 8.85
+36840, Finished Airing, Cosmic-Ray, Estudio-nao-listado, Web-manga, Ecchi, Romance, School, 6-min.-per-ep., R+---Mild-Nudity, 12, 5.50
+36848, Finished Airing, Tencent-Animation, Estudio-nao-listado, Web-manga, Harem, Comedy, Romance, 19-min.-per-ep., PG-13---Teens-13-or-older, 15, 7.48
+36861, Finished Airing, XFLAG, Estudio-nao-listado, Original, Action, Police, Magic, 40-min., G---All-Ages, 1, 6.17
+36902, Currently Airing, Genco, Estudio-nao-listado, Web-manga, Fantasy, Magic, Comedy, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.87
+36943, Currently Airing, Ichijinsha, Estudio-nao-listado, Manga, Comedy, Ecchi, Shoujo Ai, 3-min.-per-ep., R+---Mild-Nudity, 12, 5.41
+36949, Currently Airing, Shueisha, J.C.-Staff, Manga, Ecchi, School, Shounen, 24-min., PG-13---Teens-13-or-older, ?, 8.59
+37023, Currently Airing, Level-5, Estudio-nao-listado, Game, Comedy, Kids, Mystery, 23-min.-per-ep., PG---Children, 50, 7.15
+37031, Finished Airing, Production-I.G, Production-I.G, Manga, Slice of Life, Magic, Fantasy, 24-min., PG-13---Teens-13-or-older, 1, 7.37
+37044, Finished Airing, Tencent-Penguin-Pictures, Estudio-nao-listado, Novel, Drama, Romance, School, 11-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.84
+37140, Currently Airing, Yomiko-Advertising, Toei-Animation, Manga, Comedy, Demons, Supernatural, 23-min., G---All-Ages, ?, 6.89
+37150, Currently Airing, Tencent-Penguin-Pictures, Estudio-nao-listado, Novel, Action, Adventure, Historical, 20-min.-per-ep., PG-13---Teens-13-or-older, 26, 7.66
+37175, Finished Airing, Jay-Zone-Comic, Estudio-nao-listado, Web-manga, Mystery, Psychological, Thriller, 23-min.-per-ep., R---17+-(violence-&amp;-profanity), 12, 7.57
+37176, Currently Airing, Tencent-Penguin-Pictures, Estudio-nao-listado, Novel, Action, Adventure, Historical, 20-min., PG-13---Teens-13-or-older, ?, 7.12
+37204, Currently Airing, TV-Tokyo, Estudio-nao-listado, Game, Music, Slice of Life, School, 24-min., PG---Children, ?, 7.07
+37245, Currently Airing, Sunrise, Sunrise, Original, Action, Mecha, Sci-Fi, 24-min., G---All-Ages, ?, 6.58
+37254, Currently Airing, Egg-Firm, J.C.-Staff, Game, Action, Adventure, Comedy, 23-min.-per-ep., PG-13---Teens-13-or-older, 12, 6.00
+37294, Currently Airing, iQIYI, Estudio-nao-listado, Novel, Adventure, Comedy, Fantasy, Unknown, PG-13---Teens-13-or-older, ?, 6.89
+37362, Finished Airing, Bandai-Namco-Entertainment, Estudio-nao-listado, Game, Action, Game, Military, 3-min., PG-13---Teens-13-or-older, 1, 6.13
+37564, Currently Airing, Tencent-Animation, Estudio-nao-listado, Web-manga, Adventure, Comedy, Supernatural, 17-min., PG-13---Teens-13-or-older, ?, 6.60
