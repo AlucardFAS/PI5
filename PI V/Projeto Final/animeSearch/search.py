@@ -10,7 +10,7 @@ url = "https://myanimelist.net/anime/"
 
 file = open("test.txt", "w", encoding="utf-8")
 
-for x in range(1, 10000) :
+for x in range(0, 37565) :
 
     try:
         page = urllib.request.urlopen(url + str(x))
