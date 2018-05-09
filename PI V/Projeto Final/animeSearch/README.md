@@ -10,7 +10,7 @@ Danilo Mative</br>
 
 <h2> Web Scraping </h2>
 
-O Web Scraping nomeado como <a href="https://github.com/AlucardFAS/PI5/blob/master/PI%20V/Projeto%20Final/animeSearch/search.py">search.py</a> utiliza o módulo <a href="https://github.com/AlucardFAS/PI5/blob/master/PI%20V/Projeto%20Final/animeSearch/searchStudio.py">searchStudio.py</a> e <a href="https://github.com/AlucardFAS/PI5/tree/master/PI%20V/Projeto%20Final/animeSearch/bs4">BeautifulSoup 4</a> para realizar uma busca em cada página do Website <a href="www.myanimelist.net">MyAnimeList</a> e carregar todo o código fonte, separando e salvando uma série de dados de cada anime.</br></br>
+O Web Scraping nomeado como <a href="https://github.com/AlucardFAS/PI5/blob/master/PI%20V/Projeto%20Final/animeSearch/search.py">search.py</a> utiliza o módulo <a href="https://github.com/AlucardFAS/PI5/blob/master/PI%20V/Projeto%20Final/animeSearch/searchStudio.py">searchStudio.py</a> e <a href="https://github.com/AlucardFAS/PI5/tree/master/PI%20V/Projeto%20Final/animeSearch/bs4">BeautifulSoup 4</a> para realizar uma busca em cada página do Website <a href="https://myanimelist.net/">MyAnimeList</a> e carregar todo o código fonte, separando e salvando uma série de dados de cada anime.</br></br>
 Web Scraping named as search.py uses the searchStudio.py and BeautifulSoup 4 module to perform a search on each page of the MyAnimeList Website and load all the source code, separating and saving a series of data from each anime.</br>
 
 <h2>Output</h2>
