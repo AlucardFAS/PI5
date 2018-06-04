@@ -24,10 +24,11 @@ def cross(data):
     print(predicted)
 
 def predictClass(testInstance,data):
-    df_x = data.iloc[:,0:9] #Matriz
+    df_x = data.iloc[:,0:10] #Matriz
     df_y = data.iloc[:,10] #Classes
 
     print(df_x)
+    #print(df_y)
 
     mlp = MLPClassifier(activation='logistic', solver='sgd', hidden_layer_sizes=(10,15))
     mlp.fit(df_x,df_y)
@@ -38,8 +39,7 @@ def predictClass(testInstance,data):
 def main():
 
     animes_pd = pd.read_csv('input\\anime.csv', encoding = "ISO-8859-1")
-    testInstance = []
-    testInstance = [1,4,3,14,1,3,1,1,1,0.01] 
+    testInstance = [[1,20,4,4,2,12,13,5,2,0.00]]
     #cross(animes_pd)
     predictClass(testInstance,animes_pd)
 
