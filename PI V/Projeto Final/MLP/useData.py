@@ -1,3 +1,4 @@
+import re
 import numpy
 import pandas as pd
 from matplotlib import pyplot as plt
@@ -8,27 +9,40 @@ from sklearn.metrics.scorer import make_scorer
 from sklearn.metrics import recall_score
 from sklearn import svm
 
-def cross(data):
-    df_x = data.iloc[:,1:] #Matriz
-    df_y = data.iloc[:,10] #Classes
-
-    clf = svm.SVC(kernel='linear', C=1) #Name: 10, Length: 3020, dtype: int64
-    scores = cross_val_score(clf, df_x, df_y, cv=10)
-    predicted = cross_val_predict(clf, df_x, df_y, cv=10)
-
-    print("Cross-Validation Score: ")
-    for fold in range(len(scores)):
-        print(str(fold+1) + "-K Fold Precision: " + str(scores[fold]))
-    
-    print("Cross-Validation Predicts: ")
-    print(predicted)
-
 def predictClass(testInstance,data):
-    df_x = data.iloc[:,0:10] #Matriz
-    df_y = data.iloc[:,10] #Classes
+    df_x = data.iloc[:,2:11] #Matriz
+    df_y = data.iloc[:,11] #Classes
 
+    matrix = df_x.values.T.tolist()
+
+    third = matrix.pop(7)
+    second = matrix.pop(6)
+    first = matrix.pop(5)
+
+    genresList = []
+
+    #for x in range(0, len(first)):
+        
+        #genres = []
+
+        #if re.search('[a-zA-Z]', first[x]) is None:
+         #   genres.append(int(first[x]))
+        #if re.search('[a-zA-Z]', second[x]) is None:
+        #    genres.append(int(second[x]))
+       # if re.search('[a-zA-Z]', third[x]) is None:
+        #    genres.append(int(third[x]))
+
+       # genresList.append(genres)
+
+    
+    df_x.drop(df_x.columns[[5,4,3]], axis=1, inplace=True)
+    #print(genres)
     print(df_x)
-    #print(df_y)
+
+    #series = pd.Series(genresList)
+    #df_x['genres'] = series.values 
+
+    #print(df_x)
 
     mlp = MLPClassifier(activation='logistic', solver='sgd', hidden_layer_sizes=(10,15))
     mlp.fit(df_x,df_y)
@@ -39,9 +53,10 @@ def predictClass(testInstance,data):
 def main():
 
     animes_pd = pd.read_csv('input\\anime.csv', encoding = "ISO-8859-1")
-    testInstance = [[1,20,4,4,2,12,13,5,2,0.00]]
+    testInstance = [[1,1,1,4,1,1]]
     #cross(animes_pd)
     predictClass(testInstance,animes_pd)
+
 
 
 
