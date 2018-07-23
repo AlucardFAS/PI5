@@ -39,4 +39,5 @@ This project aims to explore some Machine Learning techniques and apply them to 
 <h3>
 <a href="https://github.com/AlucardFAS/PI5/blob/master/PI%20V/PI%20V/Relat%C3%B3rio/KNN.pdf">Relatório final K Nearest Neighbors</a></br>
 <a href="https://github.com/AlucardFAS/PI5/blob/master/PI%20V/PI%20V%20Learning%20Vector/Relat%C3%B3rio/LVQ.pdf">Relatório final Learning Vector Quantization</a></br>
+<a href="https://github.com/AlucardFAS/PI5/blob/master/PI%20V/Projeto%20Final/relat%C3%B3rio/projeto-integrador-v.pdf">Relatório final QU Anime</a></br>
 </h3>
